@@ -1,0 +1,185 @@
+[
+ {
+  "sort_order": 1,
+  "en": "Where did you go on holiday?",
+  "audio": "u1_a_1c",
+  "clip": "/tmp/u1_secA/final_v2/u1a_1_v2.mp3",
+  "c_start": 65.88,
+  "c_end": 68.22,
+  "size": 57722,
+  "recheck_sim": 1.0,
+  "recheck_text": "Where did you go on holiday?"
+ },
+ {
+  "sort_order": 2,
+  "en": "I didn't go anywhere special, but I tried something new — I worked as a tour guide at a museum.",
+  "audio": null,
+  "skip": "no_official_audio"
+ },
+ {
+  "sort_order": 3,
+  "en": "Did you do anything interesting on your holiday?",
+  "audio": "u1_a_1c",
+  "clip": "/tmp/u1_secA/final_v2/u1a_3_v2.mp3",
+  "c_start": 73.88,
+  "c_end": 77.87,
+  "size": 96592,
+  "recheck_sim": 0.667,
+  "recheck_text": "So, did you do anything interesting there?"
+ },
+ {
+  "sort_order": 4,
+  "en": "No, nothing special. But I met someone interesting.",
+  "audio": null,
+  "skip": "no_official_audio"
+ },
+ {
+  "sort_order": 5,
+  "en": "Did you go anywhere interesting?",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_5_v2.mp3",
+  "c_start": 20.85,
+  "c_end": 23.9,
+  "size": 74021,
+  "recheck_sim": 0.909,
+  "recheck_text": "Stick. Did you go anywhere interesting?"
+ },
+ {
+  "sort_order": 6,
+  "en": "Yes, I went to Yunnan.",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_6_v2.mp3",
+  "c_start": 23.85,
+  "c_end": 27.83,
+  "size": 97218,
+  "recheck_sim": 0.769,
+  "recheck_text": "Yes, I went to Yunnan with my family."
+ },
+ {
+  "sort_order": 7,
+  "en": "Did you go with anyone?",
+  "audio": "u1_a_1c",
+  "clip": "/tmp/u1_secA/final_v2/u1a_7_v2.mp3",
+  "c_start": 48.85,
+  "c_end": 50.92,
+  "size": 51452,
+  "recheck_sim": 1.0,
+  "recheck_text": "Did you go with anyone?"
+ },
+ {
+  "sort_order": 8,
+  "en": "Yes, I went with my family.",
+  "audio": "u1_a_1c",
+  "clip": "/tmp/u1_secA/final_v2/u1a_8_v2.mp3",
+  "c_start": 50.85,
+  "c_end": 53.86,
+  "size": 73395,
+  "recheck_sim": 0.833,
+  "recheck_text": "Yeah, I went with my family."
+ },
+ {
+  "sort_order": 9,
+  "en": "Did you eat anything special?",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_9_v2.mp3",
+  "c_start": 54.85,
+  "c_end": 57.89,
+  "size": 74649,
+  "recheck_sim": 1.0,
+  "recheck_text": "Did you eat anything special?"
+ },
+ {
+  "sort_order": 10,
+  "en": "Yes, we did! Everything tasted good, especially the steamed chicken soup. Everyone loved it.",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_10_v2.mp3",
+  "c_start": 57.9,
+  "c_end": 65.22,
+  "size": 176840,
+  "recheck_sim": 0.88,
+  "recheck_text": "Yes, we did. Everything tasted good. Especially the steamed chicken soup."
+ },
+ {
+  "sort_order": 11,
+  "en": "How was your holiday?",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_11_v2.mp3",
+  "c_start": 16.85,
+  "c_end": 18.91,
+  "size": 50825,
+  "recheck_sim": 1.0,
+  "recheck_text": "How was your holiday?"
+ },
+ {
+  "sort_order": 12,
+  "en": "It was fantastic.",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_12_v2.mp3",
+  "c_start": 18.85,
+  "c_end": 20.85,
+  "size": 49572,
+  "recheck_sim": 1.0,
+  "recheck_text": "It was fantastic!"
+ },
+ {
+  "sort_order": 13,
+  "en": "Yes, we stayed in the old town for a few days, and we enjoyed it very much.",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_13_v2.mp3",
+  "c_start": 33.85,
+  "c_end": 41.86,
+  "size": 193767,
+  "recheck_sim": 1.0,
+  "recheck_text": "Yes, we stayed in the old town for a few days and we enjoyed it very much."
+ },
+ {
+  "sort_order": 14,
+  "en": "Did you visit Yulong Mountain?",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_14_v2.mp3",
+  "c_start": 41.85,
+  "c_end": 44.89,
+  "size": 74022,
+  "recheck_sim": 1.0,
+  "recheck_text": "Did you visit Yulong Mountain?"
+ },
+ {
+  "sort_order": 15,
+  "en": "It is! It just took my breath away.",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_15_v2.mp3",
+  "c_start": 47.84,
+  "c_end": 50.98,
+  "size": 76530,
+  "recheck_sim": 1.0,
+  "recheck_text": "It is. It just took my breath away."
+ },
+ {
+  "sort_order": 16,
+  "en": "What about you?",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_16_v2.mp3",
+  "c_start": 64.85,
+  "c_end": 66.81,
+  "size": 48317,
+  "recheck_sim": 1.0,
+  "recheck_text": "What about you?"
+ },
+ {
+  "sort_order": 17,
+  "en": "I just stayed at home to read, play games, and relax, but it was still fun.",
+  "audio": "u1_a_2d",
+  "clip": "/tmp/u1_secA/final_v2/u1a_17_v2.mp3",
+  "c_start": 74.85,
+  "c_end": 81.88,
+  "size": 169944,
+  "recheck_sim": 1.0,
+  "recheck_text": "I just stayed at home to read, play games, and relax. But it was still fun."
+ },
+ {
+  "sort_order": 18,
+  "en": "How was your summer holiday?",
+  "audio": null,
+  "skip": "no_official_audio"
+ }
+]

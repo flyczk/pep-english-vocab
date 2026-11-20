@@ -1,0 +1,602 @@
+unit	word	phonetic	pos	meaning
+1	calligraphy	/kəˈlɪɡrəfi/	n.	书法
+1	ski	/skiː/	v.	滑雪
+1	program	/ˈprəʊɡræm/	v. & n.	编写程序；程序；节目（= programme）
+1	express	/ɪkˈspres/	v.	表达；表示
+1	instructor	/ɪnˈstrʌktə(r)/	n.	教练；指导者
+1	scared	/skeəd/	adj.	害怕的；对……感到惊慌的
+1	scared of		phr.	害怕；恐惧
+1	fear	/fɪə(r)/	n. & v.	害怕；担忧
+1	get over		phr.	克服（困难）；解决（问题）
+1	up to		phr.	正在做；由某人决定
+1	poem	/ˈpəʊɪm/	n.	诗
+1	single	/ˈsɪŋɡl/	adj.	单个的；单身的
+1	stroke	/strəʊk/	n.	笔画；击球
+1	give up		phr.	放弃
+1	ink	/ɪŋk/	n.	墨水
+1	return	/rɪˈtɜːn/	n. & v.	回来；归还
+1	in return		phr.	作为回报
+1	deal	/diːl/	n. & v.	交易；协议；对待（dealt /delt/）
+1	manage	/ˈmænɪdʒ/	v.	完成（困难的事）；管理
+1	get into		phr.	开始做某事；进入
+1	give it a go		phr.	试一试某事
+1	kung fu	/ˌkʊŋ ˈfuː/	n.	功夫
+1	push	/pʊʃ/	v.	督促；推
+1	myself	/maɪˈself/	pron.	我自己
+1	once in a while		phr.	偶尔地；间或
+1	chat	/tʃæt/	v. & n.	闲聊
+1	outing	/ˈaʊtɪŋ/	n.	外出游玩；远足
+1	go on an outing		phr.	出外游玩
+1	reduce	/rɪˈdjuːs/	v.	减少
+1	stress	/stres/	n.	精神压力；紧张
+1	yoga	/ˈjəʊɡə/	n.	瑜伽
+1	object	/ˈɒbdʒɪkt/	n.	物品；宾语
+1	Italian	/ɪˈtæljən/	adj. & n.	意大利的；意大利人的；意大利语的；意大利人；意大利语
+1	programmer	/ˈprəʊɡræmə(r)/	n.	程序设计员
+1	allow	/əˈlaʊ/	v.	使……成为可能；允许
+1	sense	/sens/	n.	感觉；感官
+1	achievement	/əˈtʃiːvmənt/	n.	成就
+1	coin	/kɔɪn/	n.	硬币
+1	stamp	/stæmp/	n.	邮票
+1	teenage	/ˈtiːneɪdʒ/	adj.	青少年的
+1	postcard	/ˈpəʊstkɑːd/	n.	明信片
+1	rather	/ˈrɑːðə(r)/	adv.	相当；更准确地说
+1	old-fashioned	/ˌəʊld ˈfæʃnd/	adj.	过时的；守旧的
+1	foreign	/ˈfɒrən/	adj.	外国的；国外的
+1	dream of		phr.	梦想；希望
+1	suggestion	/səˈdʒestʃən/	n.	建议；提议
+1	failure	/ˈfeɪljə(r)/	n.	失败
+1	inspire	/ɪnˈspaɪə(r)/	v.	激励；鼓舞
+1	strict	/strɪkt/	adj.	严厉的；严格的
+1	surprisingly	/səˈpraɪzɪŋli/	adv.	出人意料地；惊人地
+1	so far		phr.	到目前为止
+1	stage	/steɪdʒ/	n.	舞台；阶段
+1	importantly	/ɪmˈpɔːtntli/	adv.	重要地
+1	Luca	/ˈluːkə/	n.	卢卡
+1	Bruno	/ˈbruːnəʊ/	n.	布鲁诺
+1	India	/ˈɪndiə/	n.	印度
+1	Maya	/ˈmaɪə/	n.	马娅
+1	Badal	/ˈbɑːdəl/	n.	巴达尔
+1	Mogao Caves	/ˈkeɪvz/	n.	莫高窟
+2	ourselves	/ˌaʊəˈselvz; ɑːˈselvz/	pron.	我们自己
+2	sore	/sɔː(r)/	adj.	疼痛的；酸痛的
+2	throat	/θrəʊt/	n.	喉咙
+2	stomachache	/ˈstʌməkeɪk/	n.	胃痛；肚子疼
+2	headache	/ˈhedeɪk/	n.	头痛
+2	toothache	/ˈtuːθeɪk/	n.	牙痛
+2	backache	/ˈbækeɪk/	n.	背痛；腰痛
+2	press	/pres/	v.	压；按；挤；推
+2	nosebleed	/ˈnəʊzbliːd/	n.	鼻出血
+2	dentist	/ˈdentɪst/	n.	牙科医生
+2	fever	/ˈfiːvə(r)/	n.	发烧
+2	stomach	/ˈstʌmək/	n.	胃；腹部
+2	avoid	/əˈvɔɪd/	v.	避免；防止
+2	gas	/ɡæs/	n.	气体；燃气
+2	ache	/eɪk/	n. & v.	疼痛
+2	X-ray	/ˈeks reɪ/	n.	X 光照片；X 射线
+2	careless	/ˈkeələs/	adj.	不小心的；粗心的
+2	runny	/ˈrʌni/	adj.	流鼻涕的；流眼泪的
+2	cough	/kɒf/	n. & v.	咳嗽
+2	bruised	/bruːzd/	adj.	受了擦伤的
+2	suffer	/ˈsʌfə(r)/	v.	受苦；遭受
+2	suffer from		phr.	受苦痛；受折磨
+2	take a seat		phr.	坐下
+2	take one's temperature		phr.	给某人量体温
+2	test	/test/	n. & v.	检查；测验
+2	flu		phr.	流行性感冒
+2	medicine	/ˈmedsn/	n.	药；医学
+2	mask	/mɑːsk/	n.	口罩
+2	virus	/ˈvaɪrəs/	n.	病毒
+2	stop ... from doing		phr.	防止……；阻止……
+2	description	/dɪˈskrɪpʃn/	n.	描写；形容
+2	patient	/ˈpeɪʃnt/	n. & adj.	病人；有耐心的
+2	injury	/ˈɪndʒəri/	n.	伤害；损伤
+2	illness	/ˈɪlnəs/	n.	疾病
+2	knife	/naɪf/	n.	刀（pl. knives /naɪvz/）
+2	clear	/klɪə(r)/	adj. & v.	清晰的；清楚的；清理
+2	pain	/peɪn/	n.	疼痛；痛苦
+2	what's more		phr.	更有甚者；更为重要的是
+2	brightness	/ˈbraɪtnəs/	n.	亮度
+2	environment	/ɪnˈvaɪrənmənt/	n.	环境
+2	cross	/krɒs/	v.	穿越；横过；交叉
+2	catch fire		phr.	着火
+2	themselves	/ðəmˈselvz/	pron.	他（或她、它）们自己
+2	fry	/fraɪ/	v.	油炸；油煎；油炒
+2	turn on		phr.	接通（电流、煤气、水等）；打开
+2	stove	/stəʊv/	n.	厨房灶具；炉子
+2	happily	/ˈhæpɪli/	adv.	快乐地；高兴地
+2	no way		phr.	不可能；没门
+2	burn	/bɜːn/	v.	燃烧；着火（burnt /bɜːnt/; burned）
+2	on fire		phr.	着火；起火
+2	flame	/fleɪm/	n.	火焰
+2	panic	/ˈpænɪk/	n.	惊恐；恐慌
+2	onto	/ˈɒntu; ˈɒntə/	prep.	向；朝
+2	throw	/θrəʊ/	v.	猛动身体（部位）；扔；抛（threw /θruː/, thrown /θrəʊn/）
+2	roll	/rəʊl/	v.	（使）翻滚；滚动
+2	quick	/kwɪk/	adj. & adv.	快的；迅速的；迅速地；快速地
+2	be about to		phr.	即将；正要（做某事）
+2	stop short		phr.	突然停住
+2	aid	/eɪd/	n. & v.	帮助；援助
+2	first aid		phr.	急救
+2	safety	/ˈseɪfti/	n.	安全；安全处所
+2	extinguisher	/ɪkˈstɪŋɡwɪʃə(r)/	n.	灭火器
+2	eat out		phr.	上馆子吃饭；在外用餐
+2	tonight	/təˈnaɪt/	adv. & n.	在今夜；今夜；今晚
+2	sadly	/ˈsædli/	adv.	伤心地；令人遗憾
+2	smoke	/sməʊk/	n. & v.	烟；吸烟；冒烟
+2	unfortunately	/ʌnˈfɔːtʃənətli/	adv.	不幸地；可惜地
+2	luckily	/ˈlʌkɪli/	adv.	幸运地
+2	badly	/ˈbædli/	adv.	严重地（worse /wɜːs/, worst /wɜːst/）
+2	harm	/hɑːm/	n. & v.	伤害；损害
+2	pill	/pɪl/	n.	药丸；药片
+2	painful	/ˈpeɪnfl/	adj.	（身体部位）疼痛的；令人痛苦的
+2	lie	/laɪ/	v.	平躺（lay /leɪ/, lain /leɪn/）
+2	lie down		phr.	平躺；平卧
+2	harmful	/ˈhɑːmfl/	adj.	有害的
+2	hit	/hɪt/	v. & n.	碰撞；击；打；打；击；击中（hit, hit）
+2	shock	/ʃɒk/	n. & v.	震惊；令人震惊的事；使震惊；使惊愕
+2	bleed	/bliːd/	v.	流血；出血（bled /bled/, bled）
+2	check	/tʃek/	v. & n.	检查；查明；检查；调查
+2	tight	/taɪt/	adj.	疼痛的；憋气的；紧的；牢固的
+2	peanut	/ˈpiːnʌt/	n.	花生
+2	nervously	/ˈnɜːvəsli/	adv.	紧张不安地
+2	allergic	/əˈlɜːdʒɪk/	adj.	过敏的
+2	from now on		phr.	从现在起
+2	Ben	/ben/	n.	本
+2	Nancy	/ˈnænsi/	n.	南希
+2	Jeff	/dʒef/	n.	杰夫
+2	James	/dʒeɪmz/	n.	詹姆斯
+2	Allen	/ˈælən/	n.	艾伦
+2	Kelly	/ˈkeli/	n.	凯莉
+2	Cooper	/ˈkuːpə(r)/	n.	库珀
+3	deal with		phr.	处理；对付
+3	emotion	/ɪˈməʊʃn/	n.	情感；情绪
+3	upset	/ʌpˈset/	adj.	难过的；沮丧的
+3	lonely	/ˈləʊnli/	adj.	孤独的；寂寞的
+3	shocked	/ʃɒkt/	adj.	震惊的
+3	alone	/əˈləʊn/	adv.	独自；单独
+3	control	/kənˈtrəʊl/	v. & n.	控制
+3	anger	/ˈæŋɡə(r)/	n.	怒；怒气
+3	advise	/ədˈvaɪz/	v.	建议；劝告
+3	hurtful	/ˈhɜːtfl/	adj.	伤感情的
+3	in future		phr.	今后；从今以后
+3	forgive	/fəˈɡɪv/	v.	原谅；宽恕（forgave /fəˈɡeɪv/, forgiven /fəˈɡɪvn/）
+3	fault	/fɔːlt/	n.	过错；责任
+3	clear the air		phr.	尽释前嫌
+3	present	/ˈpreznt/	n.	礼物
+3	standard	/ˈstændəd/	n. & adj.	标准；水平；标准的
+3	award	/əˈwɔːd/	n.	奖；奖品
+3	get across		phr.	解释清楚；传达
+3	clearly	/ˈklɪəli/	adv.	清楚地
+3	pressure	/ˈpreʃə(r)/	n.	压力
+3	purpose	/ˈpɜːpəs/	n.	目的；意图
+3	on purpose		phr.	故意；有意地
+3	reduce by half		phr.	减少一半
+3	apologize	/əˈpɒlədʒaɪz/	v.	道歉（= apologise）
+3	put oneself in sb's shoes		phr.	设身处地；处于某人的境地
+3	shut	/ʃʌt/	v.	关闭；合上；住嘴（shut, shut）
+3	shut sb/sh away		phr.	把……关（藏）起来；隔离
+3	lastly	/ˈlɑːstli/	adv.	最后
+3	plenty	/ˈplenti/	pron.	充足；丰富；大量
+3	plenty of		phr.	充足；大量
+3	feel blue		phr.	感到忧郁的
+3	on top of the world		phr.	欢天喜地
+3	all smiles		phr.	笑容满面
+3	low	/ləʊ/	adj.	沮丧的；低的
+3	in low spirits		phr.	情绪低落；精神不振
+3	ring	/rɪŋ/	v.	发出铃声（rang /ræŋ/, rung /rʌŋ/）
+3	enter	/ˈentə(r)/	v.	进入
+3	dare	/deə(r)/	v. & modal v.	敢于
+3	everybody	/ˈevribɒdi/	pron.	每人；所有人
+3	let down		phr.	使失望
+3	be hard on		phr.	对……苛刻或过分严厉
+3	player	/ˈpleɪə(r)/	n.	运动员；选手
+3	referee	/ˌrefəˈriː/	n.	裁判
+3	take back		phr.	撤回；收回
+3	decision	/dɪˈsɪʒn/	n.	决定
+3	kick oneself		phr.	（因干了蠢事等）自责
+3	look on the bright side		phr.	从好的方面想；抱乐观态度
+3	score	/skɔː(r)/	n.	得分；比分
+3	proud	/praʊd/	adj.	骄傲的；自豪的
+3	proud of		phr.	为……感到骄傲
+3	coach	/kəʊtʃ/	n.	教练
+3	as well		phr.	也；又
+3	bit	/bɪt/	n.	有点儿；稍微
+3	a bit		phr.	有点儿；稍微
+3	repeat	/rɪˈpiːt/	v.	重复
+3	pull together		phr.	齐心协力；通力合作
+3	though	/ðəʊ/	conj.	虽然；尽管
+3	even though		phr.	即使；虽然
+3	solution	/səˈluːʃn/	n.	解决办法；解决
+3	joyful	/ˈdʒɔɪfl/	adj.	高兴的；令人愉快的
+3	thankful	/ˈθæŋkfl/	adj.	感谢的；感激的
+3	negative	/ˈneɡətɪv/	adj.	否定的；消极的
+3	bully	/ˈbʊli/	v. & n.	霸凌；恐吓；恶霸
+3	shout at sb		phr.	冲某人喊叫
+3	from time to time		phr.	不时；偶尔
+3	behave	/bɪˈheɪv/	v.	表现；举止得体
+3	differently	/ˈdɪfrəntli/	adv.	不同地
+3	physics	/ˈfɪzɪks/	n.	物理；物理学
+3	awake	/əˈweɪk/	adj.	醒着的
+3	normal	/ˈnɔːml/	adj.	正常的；普通的
+3	mad	/mæd/	adj.	发狂的；疯的
+3	mean	/miːn/	adj.	刻薄的；吝啬的
+3	deep	/diːp/	adj.	深的；有……深的
+3	take a deep breath		phr.	深呼吸
+3	pass away		phr.	去世（委婉说法）
+3	anybody	/ˈenibɒdi/	pron.	任何人
+3	remain	/rɪˈmeɪn/	v.	继续存在；保持不变
+3	not only ... but also ...		phr.	不但……而且……
+3	Thompson	/ˈtɒmpsən/	n.	汤普森
+4	wonder	/ˈwʌndə(r)/	n. & v.	奇观；惊叹；琢磨；想知道；感到诧异
+4	measurement	/ˈmeʒəmənt/	n.	数量；测量
+4	square kilometre		phr.	平方千米
+4	below	/bɪˈləʊ/	prep. & adv.	在（或到）……下面；少于；低于；在（或到）下面
+4	level	/ˈlevl/	n.	高度；水平；程度
+4	surface	/ˈsɜːfɪs/	n.	表面；表层
+4	depth	/depθ/	n.	深（度）；纵深
+4	dive	/daɪv/	v. & n.	潜水；跳水；俯冲
+4	research	/rɪˈsɜːtʃ/	n. & v.	研究；调查
+4	vessel	/ˈvesl/	n.	大船；轮船
+4	unusual	/ʌnˈjuːʒuəl/	adj.	特别的；不寻常的
+4	bottom	/ˈbɒtəm/	n.	底部；最下部
+4	waterfall	/ˈwɔːtəfɔːl/	n.	瀑布
+4	civilization	/ˌsɪvəlaɪˈzeɪʃn/	n.	文明（= civilisation）
+4	means	/miːnz/	n.	方式；途径（pl. means）
+4	development	/dɪˈveləpmənt/	n.	发展；壮大
+4	desert	/ˈdezət/	n.	沙漠；荒原
+4	cubic	/ˈkjuːbɪk/	adj.	立方的
+4	mile	/maɪl/	n.	英里
+4	pool	/puːl/	n.	池塘；水坑
+4	climber	/ˈklaɪmə(r)/	n.	攀登者；登山者
+4	northern	/ˈnɔːðən/	adj.	北部的；向北的
+4	distance	/ˈdɪstəns/	n.	距离；遥远
+4	survive	/səˈvaɪv/	v.	生存；存活；艰难度过
+4	condition	/kənˈdɪʃn/	n.	状态；境况
+4	degree	/dɪˈɡriː/	n.	度；度数；程度
+4	cliff	/klɪf/	n.	悬崖；峭壁
+4	changeable	/ˈtʃeɪndʒəbl/	adj.	可能变化的；易变的；常变的
+4	death	/deθ/	n.	死亡；毁灭；破灭
+4	determined	/dɪˈtɜːmɪnd/	adj.	有决心的；坚决的
+4	above	/əˈbʌv/	prep. & adv.	在（或向）……上面；超过；在（或向）上面；在（或向）高处
+4	teammate	/ˈtiːmmeɪt/	n.	同队队员；队友
+4	shoulder	/ˈʃəʊldə(r)/	n.	肩膀；肩部
+4	bit by bit		phr.	一点一点地；逐渐地
+4	ladder	/ˈlædə(r)/	n.	梯子；阶梯；途径
+4	measure	/ˈmeʒə(r)/	v. & n.	测量；量度为；措施；度量单位
+4	successfully	/səkˈsesfli/	adv.	成功地；顺利地
+4	risk	/rɪsk/	v. & n.	使……冒风险（或面临危险）；危险；风险
+4	curiosity	/ˌkjʊəriˈɒsəti/	n.	好奇心；求知欲
+4	ambition	/æmˈbɪʃn/	n.	追求的目标；野心；雄心
+4	explorer	/ɪkˈsplɔːrə(r)/	n.	探险者；勘探者
+4	simply	/ˈsɪmpli/	adv.	仅仅；只；简单地
+4	risky	/ˈrɪski/	adj.	有危险（或风险）的
+4	southern	/ˈsʌðən/	adj.	南部的；向南的
+4	located	/ləʊˈkeɪtɪd/	adj.	位于；坐落在
+4	freshwater	/ˈfreʃwɔːtə(r)/	adj.	淡水的；淡水中生长的
+4	type	/taɪp/	n.	类型；种类
+4	attract	/əˈtrækt/	v.	吸引；招引；引起（反应）
+4	curious	/ˈkjʊəriəs/	adj.	好奇的；求知欲强的
+4	traveller	/ˈtrævələ(r)/	n.	旅行者；游客（= traveler）
+4	natural	/ˈnætʃrəl/	adj.	自然的；天然的；天生的
+4	underwater	/ˌʌndəˈwɔːtə(r)/	adj. & adv.	水下的；用于水下的；在水下
+4	northeastern	/ˌnɔːθˈiːstən/	adj.	东北的；东北方向的
+4	coast	/kəʊst/	n.	海岸；海滨
+4	coral	/ˈkɒrəl/	n.	珊瑚；珊瑚虫
+4	reef	/riːf/	n.	礁；礁脉
+4	include	/ɪnˈkluːd/	v.	包含；包括
+4	sand	/sænd/	n.	沙子
+4	alive	/əˈlaɪv/	adj.	活着；在世；有活力
+4	structure	/ˈstrʌktʃə(r)/	n.	结构（体）；构造；体系
+4	snorkel	/ˈsnɔːkl/	v. & n.	使用呼吸管潜泳；（浮潜用的）呼吸管
+4	school	/skuːl/	n.	（鱼、鲸、海豚等的）群
+4	turtle	/ˈtɜːtl/	n.	海龟；龟
+4	lifetime	/ˈlaɪftaɪm/	n.	一生；终身
+4	Nile River	/naɪl/	n.	尼罗河
+4	Angel Falls	/ˈeɪndʒl/	n.	天使瀑布
+4	Mount Qomolangma	/ˈtʃəʊməʊˌlɑːŋmə/	n.	珠穆朗玛峰
+4	Dead Sea		phr.	死海
+4	Sahara Desert	/səˈhɑːrə/	n.	撒哈拉沙漠
+4	Mariana Trench	/ˌmæriˈænə trentʃ/	n.	马里亚纳海沟
+4	Titanic	/taɪˈtænɪk/	n.	泰坦尼克号
+4	Yangtze River	/ˈjæŋtsi/	n.	长江
+4	Egypt	/ˈiːdʒɪpt/	n.	埃及
+4	Taklimakan Desert	/ˌtæklɪməˈkæn/	n.	塔克拉玛干沙漠
+4	Mount Kilimanjaro	/ˌkɪlɪmənˈdʒɑːrəʊ/	n.	乞力马扎罗山
+4	Inga Falls	/ˈɪŋɡə/	n.	印加瀑布
+4	East African Rift Valley	/rɪft ˈvæli/	n.	东非大裂谷
+4	Victoria Falls	/vɪkˈtɔːriə/	n.	维多利亚瀑布
+4	George Mallory	/dʒɔːdʒ ˈmæləri/	n.	乔治·马洛里
+4	Siberia	/saɪˈbɪəriə/	n.	西伯利亚
+4	Lake Baikal	/ˈbaɪkɑːl/	n.	贝加尔湖
+4	Belgium	/ˈbeldʒəm/	n.	比利时
+4	Great Barrier Reef	/ˈbæriə(r)/	n.	大堡礁
+5	temper	/ˈtempə(r)/	n.	脾气；怒气
+5	earthquake	/ˈɜːθkweɪk/	n.	地震
+5	typhoon	/taɪˈfuːn/	n.	台风
+5	wildfire	/ˈwaɪldfaɪə(r)/	n.	野火
+5	snowstorm	/ˈsnəʊstɔːm/	n.	雪暴；暴风雪
+5	flood	/flʌd/	n. & v.	水灾；洪水；泛滥；淹没
+5	drought	/draʊt/	n.	久旱；旱灾
+5	warn	/wɔːn/	v.	警告；提醒注意
+5	do chores		phr.	做家务
+5	wave	/weɪv/	n. & v.	波浪；波；挥手；挥手；挥舞
+5	tsunami	/tsuːˈnɑːmi/	n.	海啸
+5	interview	/ˈɪntəvjuː/	n. & v.	采访；面试；采访；对（某人）进行面试
+5	possibly	/ˈpɒsəbli/	adv.	可能；或许
+5	report	/rɪˈpɔːt/	n. & v.	汇报；报道
+5	neighbourhood	/ˈneɪbəhʊd/	n.	街区；临近的地方
+5	roof	/ruːf/	n.	屋顶；顶部
+5	nearly	/ˈnɪəli/	adv.	几乎；差不多；将近
+5	trouble	/ˈtrʌbl/	n. & v.	苦恼；困难；使忧虑；苦恼；劳驾；麻烦
+5	relative	/ˈrelətɪv/	n.	亲戚；亲属
+5	truck	/trʌk/	n.	卡车
+5	supply	/səˈplaɪ/	n. & v.	供应（量）；补给（品）；供应；供给（pl. supplies）
+5	preparation	/ˌprepəˈreɪʃn/	n.	准备（工作）；预备
+5	make preparations		phr.	作准备
+5	power	/ˈpaʊə(r)/	n.	电力供应；能量；力量
+5	soundly	/ˈsaʊndli/	adv.	（睡觉）酣畅地；可靠地；完全彻底地
+5	thick	/θɪk/	adj.	厚的；浓密的
+5	beat	/biːt/	v.	敲；打（beat, beaten /ˈbiːtn/）
+5	hide	/haɪd/	v.	躲藏；隐藏（hid /hɪd/, hidden /ˈhɪdn/）
+5	tornado	/tɔːˈneɪdəʊ/	n.	龙卷风；旋风
+5	worst	/wɜːst/	adj. & adv.	最坏（的）；最糟（的）
+5	schoolgirl	/ˈskuːlɡɜːl/	n.	（学校的）女生
+5	froth	/frɒθ/	n.	泡；泡沫
+5	refuse	/rɪˈfjuːz/	v.	拒绝；拒酬
+5	security	/sɪˈkjʊərəti/	n.	安全；保安；保障
+5	guard	/ɡɑːd/	n. & v.	卫兵；保卫；保卫
+5	security guard		phr.	保安人员
+5	nearby	/ˌnɪəˈbaɪ/	adj. & adv.	附近的；在附近
+5	scream	/skriːm/	v.	尖叫
+5	thankfully	/ˈθæŋkfəli/	adv.	幸亏；感激地
+5	knowledge	/ˈnɒlɪdʒ/	n.	知识；学问
+5	thinking	/ˈθɪŋkɪŋ/	n.	思考；想法
+5	except for		phr.	除……之外
+5	as soon as		phr.	一……就……
+5	hero	/ˈhɪərəʊ/	n.	英雄；男主角；偶像（pl. heroes）
+5	landslide	/ˈlændslaɪd/	n.	（山坡或悬崖的）滑坡；塌方
+5	safeguard	/ˈseɪfɡɑːd/	v. & n.	保护；捍卫；安全设施
+5	floodwater	/ˈflʌdwɔːtə(r)/	n.	洪水
+5	manpower	/ˈmænpaʊə(r)/	n.	劳动力；人力
+5	heartbeat	/ˈhɑːtbiːt/	n.	心跳（声）
+5	rescue	/ˈreskjuː/	n. & v.	救援；援救；营救
+5	heatwave	/ˈhiːtweɪv/	n.	热浪
+5	since	/sɪns/	prep. & adv. & conj.	自……以后；从……以来；既然；由于
+5	southwestern	/ˌsaʊθˈwestən/	adj.	西南的；西南方向的
+5	firefighter	/ˈfaɪəfaɪtə(r)/	n.	消防队员
+5	volunteer	/ˌvɒlənˈtɪə(r)/	n. & v.	志愿者；自告奋勇者；自愿做；义务做
+5	terribly	/ˈterəbli/	adv.	非常糟糕地；非常
+5	alarm	/əˈlɑːm/	n.	警报（器）；惊恐
+5	alarm clock		phr.	闹钟
+5	wake up		phr.	醒来
+5	go off		phr.	（警报器等）突然发出巨响
+5	review	/rɪˈvjuː/	v. & n.	复习；回顾；复查；回顾；审查
+5	sudden	/ˈsʌdn/	adj.	突然的；骤然的
+5	all of a sudden		phr.	突然；猛地
+5	thunder	/ˈθʌndə(r)/	n. & v.	雷；雷声；打雷；发出雷鸣般响声
+5	by the time		phr.	到……的时候
+5	usual	/ˈjuːʒuəl/	adj.	通常的；寻常的
+5	out of breath		phr.	上气不接下气
+5	rainstorm	/ˈreɪnstɔːm/	n.	暴风雨
+5	as a result		phr.	因此
+5	unlucky	/ʌnˈlʌki/	adj.	不幸的；不顺利的；不吉利的
+5	rainy	/ˈreɪni/	adj.	阴雨的；多雨的
+5	go wrong		phr.	出现问题；发生故障；搞错
+5	Tilly	/ˈtɪli/	n.	蒂莉
+5	Phuket		phr.	普吉岛
+5	Indonesia	/ˌɪndəˈniːʒə/	n.	印度尼西亚
+5	Japan	/dʒəˈpæn/	n.	日本
+6	shake	/ʃeɪk/	v.	与（某人）握手；摇动（shook /ʃʊk/, shaken /ˈʃeɪkən/）
+6	bow	/baʊ/	n. & v.	鞠躬
+6	bump	/bʌmp/	v. & n.	碰；撞；碰撞；（撞击造成的）肿块
+6	fist	/fɪst/	n.	拳头
+6	rub	/rʌb/	v.	摩擦；揉
+6	kiss	/kɪs/	v. & n.	亲吻；吻
+6	cheek	/tʃiːk/	n.	脸颊
+6	hug	/hʌɡ/	v. & n.	拥抱
+6	embarrassed	/ɪmˈbærəst/	adj.	尴尬的
+6	confused	/kənˈfjuːzd/	adj.	困惑的
+6	formal	/ˈfɔːml/	adj.	正式的
+6	curry	/ˈkʌri/	n.	咖喱菜
+6	rude	/ruːd/	adj.	粗鲁的
+6	uncommon	/ʌnˈkɒmən/	adj.	罕见的；不寻常的
+6	palm	/pɑːm/	n.	手掌
+6	namaste		phr.	有礼了（印度人行合十礼时口中所念之词）
+6	fork	/fɔːk/	n.	叉子
+6	Indian	/ˈɪndiən/	adj. & n.	印度的；印度人的；印度人
+6	manner	/ˈmænə(r)/	n.	方式；（pl. manners）礼仪
+6	so ... that		phr.	如此……以至于
+6	confusing	/kənˈfjuːzɪŋ/	adj.	令人困惑的；难以理解的
+6	unless	/ənˈles/	conj.	除非；如果不
+6	proper	/ˈprɒpə(r)/	adj.	恰当的
+6	sit up		phr.	坐直
+6	keep ... off		phr.	使不碰到；使避开
+6	elbow	/ˈelbəʊ/	n.	手肘
+6	serving	/ˈsɜːvɪŋ/	adj. & n.	分菜用的；一份食物
+6	chopstick	/ˈtʃɒpstɪk/	n.	筷子（usually pl.）
+6	serving chopsticks		phr.	公筷
+6	embarrassing	/ɪmˈbærəsɪŋ/	adj.	使人难堪的
+6	be / get used to		phr.	习惯于
+6	cultural	/ˈkʌltʃərəl/	adj.	与文化有关的；文化的
+6	hear from		phr.	得到……消息
+6	custom	/ˈkʌstəm/	n.	习俗
+6	occasion	/əˈkeɪʒn/	n.	场合；重大活动
+6	nicely	/ˈnaɪsli/	adv.	漂亮地；令人愉快地
+6	blouse	/blaʊz/	n.	（女式）衬衫或短上衣
+6	private	/ˈpraɪvət/	adj.	不喜欢谈论私事的；私人的
+6	whether	/ˈweðə(r)/	conj.	是否
+6	married	/ˈmærid/	adj.	已婚的；婚姻的
+6	merci		interj.	谢谢（法语）
+6	go a long way		phr.	帮助很大
+6	au revoir		interj.	再见（法语）
+6	unsafe	/ʌnˈseɪf/	adj.	不安全的；危险的
+6	improper	/ɪmˈprɒpə(r)/	adj.	不合适的
+6	informal	/ɪnˈfɔːml/	adj.	非正式的
+6	jeans	/dʒiːnz/	n.	牛仔裤
+6	marry	/ˈmæri/	v.	结婚；娶；嫁
+6	congratulate	/kənˈɡrætʃuleɪt/	v.	祝贺
+6	Asian	/ˈeɪʃn/	adj. & n.	亚洲的；亚洲人
+6	tradition	/trəˈdɪʃn/	n.	传统
+6	firstly	/ˈfɜːstli/	adv.	第一；首先
+6	secondly	/ˈsekəndli/	adv.	第二；其次
+6	thirdly	/ˈθɜːdli/	adv.	第三
+6	correctly	/kəˈrektli/	adv.	正确地；得体地
+6	receive	/rɪˈsiːv/	v.	收到
+6	sign-off	/ˈsaɪn ɒf/	n.	结束写信
+6	main	/meɪn/	adj.	主要的
+6	in one's forties		phr.	四十多岁
+6	false	/fɔːls/	adj.	错误的；不真实的
+6	impression	/ɪmˈpreʃn/	n.	印象
+6	cheer	/tʃɪə(r)/	n. & v.	欢呼；庆祝
+6	cheers	/tʃɪəz/	interj.	再见；干杯
+6	Ji-Hoon		phr.	智勋（朝鲜或韩国人名）
+6	Kaito		phr.	海斗（日本人人名）
+6	Marie	/məˈriː/	n.	玛丽
+6	Türkiye	/ˈtʊəkiːjə/	n.	土耳其
+6	Mexico	/ˈmeksɪkəʊ/	n.	墨西哥
+6	Peru	/pəˈruː/	n.	秘鲁
+6	Germany	/ˈdʒɜːməni/	n.	德国
+6	Paris	/ˈpærɪs/	n.	巴黎（法国首都）
+7	a good read		phr.	好的读物；好书（或文章等）
+7	adventure	/ədˈventʃə(r)/	n.	冒险；冒险经历
+7	fantasy	/ˈfæntəsi/	n.	幻想；幻想作品
+7	mystery	/ˈmɪstri/	n.	悬疑小说（或电影、戏剧）；神秘的事物；奥秘
+7	fiction	/ˈfɪkʃn/	n.	小说
+7	science fiction		phr.	科幻小说（或影片等）
+7	detective	/dɪˈtektɪv/	n.	侦探
+7	alien	/ˈeɪliən/	n.	外星人
+7	attack	/əˈtæk/	v. & n.	攻击；进攻
+7	historical	/hɪˈstɒrɪkl/	adj.	历史的；有关历史的
+7	force	/fɔːs/	v. & n.	强迫；迫使；用力推动；力；武力
+7	steal	/stiːl/	v.	偷；窃取（stole /stəʊl/, stolen /ˈstəʊlən/）
+7	punish	/ˈpʌnɪʃ/	v.	惩罚；处罚
+7	idiom	/ˈɪdiəm/	n.	习语；成语
+7	recently	/ˈriːsntli/	adv.	最近；不久前
+7	lost	/lɒst/	adj.	迷路的；丢失的；失火的
+7	get lost		phr.	迷路
+7	hear of		phr.	听说；得知
+7	recommend	/ˌrekəˈmend/	v.	推荐；建议
+7	society	/səˈsaɪəti/	n.	社会；社团
+7	literary	/ˈlɪtərəri/	adj.	文学的；文学上的
+7	base	/beɪs/	v. & n.	把（总部等）设在；根基；基础；根据地
+7	base on		phr.	以……为基础；以……为根据
+7	summary	/ˈsʌməri/	n.	总结；概要
+7	spoiled	/spɔɪld/	adj.	宠坏的；娇惯坏的（= spoilt /spɔɪlt/）
+7	selfish	/ˈselfɪʃ/	adj.	自私的
+7	lock	/lɒk/	v. & n.	用锁锁上；锁
+7	lock up		phr.	锁好（建筑物的）门
+7	unlock		phr.	开……的锁；发现；揭开
+7	hidden	/ˈhɪdn/	adj.	隐藏的；秘密的
+7	nobody	/ˈnəʊbədi/	pron.	没有人；谁也不
+7	therefore	/ˈðeəfɔː(r)/	adv.	因此；所以
+7	state	/steɪt/	n. & v.	状态；国家；州；陈述；说明
+7	weak	/wiːk/	adj.	虚弱的；（能力）弱的
+7	secretly	/ˈsiːkrətli/	adv.	秘密地
+7	prove	/pruːv/	v.	证明；证实；显示是（proved, proved 或 proved, proven /ˈpruːvn/）
+7	get to one's feet		phr.	站起身来
+7	day by day		phr.	一天天；逐日
+7	build-up	/ˈbɪldʌp/	n.	准备期；准备过程
+7	climax	/ˈklaɪmæks/	n.	高潮；极点
+7	effect	/ɪˈfekt/	n.	影响；结果
+7	in time		phr.	来得及；及时
+7	reader	/ˈriːdə(r)/	n.	读者；简易读物
+7	librarian	/laɪˈbreəriən/	n.	图书管理员；图书馆馆长
+7	consider	/kənˈsɪdə(r)/	v.	认为；仔细考虑
+7	enemy	/ˈenəmi/	n.	敌人
+7	naughty	/ˈnɔːti/	adj.	淘气的
+7	gentle	/ˈdʒentl/	adj.	温柔的
+7	defeat	/dɪˈfiːt/	v. & n.	击败；战胜；失败；击败
+7	recommendation	/ˌrekəmenˈdeɪʃn/	n.	推荐；提议
+7	basic	/ˈbeɪsɪk/	adj.	基本的；初步的
+7	American	/əˈmerɪkən/	adj. & n.	美国的；美洲的；美国人；美洲人
+7	bone	/bəʊn/	n.	骨头
+7	doubt	/daʊt/	v. & n.	怀疑；疑惑；不确定
+7	destroy	/dɪˈstrɔɪ/	v.	破坏；摧毁
+7	introduction	/ˌɪntrəˈdʌkʃn/	n.	介绍；序言；采用
+7	Journey to the West		phr.	《西游记》
+7	Harry Potter and the Philosopher's Stone	/ˈpɒtə(r) fəˈlɒsəfə(r)z stəʊn/	n.	《哈利·波特与魔法石》
+7	The Time Machine		phr.	《时间机器》
+7	The Final Problem		phr.	《最后一案》
+7	The Three-Body Problem		phr.	《三体》
+7	Around the World in Eighty Days		phr.	《八十天环游世界》
+7	Sherlock Holmes	/ˈʃɜːlɒk həʊmz/	n.	夏洛克·福尔摩斯
+7	The Romance of the Three Kingdoms	/rəʊˈmæns ˈkɪŋdəmz/	n.	《三国演义》
+7	Oliver Twist	/ˈɒlɪvə(r) twɪst/	n.	《雾都孤儿》
+7	Charles Dickens	/tʃɑːlz ˈdɪkɪnz/	n.	查尔斯·狄更斯
+7	Alice's Adventures in Wonderland	/ˈwʌndəlænd/	n.	《爱丽丝梦游仙境》
+7	Lewis Carroll	/ˈluːɪs ˈkærəl/	n.	刘易斯·卡罗尔
+7	The Adventures of Tom Sawyer	/ˈsɔːjə(r)/	n.	《汤姆·索亚历险记》
+7	The Little Prince		phr.	《小王子》
+7	The Little Match Girl		phr.	《卖火柴的小女孩》
+7	Outlaws of the Marsh	/ˈaʊtlɔːz mɑːʃ/	n.	《水浒传》
+7	My Childhood	/ˈtʃaɪldhʊd/	n.	《童年》
+7	The Wonderful Wizard of Oz	/ˈwɪzəd ɒz/	n.	《绿野仙踪》
+7	A Dream of Red Mansions	/ˈmænʃnz/	n.	《红楼梦》
+7	Treasure Island		phr.	《金银岛》
+7	Red Star over China		phr.	《红星照耀中国》
+7	The Secret Garden		phr.	《秘密花园》
+7	Frances Hodgson Burnett	/ˈfrɑːnsɪs ˈhɒdʒsən bɜːˈnet/	n.	弗朗西斯·霍奇森·伯内特
+7	Lennox	/ˈlenəks/	n.	伦诺克斯
+7	Craven	/ˈkreɪvn/	n.	克雷文
+7	Dickon	/ˈdɪkən/	n.	迪康
+7	Colin	/ˈkɒlɪn/	n.	科林
+7	The Old Man and the Sea		phr.	《老人与海》
+7	Ernest Hemingway	/ˈɜːnɪst ˈhemɪŋweɪ/	n.	欧内斯特·海明威
+7	Pulitzer Prize	/ˈpʊlɪtsə(r)/	n.	普利策奖
+8	make a difference		phr.	有（重要）作用
+8	visitor	/ˈvɪzɪtə(r)/	n.	参观者；来访者
+8	elderly	/ˈeldəli/	adj.	年纪较大的；上了年纪的
+8	the elderly		phr.	老人；上了年纪的人
+8	organization	/ˌɔːɡənaɪˈzeɪʃn/	n.	组织；团体；机构（= organisation）
+8	stadium	/ˈsteɪdiəm/	n.	体育馆；运动场
+8	provide	/prəˈvaɪd/	v.	提供；给予
+8	owner	/ˈəʊnə(r)/	n.	主人；物主
+8	cage	/keɪdʒ/	n.	笼子
+8	donation	/dəʊˈneɪʃn/	n.	捐赠物；捐赠
+8	interviewer	/ˈɪntəvjuːə(r)/	n.	面试官；采访者
+8	shelter	/ˈʃeltə(r)/	n.	庇护所；居所
+8	youth	/juːθ/	n.	青年；青年时期
+8	active	/ˈæktɪv/	adj.	活跃的；积极的
+8	come along		phr.	赶快；跟着来
+8	army	/ˈɑːmi/	n.	军队
+8	primary	/ˈpraɪməri/	adj.	小学教育的；首要的
+8	help out		phr.	分担工作；帮忙做
+8	charity	/ˈtʃærəti/	n.	慈善机构（或组织）；慈善事业
+8	warmly	/ˈwɔːmli/	adv.	热情地；温暖地
+8	lady	/ˈleɪdi/	n.	女士；淑女
+8	gentleman	/ˈdʒentlmən/	n.	先生；君子（pl. gentlemen）
+8	bark	/bɑːk/	v. & n.	（狗）吠叫；狗叫声
+8	sign up		phr.	报名
+8	ever since		phr.	自从；自……以后
+8	adult	/ˈædʌlt; əˈdʌlt/	n. & adj.	成年人；成年的；成熟的
+8	missing	/ˈmɪsɪŋ/	adj.	失踪的；丢失的
+8	practical	/ˈpræktɪkl/	adj.	实用的；实际的
+8	life-saving	/ˈlaɪf seɪvɪŋ/	adj.	救命的；救生的
+8	teamwork	/ˈtiːmwɜːk/	n.	团队合作
+8	successful	/səkˈsesfl/	adj.	成功的；有成就的
+8	most of all		phr.	最主要是
+8	value	/ˈvæljuː/	n.	重要作用；价值
+8	voluntary	/ˈvɒləntri/	adj.	自愿的；无偿的
+8	ordinary	/ˈɔːdnri/	adj.	平凡的；普通的
+8	worth	/wɜːθ/	adj.	值得；有价值
+8	audience	/ˈɔːdiəns/	n.	听众；观众
+8	willing	/ˈwɪlɪŋ/	adj.	乐意的；愿意的
+8	on the go		phr.	忙碌的
+8	in need		phr.	处于贫困中；生活困难
+8	success	/səkˈses/	n.	成功
+8	elder	/ˈeldə(r)/	adj.	（尤指家庭中两个成员）年龄较长的
+8	donate	/dəʊˈneɪt/	v.	捐赠；赠送
+8	pocket	/ˈpɒkɪt/	n.	口袋
+8	effort	/ˈefət/	n.	努力；艰难的尝试
+8	hand out		phr.	分发
+8	familiar with		phr.	通晓；熟悉
+8	talent	/ˈtælənt/	n.	才能；天赋；天才
+8	madam	/ˈmædəm/	n.	（正式、礼貌的称呼）女士；夫人
+8	advertisement	/ədˈvɜːtɪsmənt; ˌædvəˈtaɪzmənt/	n.	广告；启事（= ad /æd/）
+8	Robert	/ˈrɒbət/	n.	罗伯特
+8	Rose	/rəʊz/	n.	罗斯；罗丝
+8	United Nations Peacekeeping	/ˈpiːskiːpɪŋ/	n.	联合国维和部队
+8	Argentina	/ˌɑːdʒənˈtiːnə/	n.	阿根廷
+8	Blue Sky Rescue		phr.	蓝天救援队
+8	Philippines	/ˈfɪlɪpiːnz/	n.	菲律宾

@@ -1,0 +1,462 @@
+unit	word	phonetic	pos	meaning
+1	fox	/fɒks/	n.	狐狸
+1	giraffe	/dʒəˈrɑːf/	n.	长颈鹿
+1	eagle	/ˈiːɡl/	n.	雕；鹰
+1	wolf	/wʊlf/	n.	狼（pl. wolves /wʊlvz/）
+1	penguin	/ˈpeŋɡwɪn/	n.	企鹅
+1	care	/keə(r)/	n. & v.	照顾；护理；关心；在乎
+1	take care of		phr.	照顾；处理
+1	sandwich	/ˈsænwɪtʃ; ˈsænwɪdʒ/	n.	三明治
+1	snake	/sneɪk/	n.	蛇
+1	scary	/ˈskeəri/	adj.	吓人的；恐怖的
+1	neck	/nek/	n.	脖子
+1	guess	/ɡes/	v.	猜测；估计
+1	shark	/ʃɑːk/	n.	鲨鱼
+1	whale	/weɪl/	n.	鲸
+1	huge	/hjuːdʒ/	adj.	巨大的；极多的
+1	dangerous	/ˈdeɪndʒərəs/	adj.	危险的；有危害的
+1	save	/seɪv/	v.	救；储蓄；保存
+1	luck	/lʌk/	n.	幸运；运气
+1	Thai	/taɪ/	adj. & n.	泰国的；泰国人的；泰国人；泰语
+1	trunk	/trʌŋk/	n.	象鼻
+1	pick	/pɪk/	v.	捡；摘
+1	pick up		phr.	拿起；举起
+1	carry	/ˈkæri/	v.	拿；提
+1	playful	/ˈpleɪfl/	adj.	爱嬉戏的；爱玩的
+1	swimmer	/ˈswɪmə(r)/	n.	游泳者
+1	one another		phr.	互相
+1	look after		phr.	照顾
+1	culture	/ˈkʌltʃə(r)/	n.	文化；文明
+1	however	/haʊˈevə(r)/	adv.	然而；不过
+1	danger	/ˈdeɪndʒə(r)/	n.	危险
+1	in danger		phr.	处于危险之中
+1	forest	/ˈfɒrɪst/	n.	森林
+1	cut down		phr.	砍伐；减少
+1	too many		phr.	太多
+1	kill	/kɪl/	v.	杀死；弄死
+1	made of		phr.	由……制成的
+1	ivory	/ˈaɪvəri/	n.	象牙
+1	friendly	/ˈfrendli/	adj.	友好的
+1	quite	/kwaɪt/	adv.	相当；完全
+1	quite a		phr.	相当；非常
+1	not ... at all		phr.	一点也不；完全不
+1	fur	/fɜː(r)/	n.	（动物浓厚的）软毛
+1	blind	/blaɪnd/	adj.	瞎的；失明的
+1	hearing	/ˈhɪərɪŋ/	n.	听力；听觉
+1	Antarctica	/ænˈtɑːktɪkə/	n.	南极洲
+1	Africa	/ˈæfrɪkə/	n.	非洲
+1	Malee	/mɑːˈliː/	n.	马莉
+1	Thailand	/ˈtaɪlænd/	n.	泰国
+2	rule	/ruːl/	n.	规则；规章
+2	order	/ˈɔːdə(r)/	n. & v.	秩序；命令；点菜；命令
+2	follow	/ˈfɒləʊ/	v.	遵循；跟随
+2	late for		phr.	迟到
+2	arrive	/əˈraɪv/	v.	到达
+2	on time		phr.	准时
+2	hallway	/ˈhɔːlweɪ/	n.	走廊
+2	uniform	/ˈjuːnɪfɔːm/	n.	校服；制服
+2	litter	/ˈlɪtə(r)/	v. & n.	乱扔；垃圾
+2	polite	/pəˈlaɪt/	adj.	有礼貌的
+2	treat	/triːt/	v. & n.	对待；招待；治疗；款待
+2	respect	/rɪˈspekt/	n. & v.	尊敬
+2	if	/ɪf/	conj.	如果
+2	jacket	/ˈdʒækɪt/	n.	夹克衫；短上衣
+2	have to		phr.	不得不
+2	everything	/ˈevriθɪŋ/	pron.	每件事；一切
+2	lend	/lend/	v.	借给；借出
+2	sweet	/swiːt/	n. & adj.	糖果；甜的
+2	snack	/snæk/	n.	点心；小吃
+2	of course		phr.	当然
+2	mobile	/ˈməʊbaɪl/	adj.	可移动的
+2	mobile phone		phr.	手机
+2	turn off		phr.	关掉（水、电或煤气）
+2	queue	/kjuː/	n.	队
+2	jump the queue		phr.	插队
+2	feed	/fiːd/	v.	喂养；饲养
+2	leave	/liːv/	v.	离开；留下
+2	absent	/ˈæbsənt/	adj.	缺席的；不在的
+2	absent from		phr.	缺席；不在
+2	shh	/ʃ/	interj.	嘘（用以让别人安静下来）（= sh）
+2	quietly	/ˈkwaɪətli/	adv.	轻声地；安静地
+2	belt	/belt/	n.	安全带；腰带；皮带
+2	noise	/nɔɪz/	n.	声音；噪声
+2	unhappy	/ʌnˈhæpi/	adj.	不快乐的
+2	Dr		abbr.	博士；医生（= doctor）
+2	make sb's/the bed		phr.	整理床铺；铺床
+2	either	/ˈaɪðə(r); ˈiːðə(r)/	adv.	也（用于否定词组后）
+2	practise	/ˈpræktɪs/	v.	训练；练习
+2	hang	/hæŋ/	v.	悬挂
+2	hang out		phr.	闲逛；常去某处
+2	weekday	/ˈwiːkdeɪ/	n.	工作日（星期一至星期五的任何一天）
+2	awful	/ˈɔːfl/	adj.	糟糕的；讨厌的
+2	become	/bɪˈkʌm/	v.	变成；成为
+2	better	/ˈbetə(r)/	adj. & adv.	较好的；较好地
+2	person	/ˈpɜːsn/	n.	人
+2	focus	/ˈfəʊkəs/	v.	集中（注意力、精力等）；聚焦
+2	focus on		phr.	集中（注意力、精力等）于
+2	build	/bɪld/	v.	创建；建造
+2	spirit	/ˈspɪrɪt/	n.	精神；情绪
+2	think about		phr.	思考；考虑
+2	relax	/rɪˈlæks/	v.	放松；休息
+2	advice	/ədˈvaɪs/	n.	建议；意见
+2	understand	/ˌʌndəˈstænd/	v.	理解；领会
+2	untidy	/ʌnˈtaɪdi/	adj.	不整洁的
+2	Mary	/ˈmeəri/	n.	玛丽
+2	Tony	/ˈtəʊni/	n.	托尼
+2	Anne	/æn/	n.	安妮
+2	Eric	/ˈerɪk/	n.	埃里克
+3	fit	/fɪt/	adj. & v.	健康的；健壮的；适合
+3	baseball	/ˈbeɪsbɔːl/	n.	棒球（运动）
+3	glove	/ɡlʌv/	n.	（手指分开的）手套
+3	mat	/mæt/	n.	（运动用的）垫子
+3	rope	/rəʊp/	n.	绳子；粗绳
+3	jump rope		phr.	跳绳用的绳子；跳绳（运动）
+3	racket	/ˈrækɪt/	n.	（网球、羽毛球等的）球拍
+3	hardly	/ˈhɑːdli/	adv.	几乎不；几乎没有
+3	ever	/ˈevə(r)/	adv.	在任何时候；从来；曾经
+3	hardly ever		phr.	几乎从不
+3	once	/wʌns/	adv. & conj.	一次；曾经；一旦
+3	twice	/twaɪs/	adv.	两次；两倍
+3	mine	/maɪn/	pron.	我的（所有物）
+3	hers	/hɜːz; ɜːz/	pron.	她的（所有物）
+3	maybe	/ˈmeɪbi/	adv.	也许；大概
+3	well-used	/ˌwelˈjuːzd/	adj.	使用得多的
+3	practice	/ˈpræktɪs/	n.	练习；实践
+3	perfect	/ˈpɜːfɪkt/	adj.	完美的；极好的
+3	seldom	/ˈseldəm/	adv.	很少；不常
+3	badminton	/ˈbædmɪntən/	n.	羽毛球运动
+3	double	/ˈdʌbl/	n. & adj.	双打（doubles）；两倍；成双的；两倍的
+3	sometime	/ˈsʌmtaɪm/	adv.	在某个时候
+3	volleyball	/ˈvɒlibɔːl/	n.	排球（运动）
+3	theirs	/ðeəz/	pron.	他们的，她们的，它们的（所有物）
+3	jog	/dʒɒɡ/	v.	慢跑
+3	few	/fjuː/	adj.	（表示否定的）很少的；几乎没有的
+3	a few		phr.	少数；几个
+3	excuse	/ɪkˈskjuːz/	v.	原谅；宽恕
+3	excuse me		phr.	劳驾；请原谅
+3	over there		phr.	在那边
+3	just	/dʒʌst/	adv.	只是；正好
+3	T-shirt	/ˈtiː ʃɜːt/	n.	T 恤衫
+3	belong	/bɪˈlɒŋ/	v.	应在（某处）
+3	belong to		phr.	属于（某人）
+3	working	/ˈwɜːkɪŋ/	adj.	工作的
+3	working day		phr.	工作日
+3	full of		phr.	有许多；充满
+3	energy	/ˈenədʒi/	n.	精力；能量
+3	group	/ɡruːp/	n.	组；群
+3	skateboard	/ˈskeɪtbɔːd/	n.	滑板
+3	encourage	/ɪnˈkʌrɪdʒ/	v.	鼓励；激励
+3	trick	/trɪk/	n.	技巧；戏法
+3	succeed	/səkˈsiːd/	v.	成功；达到目标
+3	skateboarding	/ˈskeɪtbɔːdɪŋ/	n.	滑板运动
+3	goal	/ɡəʊl/	n.	目标；目的
+3	sit-up	/ˈsɪtʌp/	n.	仰卧起坐
+3	work out		phr.	锻炼
+3	app	/æp/	n.	应用程序（= application /ˌæplɪˈkeɪʃn/）
+3	progress	/ˈprəʊɡres/	n.	进步；进展
+3	match	/mætʃ/	n.	比赛；竞赛
+3	team	/tiːm/	n.	队；组
+3	ours	/ˈaʊəz; ɑːz/	pron.	我们的（所有物）
+3	lose	/luːz/	v.	输掉；丢失
+3	teenager	/ˈtiːneɪdʒə(r)/	n.	青少年（13 岁至 19 岁之间）
+3	Steve	/stiːv/	n.	史蒂夫
+4	watermelon	/ˈwɔːtəmelən/	n.	西瓜
+4	cabbage	/ˈkæbɪdʒ/	n.	卷心菜
+4	mutton	/ˈmʌtn/	n.	羊肉
+4	cookie	/ˈkʊki/	n.	曲奇饼
+4	onion	/ˈʌnjən/	n.	洋葱；葱头
+4	dumpling	/ˈdʌmplɪŋ/	n.	饺子
+4	coffee	/ˈkɒfi/	n.	咖啡
+4	bean	/biːn/	n.	豆
+4	chip	/tʃɪp/	n.	炸薯条
+4	fish and chips		phr.	炸鱼薯条
+4	salad	/ˈsæləd/	n.	沙拉；色拉
+4	porridge	/ˈpɒrɪdʒ/	n.	粥；麦片粥
+4	waiter	/ˈweɪtə(r)/	n.	（男）服务员
+4	What about ...?		phr.	……怎么样？
+4	taste	/teɪst/	v. & n.	有……味道；尝；味道
+4	anything	/ˈeniθɪŋ/	pron.	某事（物）；任何事物
+4	dish	/dɪʃ/	n.	一道菜；盘子
+4	choice	/tʃɔɪs/	n.	选择
+4	meal	/miːl/	n.	一餐所吃的食物；一餐
+4	pork	/pɔːk/	n.	猪肉
+4	strawberry	/ˈstrɔːbəri/	n.	草莓
+4	menu	/ˈmenjuː/	n.	菜单
+4	customer	/ˈkʌstəmə(r)/	n.	顾客
+4	serve	/sɜːv/	v.	提供；服务
+4	waitress	/ˈweɪtrəs/	n.	女服务员
+4	sir	/sɜː(r)/	n.	先生
+4	go with		phr.	搭配；相配
+4	instead	/ɪnˈsted/	adv.	反而；代替
+4	pear	/peə(r)/	n.	梨
+4	too much		phr.	太多
+4	sugar	/ˈʃʊɡə(r)/	n.	糖
+4	improve	/ɪmˈpruːv/	v.	改进；改善
+4	habit	/ˈhæbɪt/	n.	习惯
+4	fast food		phr.	快餐
+4	salt	/sɔːlt; sɒlt/	n.	盐
+4	fat	/fæt/	n. & adj.	脂肪；肥胖的
+4	put on		phr.	增加；穿上
+4	weight	/weɪt/	n.	体重；重量
+4	hamburger	/ˈhæmbɜːɡə(r)/	n.	汉堡包
+4	cause	/kɔːz/	v.	造成；导致
+4	heart	/hɑːt/	n.	心脏；中心
+4	balanced	/ˈbælənst/	adj.	均衡的；平衡的
+4	too ... to		phr.	太……以至于不能
+4	sleepy	/ˈsliːpi/	adj.	困倦的；想睡的
+4	after all		phr.	毕竟；终归
+4	away	/əˈweɪ/	adv.	离开；在别处
+4	poor	/pɔː(r); pʊə(r)/	adj.	不好的；贫穷的；可怜的
+4	result	/rɪˈzʌlt/	n.	后果；结果
+4	article	/ˈɑːtɪkl/	n.	文章；冠词
+4	common	/ˈkɒmən/	adj.	共同的；普遍的
+4	among	/əˈmʌŋ/	prep.	在……中；……之一
+4	soft	/sɒft/	adj.	柔和的；柔软的
+4	soft drink		phr.	软饮料（不含酒精）
+4	enough	/ɪˈnʌf/	adj. & adv. & pron.	足够的；充足的；足够地；充分地；足够；充分
+4	thirsty	/ˈθɜːsti/	adj.	渴的
+4	Gongbao chicken		phr.	宫保鸡丁
+4	America	/əˈmerɪkə/	n.	美国；美洲
+4	Dongpo pork		phr.	东坡肉
+5	right now		phr.	现在；立刻
+5	ride	/raɪd/	v. & n.	骑；旅程
+5	moment	/ˈməʊmənt/	n.	某个时刻；片刻；瞬间
+5	at the moment		phr.	现在；此刻
+5	work on		phr.	做；从事
+5	dragon	/ˈdræɡən/	n.	龙
+5	festival	/ˈfestɪvl/	n.	节日
+5	hold	/həʊld/	v.	拿着；抓住
+5	hold on		phr.	别挂断电话；等一等
+5	voice	/vɔɪs/	n.	嗓音；声音
+5	race	/reɪs/	n.	比赛；竞赛
+5	darling	/ˈdɑːlɪŋ/	n.	亲爱的；宝贝
+5	somebody	/ˈsʌmbədi/	pron.	某人；有人
+5	could	/kʊd; kəd/	modal v.	能；可以
+5	message	/ˈmesɪdʒ/	n.	消息；信息
+5	take a message		phr.	捎个口信
+5	leave a message		phr.	留个口信
+5	call back		phr.	回电话
+5	kick	/kɪk/	v.	踢；踹
+5	wow	/waʊ/	interj.	哇；呀
+5	online	/ˌɒnˈlaɪn/	adj.	在线的
+5	shuttlecock	/ˈʃʌtlkɒk/	n.	羽毛球
+5	sight	/saɪt/	n.	名胜；风景；视力
+5	exam	/ɪɡˈzæm/	n.	考试（= examination /ɪɡˌzæmɪˈneɪʃn/）
+5	hope	/həʊp/	v. & n.	希望
+5	forward	/ˈfɔːwəd/	adv.	向前
+5	look forward to		phr.	盼望
+5	skate	/skeɪt/	v.	滑冰
+5	happen	/ˈhæpən/	v.	发生
+5	zone	/zəʊn/	n.	地区；地带；区域
+5	time zone		phr.	时区
+5	around the world		phr.	世界各地
+5	rush	/rʌʃ/	v. & n.	冲；奔
+5	in a hurry		phr.	匆忙
+5	shine	/ʃaɪn/	v. & n.	发光；照耀；光亮
+5	brightly	/ˈbraɪtli/	adv.	明亮地
+5	colourful	/ˈkʌləfl/	adj.	色彩鲜艳的
+5	slowly	/ˈsləʊli/	adv.	缓慢地
+5	such	/sʌtʃ/	adj. & pron.	这样的；那样的；这样（那样）的人或事物
+5	such as		phr.	例如
+5	painting	/ˈpeɪntɪŋ/	n.	绘画作品；绘画；油画
+5	market	/ˈmɑːkɪt/	n.	市场
+5	side	/saɪd/	n.	边；侧
+5	side by side		phr.	并排；并肩地
+5	subway	/ˈsʌbweɪ/	n.	地铁
+5	bright	/braɪt/	adj.	鲜艳的；明亮的；聪明的
+5	drop	/drɒp/	v. & n.	把……送至；落下；滴；下降
+5	drop off		phr.	（开车）把某人送到某处
+5	passenger	/ˈpæsɪndʒə(r)/	n.	乘客
+5	central	/ˈsentrəl/	adj.	中心的；中央的
+5	explain	/ɪkˈspleɪn/	v.	解释；说明
+5	take part in		phr.	参加
+5	tour	/tʊə(r)/	n. & v.	旅行；旅游
+5	sunshine	/ˈsʌnʃaɪn/	n.	阳光
+5	drive	/draɪv/	v.	开车；驾驶
+5	rush hour		phr.	（上下班时的）交通高峰期
+5	Adam	/ˈædəm/	n.	亚当
+5	Dragon Boat Festival		phr.	端午节
+5	Beth	/beθ/	n.	贝丝
+5	Nairobi	/naɪˈrəʊbi/	n.	内罗毕（肯尼亚首都）
+5	New York	/ˌnjuː ˈjɔːk/	n.	纽约
+5	Kenya	/ˈkenjə/	n.	肯尼亚
+5	USA	/ˌjuː es ˈeɪ/	n.	美国
+5	Central Park		phr.	中央公园
+6	rain or shine		phr.	不论是雨或是晴；不管发生什么事
+6	affect	/əˈfekt/	v.	影响
+6	dry	/draɪ/	adj.	干的；干旱的
+6	lightning	/ˈlaɪtnɪŋ/	n.	闪电
+6	stormy	/ˈstɔːmi/	adj.	有暴风雨（或暴风雪）的
+6	north	/nɔːθ/	n.	北部；北；北方
+6	west	/west/	n.	西部；西；西方
+6	south	/saʊθ/	n.	南部；南；南方
+6	east	/iːst/	n.	东部；东；东方
+6	stay in		phr.	待在家里；没有外出
+6	lucky	/ˈlʌki/	adj.	运气好的；带来好运的
+6	lucky you		phr.	你真幸运
+6	sunbathe	/ˈsʌnbeɪð/	v.	沐日光浴；晒太阳
+6	some day		phr.	将来；有朝一日
+6	temperature	/ˈtemprətʃə(r)/	n.	温度
+6	snowman	/ˈsnəʊmæn/	n.	雪人（pl. snowmen /ˈsnəʊmen/）
+6	heavily	/ˈhevɪli/	adv.	大量地；沉重地
+6	snowy	/ˈsnəʊi/	adj.	下雪的；雪白的
+6	beach volleyball		phr.	沙滩排球
+6	high	/haɪ/	adv. & adj.	高
+6	freezing	/ˈfriːzɪŋ/	adj.	极冷的；冰冻的
+6	tourist	/ˈtʊərɪst/	n.	旅行者；观光客
+6	mount	/maʊnt/	n.	（在现代英语里仅用于地名）山；山峰
+6	cloud	/klaʊd/	n.	云；云彩
+6	feel like		phr.	感觉像
+6	magical	/ˈmædʒɪkl/	adj.	魔法的；神奇的
+6	rock	/rɒk/	n.	岩石
+6	rest	/rest/	n.	休息；剩余部分
+6	area	/ˈeəriə/	n.	场地；地区
+6	rest area		phr.	休息区
+6	make progress		phr.	取得进展
+6	although	/ɔːlˈðəʊ/	conj.	虽然；尽管
+6	still	/stɪl/	adv.	还；仍然
+6	in high spirits		phr.	情绪高涨；兴高采烈
+6	experience	/ɪkˈspɪəriəns/	n. & v.	经历；经验；经历
+6	through	/θruː/	prep.	穿过；凭借
+6	glad	/ɡlæd/	adj.	高兴的
+6	peak	/piːk/	n.	山顶；顶点
+6	grey	/ɡreɪ/	adj.	灰色的（AmE gray /ɡreɪ/）
+6	because of		phr.	因为
+6	fog	/fɒɡ/	n.	雾
+6	ground	/ɡraʊnd/	n.	地面
+6	wet	/wet/	adj.	湿的
+6	tiring	/ˈtaɪərɪŋ/	adj.	令人疲倦的；累人的
+6	seem	/siːm/	v.	似乎；好像
+6	sunlight	/ˈsʌnlaɪt/	n.	阳光；日光
+6	at the top		phr.	在顶部；在顶端
+6	thought	/θɔːt/	n.	想法
+6	mountain	/ˈmaʊntən/	n.	山；高山
+6	at the start		phr.	开始；起初
+6	end	/end/	n.	末尾；结束
+6	at the end		phr.	最后；在末尾
+6	storm	/stɔːm/	n.	暴风雨；暴风雪
+6	pour	/pɔː(r)/	v.	倾倒；倒出
+6	wind	/wɪnd/	n.	风
+6	shout	/ʃaʊt/	v. & n.	喊叫；呼唤
+6	run after		phr.	追逐
+6	Anna	/ˈænə/	n.	安娜
+6	John	/dʒɒn/	n.	约翰
+6	Stockholm	/ˈstɒkhəʊm/	n.	斯德哥尔摩（瑞典首都）
+6	Mount Huangshan		phr.	黄山
+6	Bright Peak		phr.	光明顶
+7	meet up		phr.	碰头；相聚
+7	museum	/mjuˈziːəm/	n.	博物馆
+7	exhibition	/ˌeksɪˈbɪʃn/	n.	展览
+7	direction	/dɪˈrekʃn; daɪˈrekʃn/	n.	方向
+7	trip	/trɪp/	n.	旅行
+7	wastewater	/ˈweɪstwɔːtə(r)/	n.	废水
+7	plant	/plɑːnt/	n.	工厂
+7	into	/ˈɪntuː; ˈɪntə/	prep.	到……里面；进入
+7	remove	/rɪˈmuːv/	v.	移开；拿走
+7	piece	/piːs/	n.	片；块
+7	waste	/weɪst/	n. & v.	废弃物；浪费
+7	machine	/məˈʃiːn/	n.	机器
+7	germ	/dʒɜːm/	n.	微生物；细菌
+7	step	/step/	n.	步骤；脚步
+7	used to		phr.	过去常常（做）
+7	realize	/ˈrɪəlaɪz/	v.	认识到；实现（= realise）
+7	inside	/ˌɪnˈsaɪd/	prep. & adv.	在……里面；在里面
+7	go on a trip		phr.	去旅行
+7	process	/ˈprəʊses/	n.	过程
+7	theatre	/ˈθɪətə(r)/	n.	戏院；剧场；电影院
+7	factory	/ˈfæktri; ˈfæktəri/	n.	工厂
+7	terrible	/ˈterəbl/	adj.	糟糕的
+7	actor	/ˈæktə(r)/	n.	演员
+7	gun	/ɡʌn/	n.	枪
+7	try on		phr.	试穿
+7	along	/əˈlɒŋ/	prep.	沿着；顺着
+7	road	/rəʊd/	n.	道路
+7	create	/kriˈeɪt/	v.	创造
+7	record	/rɪˈkɔːd; ˈrekɔːd/	v. & n.	记录（v. /rɪˈkɔːd/）；记录（n. /ˈrekɔːd/）
+7	skill	/skɪl/	n.	技能
+7	write down		phr.	写下；记下
+7	explore	/ɪkˈsplɔː(r)/	v.	探索
+7	tent	/tent/	n.	帐篷
+7	cucumber	/ˈkjuːkʌmbə(r)/	n.	黄瓜
+7	from ... to ...		phr.	从……到……
+7	straight	/streɪt/	adv. & adj.	直接；立即；笔直地；直的
+7	fill	/fɪl/	v.	装满；盛满
+7	basket	/ˈbɑːskɪt/	n.	篮子；筐
+7	teach	/tiːtʃ/	v.	教（taught /tɔːt/）
+7	branch	/brɑːntʃ/	n.	分支；树枝
+7	leaf	/liːf/	n.	叶；叶子（pl. leaves /liːvz/）
+7	finally	/ˈfaɪnəli/	adv.	终于
+7	think of		phr.	考虑；想起
+7	grain	/ɡreɪn/	n.	谷物；谷粒
+7	fresh	/freʃ/	adj.	新鲜的
+7	certainly	/ˈsɜːtnli/	adv.	肯定地
+7	diary	/ˈdaɪəri/	n.	日记；日记本
+7	entry	/ˈentri/	n.	（日记的）一则；入口
+7	agree	/əˈɡriː/	v.	赞成；同意
+7	agree with		phr.	赞成；同意
+8	upon	/əˈpɒn/	prep.	在……上
+8	once upon a time		phr.	从前；很久以前
+8	bite	/baɪt/	v.	咬；咬伤（bit /bɪt/）
+8	bite through		phr.	咬穿
+8	net	/net/	n.	网；网状物
+8	hunter	/ˈhʌntə(r)/	n.	猎人；搜寻者
+8	promise	/ˈprɒmɪs/	v. & n.	承诺；保证；承诺；诺言
+8	long ago		phr.	很久以前
+8	war	/wɔː(r)/	n.	战争
+8	neighbour	/ˈneɪbə(r)/	n.	邻居
+8	wise	/waɪz/	adj.	明智的；高明的
+8	emperor	/ˈempərə(r)/	n.	皇帝
+8	lie	/laɪ/	v. & n.	撒谎；谎言
+8	pretend	/prɪˈtend/	v.	假装；伪装
+8	official	/əˈfɪʃl/	n.	官员；高级职员
+8	silly	/ˈsɪli/	adj.	愚蠢的；傻的
+8	decide	/dɪˈsaɪd/	v.	决定
+8	praise	/preɪz/	v. & n.	赞美；表扬
+8	afraid	/əˈfreɪd/	adj.	害怕的；担心的
+8	suddenly	/ˈsʌdənli/	adv.	突然地；出乎意料地
+8	at first		phr.	起初；最初
+8	truth	/truːθ/	n.	真相；事实
+8	tell the truth		phr.	说实话
+8	make money		phr.	赚钱
+8	true	/truː/	adj.	符合事实的；真正的
+8	hate	/heɪt/	v.	不喜欢；厌恶；讨厌
+8	get out		phr.	逃脱；离开
+8	king	/kɪŋ/	n.	君主；国王
+8	artist	/ˈɑːtɪst/	n.	美术家；艺术家
+8	quickly	/ˈkwɪkli/	adv.	快速地；很快
+8	smile	/smaɪl/	v. & n.	微笑；微笑；笑容
+8	all over		phr.	到处；遍及
+8	ugly	/ˈʌɡli/	adj.	丑陋的；难看的
+8	duckling	/ˈdʌklɪŋ/	n.	小鸭子
+8	real	/rɪəl/	adj.	真的；真正的
+8	laugh at		phr.	嘲笑
+8	go away		phr.	走开
+8	search	/sɜːtʃ/	v.	寻找；搜寻
+8	search for		phr.	寻找
+8	hen	/hen/	n.	母鸡
+8	hopefully	/ˈhəʊpfəli/	adv.	有希望地
+8	purr	/pɜː(r)/	v.	（猫愉快时）发出呜呜声
+8	lay	/leɪ/	v.	下（蛋）；放置；搁（laid /leɪd/）
+8	swan	/swɒn/	n.	天鹅
+8	feather	/ˈfeðə(r)/	n.	羽毛
+8	to sb's surprise		phr.	出乎某人的意料
+8	size	/saɪz/	n.	大小；尺寸
+8	believe	/bɪˈliːv/	v.	相信；认为
+8	only if		phr.	只有
+8	fisherman	/ˈfɪʃəmən/	n.	渔夫（pl. fishermen /ˈfɪʃəmən/）
+8	fishing	/ˈfɪʃɪŋ/	n.	钓鱼；捕鱼
+8	come out		phr.	出现；盛开
+8	genie	/ˈdʒiːni/	n.	妖怪；鬼
+8	die	/daɪ/	v.	死亡；消失
+8	make a promise		phr.	许下诺言
+8	someone	/ˈsʌmwʌn/	pron.	某人；有人
+8	set	/set/	v.	使处于某种状况；使开始
+8	set ... free		phr.	释放
+8	rich	/rɪtʃ/	adj.	富有的；富含……的
+8	powerful	/ˈpaʊəfl/	adj.	强大的；有影响力的
+8	anyone	/ˈeniwʌn/	pron.	任何人；某个人
+8	instead of		phr.	而不是；代替
+8	succeed in doing sth		phr.	成功做成某事
+8	himself	/hɪmˈself/	pron.	他自己；他本人
+8	in the end		phr.	最后；终究
+8	Hans Christian Andersen	/ˈhænz ˈkrɪstʃən ˈændəsən/	n.	汉斯·克里斯蒂安·安徒生

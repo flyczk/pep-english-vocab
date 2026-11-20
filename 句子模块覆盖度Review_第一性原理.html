@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>句子模块覆盖度 Review · 从第一性原理出发</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; background:#f5f5f7; color:#1d1d1f; margin:0; padding:28px 20px 60px; }
+  .wrap { max-width:1180px; margin:0 auto; }
+  h1 { font-size:24px; margin:0 0 4px; }
+  .sub { color:#6e6e73; font-size:13px; margin-bottom:20px; }
+  .card { background:#fff; border:1px solid #e3e3e8; border-radius:12px; padding:18px 20px; margin-bottom:16px; }
+  h2 { font-size:17px; margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid #eee; }
+  h3 { font-size:14px; margin:18px 0 8px; color:#2b2b2f; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th { background:#fafafc; text-align:left; padding:7px 9px; border-bottom:2px solid #e3e3e8; font-size:12px; color:#555; }
+  td { padding:7px 9px; border-bottom:1px solid #f0f0f3; vertical-align:top; }
+  .ctr { text-align:center; }
+  .ok { color:#1b7a33; font-weight:700; }
+  .part { color:#9a6200; font-weight:700; }
+  .no { color:#c0392b; font-weight:700; }
+  .verdict { background:#eef2ff; border:1px solid #c7d2fe; border-radius:10px; padding:14px 16px; font-size:14px; line-height:1.85; margin-bottom:16px; }
+  .verdict b { color:#3730a3; }
+  .pri { display:inline-block; min-width:38px; text-align:center; color:#fff; border-radius:5px; padding:2px 7px; font-size:12px; font-weight:700; }
+  .p0 { background:#c0392b; } .p1 { background:#d97b06; } .p2 { background:#6b7280; }
+  .lvl { display:inline-block; color:#fff; border-radius:5px; padding:2px 8px; font-size:12px; font-weight:700; }
+  .l1 { background:#1a7f5a; } .l2 { background:#2f6fd0; } .l3 { background:#7a4fd0; } .l4 { background:#c0392b; } .l5 { background:#6b7280; }
+  .note { background:#fffbe8; border:1px solid #f5e3a3; border-radius:8px; padding:12px 14px; font-size:12.5px; line-height:1.8; margin-top:10px; }
+  .risk { background:#fdeeee; border:1px solid #f3c2c2; border-radius:8px; padding:12px 14px; font-size:12.5px; line-height:1.8; margin-top:10px; }
+  .small { font-size:12px; color:#6e6e73; line-height:1.85; }
+  .en { font-family:"SF Mono",Menlo,Consolas,monospace; font-size:12px; }
+  .arrow { color:#9aa0a6; padding:0 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>句子模块覆盖度 Review ——从第一性原理出发</h1>
+  <div class="sub">words.vip.cpolar.cn · 2026-10-24 · 盘点数据来自线上库实时统计 + 人教版（2024）八上教材目录与课文原文核对</div>
+
+  <div class="verdict">
+    <b>一句话结论：你的判断成立，而且现状比"只收了 Section B"更严重。</b><br>
+    全库 136 句里，<b>132 句（97%）集中在 Grammar Focus 和 Section A 2a 两个板块</b>，剩下 4 句是语音句。
+    教材里另外四块高价值语篇——<b>Section A 1b/1c 听力对话、Section B 1b 大课文、Section B 3a–3c、Reading Plus</b>——合计约 500 句潜在素材，目前只收了 U3 的 20 句。
+    其中最该补的不是 Section B，是 <b>Section B 3a–3c（中考写作范本）</b>：那是平台现在完全空白、而对考试提分最直接的一块。
+  </div>
+
+  <div class="card">
+    <h2>一、数据盘点：教材板块 × 已覆盖情况</h2>
+    <p class="small">先纠正一个我之前的错误认知：我原以为新版有"2b 书信板块"，核对目录后确认<b>没有</b>。2024 新版每单元结构为：Section A（1a–1d/e → Pronunciation → 2a–2e → Grammar Focus）+ Section B（1a–1e/f → Vocabulary in Use → 3a–3c → Project → Reading Plus）。所以下面按真实板块盘点。</p>
+    <table>
+      <tr>
+        <th style="width:150px">教材板块</th><th style="width:110px">素材类型</th>
+        <th class="ctr" style="width:60px">U1</th><th class="ctr" style="width:60px">U2</th><th class="ctr" style="width:60px">U3</th>
+        <th class="ctr" style="width:60px">U4</th><th class="ctr" style="width:60px">U5</th><th class="ctr" style="width:60px">U6</th>
+        <th class="ctr" style="width:60px">U7</th><th class="ctr" style="width:60px">U8</th><th style="width:150px">对考试的作用</th>
+      </tr>
+      <tr><td><b>Grammar Focus 3a/3b</b></td><td>语法例句</td>
+        <td class="ctr ok">14</td><td class="ctr ok">12</td><td class="ctr ok">7</td><td class="ctr ok">6</td><td class="ctr ok">6</td><td class="ctr ok">6</td><td class="ctr ok">7</td><td class="ctr ok">8</td>
+        <td>语法选择、完成句子、句型转换</td></tr>
+      <tr><td>Section A <b>2a</b> 主对话</td><td>双人对话</td>
+        <td class="ctr part">8</td><td class="ctr part">7</td><td class="ctr part">5</td><td class="ctr part">7</td><td class="ctr part">9</td><td class="ctr part">8</td><td class="ctr part">6</td><td class="ctr part">3</td>
+        <td>听力、口语、语境例句</td></tr>
+      <tr><td>Pronunciation</td><td>语音句</td>
+        <td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr part">1</td><td class="ctr part">1</td><td class="ctr part">2</td><td class="ctr part">1</td><td class="ctr part">1</td>
+        <td>跟读、语音题</td></tr>
+      <tr><td>Section A <b>1b/1c</b> 听力对话</td><td>双人对话×2</td>
+        <td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td>
+        <td><b>听力题直接来源</b></td></tr>
+      <tr style="background:#fff8f8"><td><b>Section B 1b</b> 大课文</td><td>日记 / 论坛帖 / 记叙文 / 说明文</td>
+        <td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr ok">20</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td>
+        <td><b>阅读题源</b>、长句理解</td></tr>
+      <tr style="background:#fff8f8"><td>Section B <b>3a–3c</b></td><td>观点帖 / 写作任务</td>
+        <td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td>
+        <td><b>写作范本（中考 12–15 分）</b></td></tr>
+      <tr><td>Reading Plus</td><td>第一人称叙事</td>
+        <td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td><td class="ctr no">0</td>
+        <td>拓展阅读</td></tr>
+    </table>
+    <div class="note">
+      <b>合计 136 句的真实构成：</b>Grammar Focus 72 句（53%）+ Section A 2a 58 句（43%）+ 语音句 5 句 + 2f 1 句。<br>
+      <b>Section B 1b 实际只有 U3 的 20 句</b>，其余 7 个单元为 0。这正是你说的"只看到 Section B"——而且准确说，是<b>只看到了 U3 的 Section B</b>。<br>
+      参考量级：仅 U1 一个单元，Section A 1b/1c 两段听力约 20 句、Section B 1b 日记约 20 句、Reading Plus 两篇约 20 句，全部未收录。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>二、第一性原理推导</h2>
+    <p class="small" style="margin-bottom:12px">从平台定位出发，不做假设、只顺着因果链往下推：</p>
+    <table>
+      <tr><th style="width:150px">推导步骤</th><th style="width:330px">推理</th><th>对平台的约束</th></tr>
+      <tr>
+        <td><b>① 用户是谁</b></td>
+        <td>中学生。第一目标是<b>考试得分</b>，第二目标是能力与语感。不为"学英语"而学，为"提分 + 会用"而学。</td>
+        <td>一切功能要能指回某类考题或某种输出，否则是玩具不是工具。</td>
+      </tr>
+      <tr>
+        <td><b>② 考试考什么</b></td>
+        <td>听力 / 语法选择 / 完形 / 阅读 / 任务型或完成句子 / 写作。其中<b>语篇类（完形+阅读）和写作合计占分最高</b>，且都要求"整句整段的理解与产出"。</td>
+        <td>平台必须提供<b>成篇的语料</b>，而不只是孤立语法例句。</td>
+      </tr>
+      <tr>
+        <td><b>③ 素材从哪来</b></td>
+        <td>中考命题与教材同源同题材。教材语篇就是中考阅读/完形的"缩小版"，教材 3a–3c 就是写作任务的范文。</td>
+        <td>教材原句是最权威、最对齐考试的素材源，且已带中文翻译与朗读。</td>
+      </tr>
+      <tr>
+        <td><b>④ 平台独特优势</b></td>
+        <td>教材原文 + 逐句中译 + 逐句点读（TTS 代理，不依赖本地音频）+ 记忆曲线 + 挖空判分。<b>任何教材句子都能零成本点读</b>，收录新句子没有音频门槛。</td>
+        <td>覆盖面只受"录入工作量"限制，不受技术限制——所以缺口纯粹是投入问题。</td>
+      </tr>
+      <tr>
+        <td><b>⑤ 反推：不该做什么</b></td>
+        <td>若把教材<b>全部</b>句子无差别收进来（含 Project 说明、Vocabulary in Use 填空、Reading Plus 全文），句库会稀释成"电子课本"，必背句失焦、复习负担爆炸。</td>
+        <td>必须<b>分层收录</b>：按"考试用途 + 可背诵性"筛选，而非按板块全收。</td>
+      </tr>
+    </table>
+    <div class="note"><b>结论：平台缺的不是句子，是"按考试用途分层的语篇层"。</b>现有 136 句解决了"语法骨架"（L1）和部分"对话语境"（L2），但"阅读语篇"（L3）只有 1/8，"写作范本"（L4）为 0。</div>
+  </div>
+
+  <div class="card">
+    <h2>三、分层方案与优先级</h2>
+    <table>
+      <tr><th style="width:52px">层级</th><th style="width:130px">素材</th><th style="width:80px">现状</th><th style="width:150px">考试用途</th><th style="width:90px">可背诵性</th><th>建议</th></tr>
+      <tr><td><span class="lvl l1">L1</span></td><td>Grammar Focus 3a/3b</td><td class="ok">72 句 · 基本全</td><td>语法选择、完成句子</td><td>高</td><td>维持现状，补 3c 句式即可</td></tr>
+      <tr><td><span class="lvl l2">L2</span></td><td>2a 主对话 + 1b/1c 听力</td><td class="part">58 句 · 1b/1c 空</td><td>听力、口语</td><td>中高</td><td>补 1b/1c；句子短，主打"听写 + 跟读"而非挖空</td></tr>
+      <tr style="background:#faf7ff"><td><span class="lvl l3">L3</span></td><td><b>Section B 1b 大课文</b></td><td class="no">仅 U3 20 句</td><td>阅读、完形</td><td>中（长句多）</td><td><b>P0 优先补</b>。复用 U3 已验证模式，与中考阅读题材同源</td></tr>
+      <tr style="background:#fff5f5"><td><span class="lvl l4">L4</span></td><td><b>Section B 3a–3c</b></td><td class="no">0 句</td><td><b>写作（12–15 分）</b></td><td>高（观点句可整段背）</td><td><b>P0 且价值最高</b>。平台完全空白，是最差异化的一块</td></tr>
+      <tr><td><span class="lvl l5">L5</span></td><td>Reading Plus</td><td class="no">0 句</td><td>拓展阅读</td><td>低（上下文依赖强）</td><td>P2。只收"可独立成句的金句"，不收全文</td></tr>
+      <tr><td>—</td><td>Vocabulary in Use / Project</td><td class="no">0 句</td><td>—</td><td>低</td><td><b>不收</b>。前者是语篇填空（非完整句），后者是任务说明</td></tr>
+    </table>
+
+    <h3>优先级与工作量（按 8 个单元估算）</h3>
+    <table>
+      <tr><th style="width:52px">优先级</th><th style="width:190px">任务</th><th class="ctr" style="width:80px">预计句数</th><th class="ctr" style="width:90px">挖空题</th><th>说明与验收标准</th></tr>
+      <tr><td><span class="pri p0">P0</span></td><td><b>Section B 1b 补全 7 单元</b></td><td class="ctr">≈140</td><td class="ctr">≈70</td><td>每单元按 U3 模式录入：原句 + 中译 + 考点 + 体裁标签；<b>验收 = 每句能在教材找到原文</b>（这次 U3 的经验：必须独立复核，拼句事故出过 1 次）</td></tr>
+      <tr><td><span class="pri p0">P0</span></td><td><b>Section B 3a–3c 写作范本</b></td><td class="ctr">≈50</td><td class="ctr">≈25</td><td>观点/建议/对比类句型，标注"可直接用于写作"；验收 = 抽 5 句能拼成一篇 80 词短文</td></tr>
+      <tr><td><span class="pri p1">P1</span></td><td>1b/1c 听力对话补全</td><td class="ctr">≈140</td><td class="ctr">少量</td><td>主打听写与跟读；验收 = 听力原文逐字一致（多源交叉）</td></tr>
+      <tr><td><span class="pri p1">P1</span></td><td>2a 对话补全（收完整对话）</td><td class="ctr">≈40</td><td class="ctr">≈20</td><td>现有每单元只收 3–9 句，实际对话 10–14 句</td></tr>
+      <tr><td><span class="pri p2">P2</span></td><td>Reading Plus 金句筛选</td><td class="ctr">≈40</td><td class="ctr">≈10</td><td>只收可独立成句的叙事金句；验收 = 抽句脱离原文仍读得懂</td></tr>
+    </table>
+    <p class="small" style="margin-top:8px">P0 合计约 190 句 + 95 道题，按目前一轮对话可完成 1 个单元的速度，约需 3–5 轮；P1 完成后句库将达 500 句量级。</p>
+  </div>
+
+  <div class="card">
+    <h2>四、动手前必须先解决的 3 个架构问题</h2>
+    <h3>1. 句子上要有「体裁」标签（不做会乱）</h3>
+    <p class="small">现在 136 句靠自由文本 <span class="en">source</span> 区分来源，统计要用 LIKE 匹配。句库到 400+ 后必须结构化，否则"按用途取句子"（如"我要写作范本"）根本无法实现。建议新增字段：</p>
+    <table>
+      <tr><th style="width:110px">字段</th><th style="width:120px">取值</th><th>用途</th></tr>
+      <tr><td class="en">genre</td><td class="en">grammar / dialogue / post / diary / narrative / speech</td><td>决定句子出现在哪个入口：写作素材页只取 post/speech，听力页只取 dialogue</td></tr>
+      <tr><td class="en">section_code</td><td class="en">GF-3a / A-1b / A-2a / B-1b / B-3a</td><td>替代自由文本 source，可精确统计板块覆盖度</td></tr>
+      <tr><td class="en">tier</td><td class="en">core / extended</td><td>core = 必背（进记忆曲线），extended = 选读（只点读，不进复习队列）</td></tr>
+    </table>
+    <div class="risk"><b>为什么 tier 必须有：</b>记忆曲线对 136 句可行，对 400 句会让"待复习"堆到几百条，孩子打开生字本就被吓退。必须区分"必背核心句"和"选读扩展句"，否则功能越多体验越差。</div>
+
+    <h3>2. 解锁口径不能动</h3>
+    <p class="small">现行"已学范围 = 练到过的最远单元及之前"在句库翻倍后更重要：一次解锁几百句会直接压垮孩子。补数据时保持这个口径不变，让句子跟着学习进度逐步释放。</p>
+
+    <h3>3. 内容呈现要注意的两点</h3>
+    <p class="small">① U1 的 Section B 1b 是莫斯科假期日记，含二战/反纳粹的博物馆内容（教材原文），收录无问题，但属客观历史陈述，<b>不要挑这类句子当例句或考题</b>。<br>
+    ② 英式拼写（colourful / practise / humour）沿用教材词汇表主词条，录入时统一，别改美式。</p>
+  </div>
+
+  <div class="card">
+    <h2>五、我的建议</h2>
+    <div class="verdict" style="margin:0">
+      <b>先做 P0 的第一项：Section B 1b 补全，从 Unit 1 开始。</b><br>
+      理由：① 与 U3 已上线验证过的模式完全同构，风险最低、可复用脚本；② 直接补上"阅读语篇"这个最大缺口；③ U1 的日记体是后续 U2/U4/U5/U7 各种体裁的样板，先啃下体裁最特殊的一个。<br><br>
+      <b>紧接着做 Section B 3a–3c 写作范本</b>，那是平台现在 0 覆盖、对中考提分最直接的一块，做出来就是这个平台相对"只有单词和语法例句"的同类产品的真正差异点。<br><br>
+      要不要我现在开始录 Unit 1 的 Section B 1b（日记体，约 20 句）？按既定流程：我录 → 独立复核会话核对原文 → 线上实测 → 再推进下一个单元。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>附：依据与局限</h2>
+    <p class="small">
+      <b>数据来源</b>：线上库 sentences 表实时统计（136 句，按 source 字段分组）；人教版（2024）八上教材目录（人教社教师之家栏目）+ Unit 1 / Unit 3 / Unit 5 / Unit 7 课文原文多源交叉核对。<br>
+      <b>已修正的错误认知</b>：曾以为新版有"2b 书信板块"，核对目录后确认不存在；搜索中混入的旧版（人教新目标）Unit 1《Where did you go on vacation?》内容已剔除，未用作论据。<br>
+      <b>局限</b>：U6、U8 的单元标题尚未核实（不影响本报告的板块结论）；各单元语料句数为按已核对单元的量级外推，实际录入时以教材原文为准。
+    </p>
+  </div>
+</div>
+</body>
+</html>

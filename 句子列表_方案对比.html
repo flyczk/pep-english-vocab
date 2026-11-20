@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>句子列表页 · 三个方案对比</title>
+<style>
+  :root{
+    --blue600:#2563eb; --blue700:#1d4ed8; --blue100:#dbeafe; --blue50:#eff6ff; --blue200:#bfdbfe;
+    --indigo600:#4f46e5; --indigo700:#4338ca;
+    --emeraldBg:#d1fae5; --emerald600:#059669; --emerald700:#047857; --emerald500:#10b981; --emerald50:#ecfdf5;
+    --green100:#dcfce7; --green700:#15803d; --green500:#22c55e; --teal600:#0d9488;
+    --g50:#f9fafb; --g100:#f3f4f6; --g200:#e5e7eb; --g300:#d1d5db; --g400:#9ca3af;
+    --g500:#6b7280; --g600:#4b5563; --g700:#374151; --g900:#111827;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#eef0f3;color:#111827;
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;padding:28px 20px 60px}
+
+  .pagetitle{font-size:20px;font-weight:700;letter-spacing:-.01em}
+  .pagenote{font-size:13px;color:#6b7280;margin-top:6px;max-width:1100px}
+  .screen{margin-top:30px}
+  .screentitle{font-size:14px;font-weight:650;color:#111827;margin-bottom:12px;
+    display:flex;align-items:center;gap:8px}
+  .screentitle em{font-style:normal;font-size:12px;color:#8b909a;font-weight:400}
+  .cols{display:flex;gap:22px;align-items:stretch;flex-wrap:wrap}
+
+  .col{width:430px;flex-shrink:0;display:flex;flex-direction:column}
+  .collabel{font-size:12.5px;font-weight:650;margin-bottom:8px;display:flex;align-items:center;gap:7px}
+  .collabel .tag{font-size:10.5px;font-weight:500;padding:2px 7px;border-radius:6px;background:#fff;color:#6b7280;border:1px solid #e2e5ea}
+  .collabel .tag.hot{background:#2563eb;color:#fff;border-color:#2563eb}
+  .collabel .tag.new{background:#059669;color:#fff;border-color:#059669}
+  .colnote{font-size:11.5px;color:#8b909a;margin:-2px 0 8px;line-height:1.5}
+
+  .phone{background:var(--g50);box-shadow:0 0 0 1px #e2e5ea;border-radius:16px;overflow:hidden;
+    display:flex;flex-direction:column;flex:1;position:relative}
+
+  /* ---------- 通用：页头 ---------- */
+  header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 1px 2px rgba(16,24,40,.05)}
+  .hrow{max-width:100%;padding:16px;display:flex;align-items:center;gap:16px}
+  .back{width:36px;height:36px;flex-shrink:0;border-radius:8px;display:grid;place-items:center;color:var(--g600)}
+  .back svg{width:20px;height:20px}
+  .tt{flex:1;min-width:0}
+  .tt h1{font-size:18px;line-height:28px;font-weight:700;color:var(--g900);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tt .crumb{font-size:12px;line-height:16px;color:var(--g500);margin-top:1px;text-align:left}
+  .tt .crumb b{font-weight:400;text-decoration:underline;text-underline-offset:2px;color:#2563eb}
+
+  main{padding:24px 16px 128px;flex:1}
+  .card{background:#fff;border:1px solid var(--g200);border-radius:12px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+
+  /* ---------- 方案 A：白底概要卡 ---------- */
+  .sumA{padding:20px;margin-bottom:24px}
+  .sumA .l1{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+  .sumA .l1 .ttl{display:flex;align-items:center;gap:8px}
+  .sumA .l1 .ttl svg{width:16px;height:16px;color:#d97706}
+  .sumA .l1 h2{font-size:16px;font-weight:600;color:var(--g900)}
+  .sumA .l1 .cnt{font-size:14px;color:var(--g500)}
+  .sumA .l2{display:flex;align-items:center;gap:16px;font-size:14px;color:var(--g500);margin-bottom:12px}
+  .sumA .l2 span{display:flex;align-items:center;gap:6px}
+  .sumA .l2 b{font-weight:500;color:var(--g900)}
+  .bar{height:4px;border-radius:99px;background:var(--g100);overflow:hidden;display:flex}
+  .bar i{display:block;height:100%}
+
+  /* ---------- 方案 B：主色渐变卡（与词表页同规格） ---------- */
+  .sumB{margin-bottom:24px;background:linear-gradient(to right,#8b5cf6,#9333ea);border:0;color:#fff}
+  .sumB .p5{padding:20px}
+  .sumB .row{display:flex;align-items:center;gap:16px}
+  .sumB .ico{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.2);display:grid;place-items:center;flex-shrink:0}
+  .sumB .ico svg{width:24px;height:24px;color:#fff}
+  .sumB h2{font-size:18px;line-height:28px;font-weight:700}
+  .sumB .sub{font-size:14px;line-height:20px;color:#f3e8ff;margin-top:2px}
+  .sumB .pbar{margin-top:16px;height:6px;border-radius:99px;background:rgba(255,255,255,.25);overflow:hidden;display:flex}
+  .sumB .pbar i{display:block;height:100%}
+  .sumB .pbar i.m{background:#fff}
+  .sumB .pbar i.l{background:rgba(255,255,255,.45)}
+  .sumB .leg{margin-top:10px;font-size:12px;color:rgba(255,255,255,.85);display:flex;gap:14px}
+  .sumB .leg span{display:flex;align-items:center;gap:5px}
+  .sumB .leg .d{width:6px;height:6px;border-radius:50%;background:#fff}
+  .sumB .leg .d.l{background:rgba(255,255,255,.45)}
+  .sumB .leg .d.n{background:rgba(255,255,255,.38)}
+
+  /* ---------- 方案 C：统计卡组（与生字本同规格） ---------- */
+  .sumC{margin-bottom:24px}
+  .sumC .head{display:flex;align-items:center;gap:8px;padding:0 4px 12px}
+  .sumC .head svg{width:16px;height:16px;color:#2563eb}
+  .sumC .head h2{font-size:16px;font-weight:600;color:var(--g900)}
+  .sumC .head .cnt{margin-left:auto;font-size:13px;color:var(--g500)}
+  .sumC .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  .sc{border-radius:12px;padding:16px;border:1px solid transparent}
+  .sc .top{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:500}
+  .sc .top svg{width:16px;height:16px}
+  .sc .num{font-size:24px;line-height:32px;font-weight:700;margin-top:4px;font-variant-numeric:tabular-nums}
+  .sc-m{background:var(--emerald50);border-color:#a7f3d0}
+  .sc-m .top{color:#047857} .sc-m .num{color:#065f46}
+  .sc-l{background:var(--blue50);border-color:var(--blue200)}
+  .sc-l .top{color:#1d4ed8} .sc-l .num{color:#1e40af}
+  .sc-n{background:var(--g50);border-color:var(--g200)}
+  .sc-n .top{color:var(--g500)} .sc-n .num{color:var(--g700)}
+  .sumC .barwrap{margin-top:12px}
+
+  /* ---------- 分类 Tabs ---------- */
+  .tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));height:36px;align-items:center;
+    justify-content:center;border-radius:8px;background:var(--g100);padding:4px;color:var(--g500);margin-bottom:8px}
+  .tabs>span{display:flex;align-items:center;justify-content:center;white-space:nowrap;border-radius:6px;
+    padding:0 4px;font-size:12px;font-weight:500;height:28px;transition:all .15s}
+  .tabs>span.on{background:#fff;color:var(--g900);font-weight:600;box-shadow:0 1px 3px rgba(16,24,40,.1)}
+  .tabs>span i{font-style:normal;color:var(--g400);margin-left:4px;font-weight:400}
+  .tabs>span.on i{color:var(--g500)}
+
+  /* ---------- 分组 + 列表 ---------- */
+  .ghead{display:flex;align-items:baseline;justify-content:space-between;padding:0 4px;
+    margin-top:20px;margin-bottom:8px;border-bottom:1px solid var(--g100);padding-bottom:6px}
+  .ghead h3{font-size:14px;font-weight:500;color:var(--g500)}
+  .ghead span{font-size:12px;color:var(--g400)}
+
+  ul{list-style:none}
+  li{margin-top:12px;background:#fff;border:1px solid var(--g200);border-radius:12px;
+    box-shadow:0 1px 2px rgba(16,24,40,.04);padding:16px;display:flex;align-items:flex-start;gap:16px}
+  li.done{border-color:#a7f3d0;background:rgba(236,253,245,.4)}
+  .num{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;flex-shrink:0;
+    font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
+  .num.n{background:var(--g100);color:var(--g500)}          /* 方案 A：中性灰 */
+  .num.b{background:var(--blue100);color:var(--blue600)}    /* 方案 B/C：与词表页一致 */
+  .num.d{background:var(--green100);color:var(--green700)}
+  .body{flex:1;min-width:0}
+  .enrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .en{font-size:18px;line-height:24px;font-weight:700;color:var(--g900);letter-spacing:-.01em;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .zh{font-size:14px;color:var(--g700);margin-top:4px}
+  .bdg{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:500;
+    padding:2px 8px;border-radius:99px;border:0}
+  .bdg.done{background:var(--green100);color:var(--green700)}
+  .bdg.done svg{width:12px;height:12px}
+  .bdg.sec{background:var(--g100);color:var(--g600);font-size:11px;padding:2px 7px}
+  .act{flex-shrink:0;display:flex;align-items:center;padding-top:2px}
+  .play{width:36px;height:36px;border-radius:99px;display:grid;place-items:center;color:var(--g400)}
+  .play svg{width:20px;height:20px}
+
+  /* ---------- 底部栏 ---------- */
+  .foot{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--g200);
+    box-shadow:0 -4px 12px rgba(16,24,40,.06);padding:16px;margin-top:auto}
+  .foot .row{display:flex;align-items:center;gap:12px}
+  .btn{flex:1;height:48px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+    gap:8px;font-size:14px;font-weight:500}
+  .btn.out{background:#fff;border:1px solid var(--g200);color:var(--g900)}
+  .btn.out svg{width:16px;height:16px}
+  .btn.pri{background:#2563eb;color:#fff;font-size:16px}
+  .btn.pri svg{width:16px;height:16px}
+  .btn.pri:disabled{background:var(--g300);color:var(--g400)}
+
+  .empty{padding:48px 16px;text-align:center;color:var(--g500);font-size:14px}
+  .empty svg{width:48px;height:48px;color:var(--g300);margin-bottom:12px}
+
+  .diffs{margin-top:34px;max-width:1100px}
+  .diffs h2{font-size:15px;font-weight:650}
+  table{width:100%;border-collapse:collapse;margin-top:12px;font-size:13px;background:#fff;border-radius:10px;overflow:hidden}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid #eef0f3;vertical-align:top}
+  th{background:#f6f7f9;font-weight:600;color:#374151;font-size:12.5px}
+  tr:last-child td{border-bottom:0}
+  td.k{color:#6b7280;white-space:nowrap;width:130px}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:#f3f4f6;padding:1px 5px;border-radius:4px;color:#374151}
+
+  @media (max-width:920px){
+    body{padding:18px 12px 40px}
+    .cols{flex-direction:column;gap:26px}
+    .col{width:100%;max-width:430px;margin:0 auto}
+    .diffs table{display:block;overflow-x:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="pagetitle">句子列表页 · 方案对比</div>
+<div class="pagenote">
+  数据为线上真实内容（PEP 八上 Unit 1，lesson_id=82，共 18 句：重点考点 12 / 常用搭配 2 / 经典句型 4）。
+  A 是改造前的版本；B、C 是新设计的两个方案。三栏除「概要区」外，列表行、分组、底部栏完全一致，便于只比较差异。<b style="color:#047857">已选定方案 B，并已于 2026-10-21 上线。</b>
+</div>
+
+<section class="screen">
+  <div class="screentitle">场景 1 · 刚进入单元 <em>18 句全部未练</em></div>
+  <div class="cols" id="s1"></div>
+</section>
+
+<section class="screen">
+  <div class="screentitle">场景 2 · 练过一阵 <em>已掌握 7 · 学习中 4 · 未练 7</em></div>
+  <div class="cols" id="s2"></div>
+</section>
+
+<div class="diffs">
+  <h2>三方案的取舍</h2>
+  <table>
+    <tr><th>&nbsp;</th><th>A 白底概要卡（当前线上）</th><th>B 主色渐变卡（推荐）</th><th>C 统计卡组</th></tr>
+    <tr><td class="k">对齐对象</td><td>无（自造）</td><td>词表页 WordListPage</td><td>生字本统计卡</td></tr>
+    <tr><td class="k">概要区</td><td>白底卡 + 三态文字 + 4px 细进度</td><td><code>from-blue-600 to-indigo-600</code> 渐变卡，规格与词表页绿→青卡完全一致</td><td>3 张等宽小卡（emerald-50 / blue-50 / gray-50）+ 细进度</td></tr>
+    <tr><td class="k">序号方块</td><td><code>bg-gray-100</code>（偏离词表页）</td><td><code>bg-blue-100</code>，掌握转 <code>bg-green-100</code>（与词表页一致）</td><td>同 B</td></tr>
+    <tr><td class="k">视觉重量</td><td>轻，低于词表页</td><td>与词表页等量</td><td>中等，信息密度最高</td></tr>
+    <tr><td class="k">风险</td><td>和单词页并列时"句子这边毛坯"</td><td>大色块；但用主色蓝，不引入新色系</td><td>三卡在窄屏上数字位略挤</td></tr>
+  </table>
+</div>
+
+<script>
+const ICON = {
+  back:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>',
+  msg:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>',
+  vol:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>',
+  play:'<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 3 20 12 6 21"/></svg>',
+  grid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>',
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>',
+  book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+  clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+  dot:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>'
+};
+
+// 真实数据：八上 Unit 1（lesson_id=82）
+const DATA = [
+  [1,'重点考点','Where did you go on holiday?','你假期去了哪里？'],
+  [2,'重点考点',"I didn't go anywhere special, but I tried something new — I worked as a tour guide at a museum.",'我没去什么特别的地方，但尝试了新事物——我在博物馆当了一回导游。'],
+  [3,'重点考点','Did you do anything interesting on your holiday?','你假期做了什么有趣的事吗？'],
+  [4,'重点考点','No, nothing special. But I met someone interesting.','没有，没什么特别的。不过我遇到了一个有趣的人。'],
+  [5,'重点考点','Did you go anywhere interesting?','你去什么有趣的地方了吗？'],
+  [6,'重点考点','Yes, I went to Yunnan.','是的，我去了云南。'],
+  [7,'重点考点','Did you go with anyone?','你是和别人一起去的吗？'],
+  [8,'重点考点','Yes, I went with my family.','是的，我和家人一起去的。'],
+  [9,'重点考点','Did you eat anything special?','你吃了什么特别的东西吗？'],
+  [10,'重点考点','Yes, we did! Everything tasted good, especially the steamed chicken soup. Everyone loved it.','是的！每样东西都好吃，尤其是汽锅鸡。大家都很喜欢。'],
+  [14,'重点考点','Did you visit Yulong Mountain?','你去玉龙雪山了吗？'],
+  [17,'重点考点','I just stayed at home to read, play games, and relax, but it was still fun.','我就待在家里看书、玩游戏、放松，但假期仍然很有趣。'],
+  [13,'常用搭配','Yes, we stayed in the old town for a few days, and we enjoyed it very much.','是的，我们在老城住了几天，玩得很开心。'],
+  [15,'常用搭配','It is! It just took my breath away.','是的！它让我惊叹不已。'],
+  [11,'经典句型','How was your holiday?','你的假期怎么样？'],
+  [12,'经典句型','It was fantastic.','太棒了。'],
+  [16,'经典句型','What about you?','你呢？'],
+  [18,'经典句型','How was your summer holiday?','你的暑假过得怎么样？']
+];
+const ORDER = ['重点考点','常用搭配','经典句型'];
+const CATN = {'重点考点':12,'常用搭配':2,'经典句型':4};
+
+// 场景 2 的状态
+const MASTERED = new Set([1,6,8,11,12,13,16]);
+const LEARNING = {2:2, 3:1, 10:3, 14:1};
+
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function summary(v, m, l, n, total){
+  const pm = (m/total*100).toFixed(2), pl = (l/total*100).toFixed(2);
+  if (v === 'A'){
+    return `<div class="card sumA">
+      <div class="l1">
+        <div class="ttl">${ICON.msg}<h2>常用语句</h2></div>
+        <span class="cnt">${total} 句</span>
+      </div>
+      <div class="l2">
+        <span><i style="width:6px;height:6px;border-radius:50%;background:#10b981;display:inline-block"></i>已掌握 <b>${m}</b></span>
+        <span><i style="width:6px;height:6px;border-radius:50%;background:#fbbf24;display:inline-block"></i>学习中 <b>${l}</b></span>
+        <span><i style="width:6px;height:6px;border-radius:50%;background:#d1d5db;display:inline-block"></i>未练 <b>${n}</b></span>
+      </div>
+      <div class="bar"><i style="width:${pm}%;background:#10b981"></i><i style="width:${pl}%;background:#fbbf24"></i></div>
+    </div>`;
+  }
+  if (v === 'B'){
+    return `<div class="card sumB"><div class="p5">
+      <div class="row">
+        <div class="ico">${ICON.msg}</div>
+        <div>
+          <h2>常用语句</h2>
+          <div class="sub">共 ${total} 句 · 已掌握 ${m}</div>
+        </div>
+      </div>
+      <div class="pbar"><i class="m" style="width:${pm}%"></i><i class="l" style="width:${pl}%"></i></div>
+      <div class="leg">
+        <span><i class="d"></i>已掌握 ${m}</span>
+        <span><i class="d l"></i>学习中 ${l}</span>
+        <span><i class="d n"></i>未练 ${n}</span>
+      </div>
+    </div></div>`;
+  }
+  return `<div class="sumC">
+    <div class="head">${ICON.msg}<h2>常用语句</h2><span class="cnt">${total} 句</span></div>
+    <div class="grid">
+      <div class="sc sc-m"><div class="top">${ICON.check}已掌握</div><div class="num">${m}</div></div>
+      <div class="sc sc-l"><div class="top">${ICON.clock}学习中</div><div class="num">${l}</div></div>
+      <div class="sc sc-n"><div class="top">${ICON.dot}未练</div><div class="num">${n}</div></div>
+    </div>
+    <div class="barwrap"><div class="bar"><i style="width:${pm}%;background:#10b981"></i><i style="width:${pl}%;background:#3b82f6"></i></div></div>
+  </div>`;
+}
+
+function phone(v, st){
+  const m = st.mastered.length, l = st.learning, n = 18 - m - l;
+  // 排序：按分类顺序
+  const groups = ORDER.map(c => [c, DATA.filter(d => d[1] === c)]);
+  let seq = 0;
+  let list = '';
+  groups.forEach(([cat, items]) => {
+    list += `<div class="ghead"><h3>${cat}</h3><span>${items.length} 句</span></div><ul>`;
+    items.forEach(d => {
+      seq += 1;
+      const done = st.mastered.includes(d[0]);
+      const learn = (st.learnMap || {})[d[0]] || 0;
+      const numCls = done ? 'd' : (v === 'A' ? 'n' : 'b');
+      list += `<li class="${done?'done':''}">
+        <div class="num ${numCls}">${seq}</div>
+        <div class="body">
+          <div class="enrow">
+            <div class="en">${esc(d[2])}</div>
+            ${done?`<span class="bdg done">${ICON.check}已掌握</span>`:''}
+            ${(!done && learn)?`<span class="bdg sec">学习中 S${learn}</span>`:''}
+          </div>
+          <div class="zh">${esc(d[3])}</div>
+        </div>
+        <div class="act"><div class="play">${ICON.vol}</div></div>
+      </li>`;
+    });
+    list += '</ul>';
+  });
+
+  const segs = ['全部', ...ORDER];
+  const tabs = segs.map((c,i)=>`<span class="${i===0?'on':''}">${c}<i>${c==='全部'?18:CATN[c]}</i></span>`).join('');
+
+  return `<div class="phone">
+    <header><div class="hrow">
+      <div class="back">${ICON.back}</div>
+      <div class="tt">
+        <h1>Unit 1 Happy Holiday</h1>
+        <div class="crumb">PEP英语八上 · <b>单元总览</b></div>
+      </div>
+    </div></header>
+    <main>
+      ${summary(v, m, l, n, 18)}
+      <div class="tabs">${tabs}</div>
+      ${list}
+    </main>
+    <div class="foot"><div class="row">
+      <div class="btn out">${ICON.grid}单元总览</div>
+      <div class="btn pri">${ICON.play}开始练习</div>
+    </div></div>
+  </div>`;
+}
+
+function render(hostId, st){
+  const cols = [
+    ['A','改前（旧版）','白底概要卡 · 中性灰序号',''],
+    ['B','方案 B · 主色渐变卡（已上线）','与词表页同规格','hot'],
+    ['C','方案 C · 统计卡组','与生字本同规格','']
+  ];
+  document.getElementById(hostId).innerHTML = cols.map(([v,name,note,tag])=>
+    `<div class="col">
+      <div class="collabel">${name}${tag?`<span class="tag ${tag}">${tag==='new'?'新方案':tag}</span>`:''}</div>
+      <div class="colnote">${note}</div>
+      ${phone(v, st)}
+    </div>`).join('');
+}
+
+const S1 = {mastered:[], learnMap:{}, learning:0};
+const S2 = {mastered:[...MASTERED], learnMap:LEARNING, learning:Object.keys(LEARNING).length};
+render('s1', S1);
+render('s2', S2);
+if (location.hash === '#only2') document.getElementById('s1').closest('.screen').style.display = 'none';
+if (location.hash === '#only1') document.getElementById('s2').closest('.screen').style.display = 'none';
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+{
+ "missing": [
+  {
+   "unit": 2,
+   "word": "set off",
+   "ph": "",
+   "pos": "",
+   "mean": "点燃；使⋯⋯爆炸；sth."
+  },
+  {
+   "unit": 8,
+   "word": "déjà vu",
+   "ph": "/ˌdeɪʒɑː ˈvuː/",
+   "pos": "n.",
+   "mean": "似曾经历过的感觉；似曾相识"
+  },
+  {
+   "unit": 9,
+   "word": "World War Ⅱ",
+   "ph": "",
+   "pos": "",
+   "mean": "第二次世界大战"
+  },
+  {
+   "unit": 11,
+   "word": "pull",
+   "ph": "/pʊl/",
+   "pos": "v.",
+   "mean": "拉；拖"
+  },
+  {
+   "unit": 13,
+   "word": "fisherman",
+   "ph": "/ˈfɪʃə(r)mən/",
+   "pos": "n.",
+   "mean": "渔民；钓鱼的人"
+  },
+  {
+   "unit": 13,
+   "word": "shark",
+   "ph": "/ʃɑː(r)k/",
+   "pos": "n.",
+   "mean": "鲨鱼"
+  },
+  {
+   "unit": 14,
+   "word": "senior high",
+   "ph": "",
+   "pos": "",
+   "mean": "高中；school"
+  }
+ ],
+ "extra": [
+  {
+   "id": 4542,
+   "unit": 2,
+   "word": "set off (sth.)"
+  },
+  {
+   "id": 4546,
+   "unit": 2,
+   "word": "mark"
+  },
+  {
+   "id": 4770,
+   "unit": 5,
+   "word": "judge"
+  },
+  {
+   "id": 4849,
+   "unit": 8,
+   "word": "deja vu"
+  },
+  {
+   "id": 4951,
+   "unit": 9,
+   "word": "World War II"
+  },
+  {
+   "id": 5107,
+   "unit": 12,
+   "word": "cost"
+  },
+  {
+   "id": 5109,
+   "unit": 13,
+   "word": "ship"
+  },
+  {
+   "id": 5178,
+   "unit": 14,
+   "word": "senior high (school)"
+  }
+ ]
+}

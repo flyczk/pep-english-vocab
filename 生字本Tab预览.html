@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生字本 · 双 tab 预览（与线上一致）</title>
+<style>
+  :root{--bg:#f7f8fa;--line:#e8e9ec;--text:#1c1d1f;--muted:#8a8f98}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:16px}
+  .topbar{display:flex;align-items:center;gap:12px;padding:12px 0 10px}
+  .back{width:32px;height:32px;border-radius:10px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;cursor:pointer}
+  h1{font-size:17px;margin:0}
+  .sub{font-size:12px;color:var(--muted)}
+  .tabs{display:flex;gap:6px;background:#eceef1;padding:4px;border-radius:12px;margin:6px 0 18px}
+  .tab{flex:1;text-align:center;padding:8px 0;border-radius:9px;font-size:13px;font-weight:600;color:#5b6169;cursor:pointer;border:0;background:transparent}
+  .tab.active{background:#fff;color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .tab .n{font-weight:400;color:var(--muted);font-size:12px;margin-left:4px}
+  .panel{display:none}.panel.active{display:block}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+  .stat{border-radius:12px;padding:14px;border:1px solid var(--line)}
+  .stat .k{font-size:12px;display:flex;align-items:center;gap:6px}
+  .stat .v{font-size:24px;font-weight:700;margin-top:8px}
+  .s-blue{background:#eff5ff;border-color:#cfe0ff}.s-blue .k{color:#1d4ed8}.s-blue .v{color:#14284f}
+  .s-green{background:#ecfdf5;border-color:#c7f0dd}.s-green .k{color:#047857}.s-green .v{color:#0c3b2b}
+  .s-yellow{background:#fffbeb;border-color:#f6e6b0}.s-yellow .k{color:#b45309}.s-yellow .v{color:#4a3208}
+  .s-red{background:#fef2f2;border-color:#fbd5d5}.s-red .k{color:#b91c1c}.s-red .v{color:#4a1616}
+  .alert{background:#fef2f2;border:1px solid #fbd5d5;border-radius:14px;padding:16px;display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+  .alert .t{font-weight:600;color:#7f1d1d}
+  .alert .d{font-size:12px;color:#b91c1c;margin-top:2px}
+  .btn{background:#dc2626;color:#fff;border:0;border-radius:10px;padding:9px 14px;font-size:13px;cursor:pointer}
+  .ghead{display:flex;align-items:baseline;justify-content:space-between;margin:0 2px 8px}
+  .ghead .n{font-weight:600}
+  .ghead .m{font-size:12px;color:var(--muted)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;align-items:flex-start;gap:12px;margin-bottom:10px}
+  .card.mastered{background:#f0fdf4;border-color:#bbf7d0}
+  .idx{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;font-size:13px;font-weight:600;flex-shrink:0}
+  .idx.amber{background:#fef3c7;color:#b45309}.idx.green{background:#dcfce7;color:#15803d}
+  .en{font-size:15px;font-weight:600;line-height:1.5}
+  .zh{font-size:13px;color:#4b5563;margin-top:2px}
+  .pat{font-size:12px;color:var(--muted);margin-top:2px}
+  .badge{font-size:11px;padding:1px 7px;border-radius:999px;background:#f3f4f6;color:#6b7280}
+  .badge.g{background:#dcfce7;color:#15803d}
+  .rowtop{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .icon{width:36px;height:36px;border-radius:999px;display:grid;place-items:center;color:#9ca3af;flex-shrink:0;border:0;background:transparent;cursor:pointer}
+  .icon:hover{color:#d97706;background:#fffbeb}
+  .note{margin-top:20px;background:#fff;border:1px dashed #d7dbe0;border-radius:12px;padding:12px 14px;font-size:12px;color:#5b6169}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="back">←</div>
+    <div>
+      <h1>我的生字本</h1>
+      <div class="sub">科学间隔复习 · 9阶段记忆巩固系统</div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab" onclick="sw('words')">单词<span class="n">128</span></button>
+    <button class="tab active" onclick="sw('sentences')">句子<span class="n">18</span></button>
+  </div>
+
+  <!-- 句子 tab：与单词 tab 完全同构 -->
+  <div id="sentences" class="panel active">
+    <div class="grid4">
+      <div class="stat s-blue"><div class="k">📗 总句子</div><div class="v">18</div></div>
+      <div class="stat s-green"><div class="k">✅ 已掌握</div><div class="v">0</div></div>
+      <div class="stat s-yellow"><div class="k">⏳ 学习中</div><div class="v">0</div></div>
+      <div class="stat s-red"><div class="k">🔔 待复习</div><div class="v">18</div></div>
+    </div>
+
+    <div class="alert">
+      <div>
+        <div class="t">有 18 句需要复习</div>
+        <div class="d">同一条记忆曲线，一次过才升档，修补通过只保档</div>
+      </div>
+      <button class="btn">▶ 开始复习</button>
+    </div>
+
+    <div class="ghead"><span class="n">Unit 1 Happy Holiday</span><span class="m">PEP英语八上 · 18 句</span></div>
+
+    <div class="card">
+      <div class="idx amber">1</div>
+      <div style="flex:1;min-width:0">
+        <div class="rowtop"><span class="en">Where did you go on holiday?</span><span class="badge">待复习</span></div>
+        <div class="zh">你假期去了哪里？</div>
+        <div class="pat">句型：Where did you go …?</div>
+      </div>
+      <button class="icon" title="朗读">🔊</button>
+    </div>
+
+    <div class="card">
+      <div class="idx amber">2</div>
+      <div style="flex:1;min-width:0">
+        <div class="rowtop"><span class="en">I didn't go anywhere special, but I tried something new — I worked as a tour guide at a museum.</span><span class="badge">待复习</span></div>
+        <div class="zh">我没去什么特别的地方，但尝试了新事物——我在博物馆当了一回导游。</div>
+        <div class="pat">句型：didn't + anywhere</div>
+      </div>
+      <button class="icon" title="朗读">🔊</button>
+    </div>
+
+    <div class="card">
+      <div class="idx amber">3</div>
+      <div style="flex:1;min-width:0">
+        <div class="rowtop"><span class="en">Yes, we did! Everything tasted good, especially the steamed chicken soup. Everyone loved it.</span><span class="badge">待复习</span></div>
+        <div class="zh">是的！每样东西都好吃，尤其是汽锅鸡。大家都很喜欢。</div>
+        <div class="pat">句型：Everything / Everyone</div>
+      </div>
+      <button class="icon" title="朗读">🔊</button>
+    </div>
+
+    <div class="card mastered">
+      <div class="idx green">4</div>
+      <div style="flex:1;min-width:0">
+        <div class="rowtop"><span class="en">How was your holiday?</span><span class="badge g">✓ 已掌握</span></div>
+        <div class="zh">你的假期怎么样？</div>
+        <div class="pat">句型：How was …?</div>
+      </div>
+      <button class="icon" title="朗读">🔊</button>
+    </div>
+
+    <div class="note">
+      和单词 tab 共用同一套视觉：浅色统计卡、红色待复习提醒、白底圆角行、序号方块、状态徽章、右侧朗读。
+      差别只在语义——句子按单元分组，因为这里要回答的是"哪个单元欠账多"。
+    </div>
+  </div>
+
+  <!-- 单词 tab -->
+  <div id="words" class="panel">
+    <div class="grid4">
+      <div class="stat s-blue"><div class="k">📗 总单词</div><div class="v">128</div></div>
+      <div class="stat s-green"><div class="k">✅ 已掌握</div><div class="v">62</div></div>
+      <div class="stat s-yellow"><div class="k">⏳ 学习中</div><div class="v">34</div></div>
+      <div class="stat s-red"><div class="k">🔔 待复习</div><div class="v">32</div></div>
+    </div>
+    <div class="card">
+      <div class="idx green">1</div>
+      <div style="flex:1;min-width:0">
+        <div class="rowtop"><span class="en">fantastic</span><span class="pat">/fænˈtæstɪk/</span><span class="badge g">✓ 已掌握</span></div>
+        <div class="zh">adj. 极好的；了不起的</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="idx amber">2</div>
+      <div style="flex:1;min-width:0">
+        <div class="rowtop"><span class="en">anywhere</span><span class="pat">/ˈeniweə(r)/</span><span class="badge">学习中 S2</span></div>
+        <div class="zh">adv. 在任何地方</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function sw(name){
+    document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',(name==='sentences')===(i===1)));
+    document.getElementById('sentences').classList.toggle('active',name==='sentences');
+    document.getElementById('words').classList.toggle('active',name==='words');
+  }
+</script>
+</body>
+</html>

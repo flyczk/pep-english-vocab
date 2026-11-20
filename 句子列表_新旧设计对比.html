@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>句子列表：旧设计 vs 新设计</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#eef0f3;font:14px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;padding:20px;display:flex;gap:20px;justify-content:center;align-items:flex-start}
+.phone{width:390px;background:#f9fafb;border-radius:22px;overflow:hidden;box-shadow:0 8px 30px rgba(16,24,40,.10)}
+header{background:#fff;box-shadow:0 1px 2px rgba(16,24,40,.06);padding:16px}
+.hrow{display:flex;align-items:center;gap:16px}
+.back{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:#6b7280;font-size:18px}
+.tt h1{font-size:18px;font-weight:700;color:#111827}
+.tt p{font-size:12px;color:#6b7280;margin-top:1px}
+main{padding:24px 16px 96px}
+.ghead{display:flex;justify-content:space-between;align-items:baseline;padding:0 4px 6px;margin:20px 0 8px;border-bottom:1px solid #f3f4f6}
+.ghead h3{font-size:14px;font-weight:500;color:#6b7280}
+.ghead span{font-size:12px;color:#9ca3af}
+.item{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin-bottom:12px;display:flex;gap:16px;align-items:flex-start}
+.item.done{background:#f0fdf4;border-color:#a7f3d0}
+.num{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;font-size:14px;font-weight:600;flex-shrink:0}
+.body{flex:1;min-width:0}
+.body h4{font-size:18px;font-weight:700;color:#111827;line-height:1.5}
+.body p{color:#374151;margin-top:4px}
+.badge{font-size:11px;padding:2px 8px;border-radius:999px;background:#d1fae5;color:#047857;display:inline-flex;align-items:center;gap:3px}
+.act{width:36px;height:36px;border-radius:999px;display:grid;place-items:center;color:#9ca3af;flex-shrink:0}
+.foot{background:#fff;border-top:1px solid #e5e7eb;box-shadow:0 -4px 12px rgba(16,24,40,.06);padding:16px}
+.foot .row{display:flex;gap:12px}
+.btn{flex:1;height:48px;border-radius:10px;font-size:16px;font-weight:600;display:grid;place-items:center;color:#fff;border:0}
+.btn.ghost{background:#fff;border:1px solid #d1d5db;color:#374151}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);background:#f3f4f6;border-radius:10px;padding:3px;margin-bottom:8px}
+.tabs div{text-align:center;padding:6px 0;border-radius:8px;font-size:12px;color:#6b7280}
+.tabs div.on{background:#fff;color:#111827;font-weight:600;box-shadow:0 1px 2px rgba(16,24,40,.08)}
+.cap{text-align:center;font-size:12px;color:#6b7280;margin-bottom:8px}
+/* 旧 */
+.grad{border-radius:12px;margin-bottom:24px;color:#fff;padding:20px;background:linear-gradient(90deg,#f59e0b,#ea580c)}
+.grad .row{display:flex;align-items:center;gap:16px}
+.grad .ico{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:22px}
+.grad h2{font-size:18px;font-weight:700}
+.grad p{font-size:14px;opacity:.85;margin-top:2px}
+/* 新 */
+.sum{background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:24px;padding:20px}
+.sum .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.sum .lbl{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:600;color:#111827}
+.sum .n{font-size:14px;color:#6b7280}
+.sum .stats{display:flex;gap:16px;font-size:14px;color:#6b7280;margin-bottom:12px}
+.sum .stats span{display:flex;align-items:center;gap:6px}
+.dot{width:6px;height:6px;border-radius:50%}
+.sum .bar{height:4px;border-radius:99px;background:#f3f4f6;overflow:hidden}
+.sum .bar i{display:block;height:100%;background:#10b981;border-radius:99px}
+</style></head><body>
+<div>
+  <p class="cap">旧设计（橙色渐变大卡 + 橙色序号 + 橙色按钮）</p>
+  <div class="phone">
+    <header><div class="hrow"><div class="back">←</div><div class="tt"><h1>Unit 1 Happy Holiday</h1><p>PEP英语八上 · 单元总览</p></div></div></header>
+    <main>
+      <div class="grad"><div class="row"><div class="ico">💬</div><div><h2>Unit 1 Happy Holiday</h2><p>共 18 句 · 已掌握 0 句</p></div></div></div>
+      <div class="tabs"><div class="on">全部 18</div><div>重点考点 12</div><div>常用搭配 2</div><div>经典句型 4</div></div>
+      <div class="ghead"><h3>重点考点</h3><span>12 句</span></div>
+      <div class="item"><div class="num" style="background:#fef3c7;color:#b45309">1</div><div class="body"><h4>Where did you go on holiday?</h4><p>你假期去了哪里？</p></div><div class="act">🔊</div></div>
+      <div class="item done"><div class="num" style="background:#dcfce7;color:#16a34a">2</div><div class="body"><h4>How was your holiday? <span class="badge">✓ 已掌握</span></h4><p>你的假期怎么样？</p></div><div class="act">🔊</div></div>
+      <div class="item"><div class="num" style="background:#fef3c7;color:#b45309">3</div><div class="body"><h4>Did you go anywhere interesting?</h4><p>你去什么有趣的地方了吗？</p></div><div class="act">🔊</div></div>
+    </main>
+    <div class="foot"><div class="row"><div class="btn ghost">单元总览</div><div class="btn" style="background:#d97706">开始练习</div></div></div>
+  </div>
+</div>
+<div>
+  <p class="cap">新设计（白底概要卡 + 中性序号 + 全站主色按钮）</p>
+  <div class="phone">
+    <header><div class="hrow"><div class="back">←</div><div class="tt"><h1>Unit 1 Happy Holiday</h1><p>PEP英语八上 · 单元总览</p></div></div></header>
+    <main>
+      <div class="sum">
+        <div class="top"><div class="lbl">💬 常用语句</div><div class="n">18 句</div></div>
+        <div class="stats">
+          <span><i class="dot" style="background:#10b981"></i>已掌握 <b style="color:#111827">0</b></span>
+          <span><i class="dot" style="background:#fbbf24"></i>学习中 <b style="color:#111827">0</b></span>
+          <span><i class="dot" style="background:#d1d5db"></i>未练 <b style="color:#111827">18</b></span>
+        </div>
+        <div class="bar"><i style="width:0%"></i></div>
+      </div>
+      <div class="tabs"><div class="on">全部 18</div><div>重点考点 12</div><div>常用搭配 2</div><div>经典句型 4</div></div>
+      <div class="ghead"><h3>重点考点</h3><span>12 句</span></div>
+      <div class="item"><div class="num" style="background:#f3f4f6;color:#6b7280">1</div><div class="body"><h4>Where did you go on holiday?</h4><p>你假期去了哪里？</p></div><div class="act">🔊</div></div>
+      <div class="item done"><div class="num" style="background:#d1fae5;color:#059669">2</div><div class="body"><h4>How was your holiday? <span class="badge">✓ 已掌握</span></h4><p>你的假期怎么样？</p></div><div class="act">🔊</div></div>
+      <div class="item"><div class="num" style="background:#f3f4f6;color:#6b7280">3</div><div class="body"><h4>Did you go anywhere interesting?</h4><p>你去什么有趣的地方了吗？</p></div><div class="act">🔊</div></div>
+    </main>
+    <div class="foot"><div class="row"><div class="btn ghost">单元总览</div><div class="btn" style="background:#2563eb">开始练习</div></div></div>
+  </div>
+</div>
+</body></html>

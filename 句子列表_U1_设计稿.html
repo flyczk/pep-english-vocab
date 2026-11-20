@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>句子列表 · 重新设计稿</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#f6f7f9;color:#16181d;font:15px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+  .phone{max-width:430px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 0 1px #e6e8ec}
+  header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid #eef0f3;padding:14px 18px 12px}
+  .hrow{display:flex;align-items:center;gap:10px}
+  .back{width:30px;height:30px;border-radius:9px;border:1px solid #e8eaee;display:grid;place-items:center;color:#6b7280;font-size:15px}
+  .tt{flex:1;min-width:0}
+  .tt h1{font-size:17px;font-weight:650;letter-spacing:-.01em}
+  .tt .crumb{font-size:12px;color:#8b909a;margin-top:1px}
+  .tt .crumb b{color:#c2801a;font-weight:500;text-decoration:underline;text-underline-offset:3px}
+  /* 进度条：替代渐变大卡 */
+  .strip{padding:16px 18px 4px}
+  .strip .line{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:9px}
+  .strip .t{font-size:13px;color:#5c6270}
+  .strip .t b{color:#16181d;font-weight:650}
+  .strip .c{font-size:12px;color:#9aa0ab}
+  .bar{height:4px;border-radius:99px;background:#eef0f3;overflow:hidden;display:flex}
+  .bar i{display:block;height:100%}
+  .bar .m{background:#22a06b}.bar .l{background:#e8b53c}.bar .n{background:#e3e6ea}
+  .legend{display:flex;gap:14px;margin-top:9px;font-size:11.5px;color:#8b909a}
+  .legend span{display:flex;align-items:center;gap:5px}
+  .dot{width:7px;height:7px;border-radius:50%}
+  /* 分段筛选 */
+  .seg{display:flex;gap:2px;background:#f2f3f5;border-radius:11px;padding:3px;margin:14px 18px 6px}
+  .seg button{flex:1;border:0;background:transparent;border-radius:9px;padding:7px 0;font-size:12.5px;color:#6b7280;font-weight:500}
+  .seg button.on{background:#fff;color:#16181d;box-shadow:0 1px 3px rgba(16,24,40,.08);font-weight:600}
+  .seg button i{font-style:normal;color:#a8adb7;margin-left:3px;font-weight:400}
+  .seg button.on i{color:#8b909a}
+  /* 列表 */
+  .groups{padding:6px 18px 120px}
+  .ghead{display:flex;align-items:center;gap:7px;margin:20px 0 8px}
+  .ghead .rule{width:3px;height:12px;border-radius:2px}
+  .ghead h2{font-size:12.5px;font-weight:600;color:#5c6270;letter-spacing:.02em}
+  .ghead em{font-style:normal;font-size:11.5px;color:#a8adb7;margin-left:auto}
+  ul{list-style:none}
+  li{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid #f2f3f5;cursor:pointer;align-items:flex-start}
+  li:last-child{border-bottom:0}
+  li.done .num{color:#22a06b}
+  .num{width:22px;flex-shrink:0;font-size:12px;color:#c3c8d0;font-variant-numeric:tabular-nums;padding-top:3px;letter-spacing:.02em}
+  .body{flex:1;min-width:0}
+  .en{font-size:15px;font-weight:550;line-height:1.5;letter-spacing:-.005em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  li.done .en{color:#22a06b}
+  .zh{font-size:13px;color:#7c828d;margin-top:3px}
+  .act{flex-shrink:0;display:flex;align-items:center;gap:4px;padding-top:2px}
+  .play{width:30px;height:30px;border-radius:50%;border:1px solid #e8eaee;background:#fff;color:#6b7280;font-size:11px;display:grid;place-items:center}
+  .play:hover{color:#c2801a;border-color:#f0dcbe}
+  .st{font-size:11px;color:#a8adb7}
+  .st.b{color:#22a06b}
+  .st.y{color:#c99a1f}
+  /* 底部 */
+  .foot{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-top:1px solid #eef0f3;padding:11px 18px calc(11px + env(safe-area-inset-bottom))}
+  .foot .row{display:flex;align-items:center;gap:12px}
+  .foot .meta{flex:1;font-size:12px;color:#8b909a}
+  .foot .meta b{color:#16181d;font-weight:600}
+  .foot .go{background:#16181d;color:#fff;border:0;border-radius:10px;padding:11px 20px;font-size:13.5px;font-weight:600}
+  .foot .go:disabled{background:#e3e6ea;color:#a8adb7}
+  .empty{padding:70px 30px;text-align:center;color:#8b909a}
+  .empty .ic{font-size:26px;margin-bottom:10px}
+</style></head><body>
+<div class="phone">
+  <header>
+    <div class="hrow">
+      <div class="back">←</div>
+      <div class="tt">
+        <h1>Unit 1 Happy Holiday</h1>
+        <div class="crumb">PEP英语八上 · <b>单元总览</b></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="strip">
+    <div class="line">
+      <div class="t">已掌握 <b>0</b> / 18 句</div>
+      <div class="c">学习中 0 · 未练 18</div>
+    </div>
+    <div class="bar"><i class="n" style="width:100%"></i></div>
+  </div>
+
+  <div class="seg">
+    <button class="on">全部<i>18</i></button>
+    <button>重点考点<i>12</i></button>
+    <button>常用搭配<i>2</i></button>
+    <button>经典句型<i>4</i></button>
+  </div>
+
+  <div class="groups">
+    <div class="ghead"><i class="rule" style="background:#e0566f"></i><h2>重点考点</h2><em>12 句</em></div>
+    <ul>
+  <li>
+    <div class="num">01</div>
+    <div class="body"><p class="en">Where did you go on holiday?</p><p class="zh">你假期去了哪里？</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">02</div>
+    <div class="body"><p class="en">I didn&#x27;t go anywhere special, but I tried something new — I worked as a tour guide at a museum.</p><p class="zh">我没去什么特别的地方，但尝试了新事物——我在博物馆当了一回导游。</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">03</div>
+    <div class="body"><p class="en">Did you go anywhere interesting?</p><p class="zh">你去什么有趣的地方了吗？</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">04</div>
+    <div class="body"><p class="en">Did you do anything interesting on your holiday?</p><p class="zh">你假期做了什么有趣的事吗？</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">05</div>
+    <div class="body"><p class="en">No, nothing special. But I met someone interesting.</p><p class="zh">没有，没什么特别的。不过我遇到了一个有趣的人。</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">06</div>
+    <div class="body"><p class="en">Yes, I went to Yunnan.</p><p class="zh">是的，我去了云南。</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">07</div>
+    <div class="body"><p class="en">Did you go with anyone?</p><p class="zh">你是和别人一起去的吗？</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">08</div>
+    <div class="body"><p class="en">Yes, I went with my family.</p><p class="zh">是的，我和家人一起去的。</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">09</div>
+    <div class="body"><p class="en">Did you eat anything special?</p><p class="zh">你吃了什么特别的东西吗？</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">10</div>
+    <div class="body"><p class="en">Yes, we did! Everything tasted good, especially the steamed chicken soup. Everyone loved it.</p><p class="zh">是的！每样东西都好吃，尤其是汽锅鸡。大家都很喜欢。</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">11</div>
+    <div class="body"><p class="en">Did you visit Yulong Mountain?</p><p class="zh">你去玉龙雪山了吗？</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">12</div>
+    <div class="body"><p class="en">I just stayed at home to read, play games, and relax, but it was still fun.</p><p class="zh">我就待在家里看书、玩游戏、放松，但假期仍然很有趣。</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+    </ul>
+    <div class="ghead"><i class="rule" style="background:#e8b53c"></i><h2>常用搭配</h2><em>2 句</em></div>
+    <ul>
+  <li>
+    <div class="num">13</div>
+    <div class="body"><p class="en">Yes, we stayed in the old town for a few days, and we enjoyed it very much.</p><p class="zh">是的，我们在老城住了几天，玩得很开心。</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">14</div>
+    <div class="body"><p class="en">It is! It just took my breath away.</p><p class="zh">是的！它让我惊叹不已。</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+    </ul>
+    <div class="ghead"><i class="rule" style="background:#5b6ee0"></i><h2>经典句型</h2><em>4 句</em></div>
+    <ul>
+  <li>
+    <div class="num">15</div>
+    <div class="body"><p class="en">How was your holiday?</p><p class="zh">你的假期怎么样？</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">16</div>
+    <div class="body"><p class="en">It was fantastic.</p><p class="zh">太棒了。</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">17</div>
+    <div class="body"><p class="en">What about you?</p><p class="zh">你呢？</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+  <li>
+    <div class="num">18</div>
+    <div class="body"><p class="en">How was your summer holiday?</p><p class="zh">你的暑假过得怎么样？</p></div>
+    <div class="act"><button class="play">🔊</button></div>
+  </li>
+    </ul>
+</div>
+</div>
+</body></html>

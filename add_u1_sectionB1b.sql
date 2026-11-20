@@ -1,0 +1,60 @@
+-- 八上 Unit 1 Section B 1b（P26–P27，Vincent 莫斯科假期日记，多源逐字一致）
+-- genre=diary / section_code=B-1b / source=八上 U1 Section B 1b
+-- tier：core=必背（进记忆曲线）；extended=选读（只点读，不进复习队列）
+-- 说明：第 4 句（二战/反纳粹博物馆）为教材原文，收录但不出挖空题。
+
+INSERT INTO sentences (lesson_id, en, zh, pattern, grammar_point, source, sort_order, category, exam_point, is_review, genre, section_code, tier) VALUES
+(82, 'Today was our first day to visit Moscow.', '今天是我们游览莫斯科的第一天。', '一般过去时', '过去时间发生的事用动词过去式', '八上 U1 Section B 1b', 19, '重点考点', '一般过去时', 0, 'diary', 'B-1b', 'core'),
+(82, 'The weather was fine, and everyone felt excited to visit some famous places in Russia.', '天气很好，大家都很兴奋能去参观俄罗斯的一些名胜。', 'everyone 作主语', '不定代词作主语，谓语动词用单数', '八上 U1 Section B 1b', 20, '重点考点', '复合不定代词', 0, 'diary', 'B-1b', 'core'),
+(82, 'In the morning, we went to the Victory Museum.', '早上，我们去了胜利博物馆。', 'in the morning', '一般过去时；in the morning 在早上', '八上 U1 Section B 1b', 21, '重点考点', '一般过去时', 0, 'diary', 'B-1b', 'core'),
+(82, 'The Russian people built this museum to remember their fight against the Nazis during World War II.', '俄罗斯人民建造这座博物馆，是为了纪念他们在二战期间抗击纳粹的斗争。', '动词不定式表目的', 'build sth to do sth 动词不定式表目的', '八上 U1 Section B 1b', 22, '经典句型', '基础句型与其它', 0, 'diary', 'B-1b', 'core'),
+(82, 'As we walked through the halls, the tour guide told us stories about the war.', '我们穿过一个个展厅时，导游给我们讲了战争的故事。', 'as 引导时间状语从句', 'as 当……的时候；tell sb stories about sth', '八上 U1 Section B 1b', 23, '经典句型', '从句（宾语/定语/状语）', 0, 'diary', 'B-1b', 'core'),
+(82, 'In one hall, I saw an artwork with thousands of glass tears falling down.', '在一个展厅里，我看到一件艺术品——无数玻璃"眼泪"从上方纷纷落下。', 'thousands of', 'thousands of 成千上万的；with 复合结构', '八上 U1 Section B 1b', 24, '常用搭配', '固定搭配与动词短语', 0, 'diary', 'B-1b', 'core'),
+(82, 'It reminds us that war is terrible and peace does not come easily.', '它提醒我们：战争是残酷的，和平来之不易。', 'that 引导宾语从句', 'remind sb that ... 提醒某人……；that 引导宾语从句', '八上 U1 Section B 1b', 25, '重点考点', '从句（宾语/定语/状语）', 0, 'diary', 'B-1b', 'core'),
+(82, 'We should not forget that.', '我们不应该忘记这一点。', 'should + 动词原形', 'should 应该（后接动词原形，否定 should not）', '八上 U1 Section B 1b', 26, '经典句型', '基础句型与其它', 0, 'diary', 'B-1b', 'core'),
+(82, 'At noon, we had lunch at a restaurant near the park.', '中午，我们在公园附近的一家餐馆吃了午饭。', 'at noon', 'at noon 在中午；near 在……附近', '八上 U1 Section B 1b', 27, '常用搭配', '一般过去时', 0, 'diary', 'B-1b', 'extended'),
+(82, 'I liked the ice cream there, so I ate a lot of it.', '我很喜欢那里的冰激凌，所以吃了很多。', 'so 表结果', 'a lot of 许多；so 所以（表结果）', '八上 U1 Section B 1b', 28, '常用搭配', '固定搭配与动词短语', 0, 'diary', 'B-1b', 'core'),
+(82, 'But during dinner, I didn''t feel like eating because I felt sick.', '但是吃晚饭时，我觉得不舒服，一点也不想吃。', 'didn''t + 动词原形', '一般过去时否定用 didn''t + 动词原形；feel like doing', '八上 U1 Section B 1b', 29, '重点考点', '一般过去时', 0, 'diary', 'B-1b', 'core'),
+(82, 'So now, I just want to get a good night''s sleep.', '所以现在，我只想好好睡一觉。', 'want to do', 'want to do sth 想要做某事', '八上 U1 Section B 1b', 30, '经典句型', '基础句型与其它', 0, 'diary', 'B-1b', 'extended'),
+(82, 'It rained last night, so this morning the air was fresh and cool.', '昨晚下了雨，所以今早空气清新又凉爽。', '一般过去时', 'rain 的过去式 rained；so 表结果', '八上 U1 Section B 1b', 31, '重点考点', '一般过去时', 0, 'diary', 'B-1b', 'core'),
+(82, 'I felt much better today.', '今天我感觉好多了。', 'much + 比较级', 'much 修饰比较级，表示……得多', '八上 U1 Section B 1b', 32, '重点考点', '比较等级·比较级', 0, 'diary', 'B-1b', 'core'),
+(82, 'We took the Moscow Metro to travel around.', '我们乘坐莫斯科地铁四处游览。', 'take + 交通工具', 'take + 交通工具 乘坐……', '八上 U1 Section B 1b', 33, '常用搭配', '固定搭配与动词短语', 0, 'diary', 'B-1b', 'core'),
+(82, 'The metro stations are really beautiful.', '地铁站真的非常漂亮。', '主系表结构', 'be + 形容词 作表语', '八上 U1 Section B 1b', 34, '经典句型', '基础句型与其它', 0, 'diary', 'B-1b', 'extended'),
+(82, 'Sometimes I felt like I was walking inside a palace.', '有时我觉得自己仿佛走在宫殿里。', 'feel like + 从句', 'feel like ... 感觉像……（后可接从句）', '八上 U1 Section B 1b', 35, '常用搭配', '固定搭配与动词短语', 0, 'diary', 'B-1b', 'core'),
+(82, 'After that, we went to Red Square.', '之后，我们去了红场。', 'after that', 'after that 在那之后（表时间顺序）', '八上 U1 Section B 1b', 36, '经典句型', '一般过去时', 0, 'diary', 'B-1b', 'extended'),
+(82, 'We saw some fantastic buildings there.', '我们在那里看到了一些壮观的建筑。', '一般过去时', 'see 的过去式 saw', '八上 U1 Section B 1b', 37, '重点考点', '一般过去时', 0, 'diary', 'B-1b', 'core'),
+(82, 'In the afternoon, we arrived at a school and met a group of Russian students.', '下午，我们来到一所学校，遇到了一群俄罗斯学生。', 'arrive at', 'arrive at + 小地点；a group of 一群', '八上 U1 Section B 1b', 38, '重点考点', '固定搭配与动词短语', 0, 'diary', 'B-1b', 'core'),
+(82, 'We played games and soon became friends.', '我们一起做游戏，很快就成了朋友。', '一般过去时', 'become 的过去式 became', '八上 U1 Section B 1b', 39, '重点考点', '一般过去时', 0, 'diary', 'B-1b', 'core'),
+(82, 'Later, someone took out his accordion, and soon everyone got together to sing and dance.', '后来，有人拿出手风琴，很快大家都聚到一起唱歌跳舞。', 'someone / everyone 作主语', '不定代词作主语，谓语动词用单数；get together 聚在一起', '八上 U1 Section B 1b', 40, '重点考点', '复合不定代词', 0, 'diary', 'B-1b', 'core'),
+(82, 'We were so happy that we didn''t notice the time.', '我们开心得都没注意到时间。', 'so ... that ...', 'so + 形容词 + that 从句（如此……以至于……）', '八上 U1 Section B 1b', 41, '重点考点', '从句（宾语/定语/状语）', 0, 'diary', 'B-1b', 'core'),
+(82, 'It was such a good experience!', '这真是一次很棒的体验！', 'such a + 名词', 'such a/an + 单数名词（与 so + 形容词 区分）', '八上 U1 Section B 1b', 42, '经典句型', '基础句型与其它', 0, 'diary', 'B-1b', 'core');
+
+-- ===== 挖空题：答案唯一，优先挖介词 / 连词 / 固定搭配关键词 =====
+INSERT INTO sentence_drills (id, sentence_id, exam_point, kind, prompt, answer, hint, sort_order) VALUES
+ ('dr_u1_sb1', (SELECT id FROM sentences WHERE en = 'But during dinner, I didn''t feel like eating because I felt sick.'), '一般过去时', 'cloze',
+  'But during dinner, I didn''t feel ____ eating because I felt sick.', 'like',
+  'feel like doing 想要做某事；前面 didn''t 提示用动词原形', 1),
+ ('dr_u1_sb2', (SELECT id FROM sentences WHERE en = 'Sometimes I felt like I was walking inside a palace.'), '固定搭配与动词短语', 'cloze',
+  'Sometimes I felt ____ I was walking inside a palace.', 'like',
+  'feel like ... 感觉像……（like 后可接句子）', 1),
+ ('dr_u1_sb3', (SELECT id FROM sentences WHERE en = 'In the afternoon, we arrived at a school and met a group of Russian students.'), '固定搭配与动词短语', 'cloze',
+  'In the afternoon, we arrived ____ a school and met a group of Russian students.', 'at',
+  'arrive at + 小地点（学校、车站）；arrive in + 大地方（城市、国家）', 1),
+ ('dr_u1_sb4', (SELECT id FROM sentences WHERE en = 'Later, someone took out his accordion, and soon everyone got together to sing and dance.'), '复合不定代词', 'cloze',
+  'Later, someone took out his accordion, and soon everyone got ____ to sing and dance.', 'together',
+  'get together 聚在一起（固定短语）', 1),
+ ('dr_u1_sb5', (SELECT id FROM sentences WHERE en = 'We were so happy that we didn''t notice the time.'), '从句（宾语/定语/状语）', 'cloze',
+  'We were ____ happy that we didn''t notice the time.', 'so',
+  'so + 形容词 + that 从句：如此……以至于……', 1),
+ ('dr_u1_sb6', (SELECT id FROM sentences WHERE en = 'It was such a good experience!'), '基础句型与其它', 'cloze',
+  'It was ____ a good experience!', 'such',
+  'such a + 单数名词；注意与 so + 形容词区分', 1),
+ ('dr_u1_sb7', (SELECT id FROM sentences WHERE en = 'It rained last night, so this morning the air was fresh and cool.'), '一般过去时', 'cloze',
+  'It rained last night, so this morning the air was ____ and cool.', 'fresh',
+  'fresh and cool 清新又凉爽（教材原搭配）；rain 的过去式 rained', 1),
+ ('dr_u1_sb8', (SELECT id FROM sentences WHERE en = 'We took the Moscow Metro to travel around.'), '固定搭配与动词短语', 'cloze',
+  'We took the Moscow ____ to travel around.', 'Metro',
+  'Moscow Metro 莫斯科地铁；take + 交通工具 乘坐……', 1),
+ ('dr_u1_sb9', (SELECT id FROM sentences WHERE en = 'I liked the ice cream there, so I ate a lot of it.'), '固定搭配与动词短语', 'cloze',
+  'I liked the ice cream there, so I ate a lot ____ it.', 'of',
+  'a lot of 许多（既可接可数也可接不可数名词）', 1);

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U1 Section B 1b · 官方音频试听（24 句）</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; background:#f5f5f7; color:#1d1d1f; margin:0; padding:24px 18px 60px; }
+  .wrap { max-width:900px; margin:0 auto; }
+  h1 { font-size:21px; margin:0 0 4px; }
+  .sub { color:#6e6e73; font-size:13px; margin-bottom:18px; line-height:1.7; }
+  .bar { display:flex; gap:10px; align-items:center; margin-bottom:14px; flex-wrap:wrap; }
+  button { font-family:inherit; cursor:pointer; border:none; border-radius:8px; }
+  .btn-all { background:#1a7f5a; color:#fff; padding:9px 16px; font-size:13px; font-weight:600; }
+  .btn-stop { background:#e8e8ed; color:#333; padding:9px 16px; font-size:13px; }
+  .btn-all:hover { background:#156b4c; }
+  .card { background:#fff; border:1px solid #e3e3e8; border-radius:12px; overflow:hidden; }
+  .row { display:flex; align-items:center; gap:12px; padding:11px 14px; border-bottom:1px solid #f0f0f3; }
+  .row:last-child { border-bottom:none; }
+  .row:hover { background:#fafafe; }
+  .row.playing { background:#eef7f0; }
+  .num { flex-shrink:0; width:26px; height:26px; border-radius:7px; background:#eef0f4; color:#555; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+  .row.playing .num { background:#1a7f5a; color:#fff; }
+  .txt { flex:1; min-width:0; }
+  .en { font-family:"SF Mono",Menlo,Consolas,monospace; font-size:13.5px; line-height:1.5; }
+  .zh { font-size:12px; color:#6e6e73; margin-top:2px; }
+  .dur { font-size:11px; color:#9aa0a6; flex-shrink:0; }
+  .play { flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#1a7f5a; color:#fff; font-size:14px; display:flex; align-items:center; justify-content:center; }
+  .play:hover { background:#156b4c; }
+  .row.playing .play { background:#c0392b; }
+  .note { background:#fffbe8; border:1px solid #f5e3a3; border-radius:8px; padding:11px 14px; font-size:12.5px; line-height:1.8; margin-bottom:14px; }
+  .day { background:#f6f6fa; font-weight:700; font-size:12.5px; color:#333; padding:8px 14px; border-bottom:1px solid #e8e8ee; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>U1 Section B 1b · 官方课文录音试听</h1>
+  <div class="sub">人教版（2024）八上 Unit 1《Happy Holiday》· Vincent 的莫斯科假期日记 · 国家中小学智慧教育平台官方音频，按句切分 24 段<br>
+  来源音频：2 分 13 秒 / 192kbps · 2026-10-24 切分并上线</div>
+
+  <div class="note">
+    <b>怎么听</b>：点每行右边的 ▶ 听单句；点上方「顺序播放全部」可连听 24 句（模拟整篇朗读）。<br>
+    <b>要检查什么</b>：① 是不是真人发音（不再是机器音）；② 每句是否完整（没有切半句）；③ 句间停顿是否自然。<br>
+    发现问题请把<b>序号</b>告诉我（例如「23 句只听到一半」），我按静音分布校正。
+  </div>
+
+  <div class="bar">
+    <button class="btn-all" id="playAll">▶ 顺序播放全部</button>
+    <button class="btn-stop" id="stopAll">■ 停止</button>
+    <span class="dur" id="status">共 24 句 · 约 2 分 13 秒</span>
+  </div>
+
+  <div class="card" id="list"></div>
+</div>
+
+<script>
+const BASE = 'https://words.vip.cpolar.cn';
+const ROWS = [
+  {n:1,  en:"Today was our first day to visit Moscow.", zh:"今天是我们游览莫斯科的第一天。", f:"u1_b1b_19.mp3"},
+  {n:2,  en:"The weather was fine and everyone felt excited to visit some famous places in Russia.", zh:"天气很好，大家都很兴奋能去参观俄罗斯的一些名胜。", f:"u1_b1b_20.mp3"},
+  {n:3,  en:"In the morning, we went to the Victory Museum.", zh:"早上，我们去了胜利博物馆。", f:"u1_b1b_21.mp3"},
+  {n:4,  en:"The Russian people built this museum to remember their fight against the Nazis during World War II.", zh:"俄罗斯人民建造这座博物馆，是为了纪念他们在二战期间抗击纳粹的斗争。", f:"u1_b1b_22.mp3"},
+  {n:5,  en:"As we walked through the halls, the tour guide told us stories about the war.", zh:"我们穿过一个个展厅时，导游给我们讲了战争的故事。", f:"u1_b1b_23.mp3"},
+  {n:6,  en:"In one hall, I saw an artwork with thousands of glass \"tears\" falling down.", zh:"在一个展厅里，我看到一件艺术品——成千上万颗玻璃“眼泪”从上方纷纷落下。", f:"u1_b1b_24.mp3"},
+  {n:7,  en:"It reminds us that war is terrible and peace does not come easily.", zh:"它提醒我们：战争是残酷的，和平来之不易。", f:"u1_b1b_25.mp3"},
+  {n:8,  en:"We should not forget that.", zh:"我们不应该忘记这一点。", f:"u1_b1b_26.mp3"},
+  {n:9,  en:"At noon, we had lunch at a restaurant near the park.", zh:"中午，我们在公园附近的一家餐馆吃了午饭。", f:"u1_b1b_27.mp3"},
+  {n:10, en:"I liked the ice cream there, so I ate a lot of it.", zh:"我很喜欢那里的冰激凌，所以吃了很多。", f:"u1_b1b_28.mp3"},
+  {n:11, en:"But, during dinner, I didn't feel like eating because I felt sick.", zh:"但是吃晚饭时，我觉得不舒服，一点也不想吃。", f:"u1_b1b_29.mp3"},
+  {n:12, en:"So now, I just want to get a good night's sleep.", zh:"所以现在，我只想好好睡一觉。", f:"u1_b1b_30.mp3"},
+  {n:13, en:"It rained last night, so this morning the air was fresh and cool.", zh:"昨晚下了雨，所以今早空气清新又凉爽。", f:"u1_b1b_31.mp3"},
+  {n:14, en:"I felt much better today.", zh:"今天我感觉好多了。", f:"u1_b1b_32.mp3"},
+  {n:15, en:"We took the Moscow Metro to travel around.", zh:"我们乘坐莫斯科地铁四处游览。", f:"u1_b1b_33.mp3"},
+  {n:16, en:"The metro stations are really beautiful.", zh:"地铁站真的非常漂亮。", f:"u1_b1b_34.mp3"},
+  {n:17, en:"Sometimes I felt like I was walking inside a palace.", zh:"有时我觉得自己仿佛走在宫殿里。", f:"u1_b1b_35.mp3"},
+  {n:18, en:"After that, we went to Red Square.", zh:"之后，我们去了红场。", f:"u1_b1b_36.mp3"},
+  {n:19, en:"It was fantastic!", zh:"那里真是太棒了！", f:"u1_b1b_37.mp3"},
+  {n:20, en:"In the afternoon, we arrived at a school and met a group of Russian students.", zh:"下午，我们来到一所学校，结识了一群俄罗斯学生。", f:"u1_b1b_38.mp3"},
+  {n:21, en:"We played games and soon became friends.", zh:"我们一起做游戏，很快就成了朋友。", f:"u1_b1b_39.mp3"},
+  {n:22, en:"Later, someone took out his accordion, and soon everyone got together to sing and dance.", zh:"后来，有人拿出手风琴，很快大家都聚到一起唱歌跳舞。", f:"u1_b1b_40.mp3"},
+  {n:23, en:"We were so happy that we didn't notice the time.", zh:"我们开心得都没注意到时间。", f:"u1_b1b_41.mp3"},
+  {n:24, en:"It was such a good experience!", zh:"这真是一次很棒的体验！", f:"u1_b1b_42.mp3"},
+];
+
+let audio = new Audio();
+let cur = -1, queue = [], playingAll = false;
+
+const listEl = document.getElementById('list');
+const statusEl = document.getElementById('status');
+
+function render() {
+  let html = '<div class="day">7 月 17 日（第 1–12 句）</div>';
+  ROWS.forEach((r, i) => {
+    if (i === 12) html += '<div class="day">7 月 18 日（第 13–24 句）</div>';
+    html += `<div class="row" id="row${i}">
+      <div class="num">${r.n}</div>
+      <div class="txt"><div class="en">${r.en}</div><div class="zh">${r.zh}</div></div>
+      <div class="dur">${r.f.replace('u1_b1b_','').replace('.mp3','')}</div>
+      <button class="play" data-i="${i}">▶</button>
+    </div>`;
+  });
+  listEl.innerHTML = html;
+  listEl.querySelectorAll('.play').forEach(b => {
+    b.addEventListener('click', () => { playingAll = false; playOne(Number(b.dataset.i)); });
+  });
+}
+
+function highlight(i) {
+  document.querySelectorAll('.row').forEach((el, idx) => {
+    el.classList.toggle('playing', idx === i);
+    const btn = el.querySelector('.play');
+    btn.textContent = idx === i ? '■' : '▶';
+  });
+  if (i >= 0) document.getElementById('row' + i).scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+}
+
+function playOne(i) {
+  if (i < 0 || i >= ROWS.length) return;
+  cur = i;
+  audio.src = BASE + '/audio/' + ROWS[i].f;
+  audio.playbackRate = 1;
+  audio.play().catch(e => { statusEl.textContent = '播放失败：' + e.message; });
+  highlight(i);
+  statusEl.textContent = `正在播放 第 ${ROWS[i].n} 句 / 共 24 句`;
+}
+
+audio.addEventListener('ended', () => {
+  if (playingAll && cur >= 0 && cur < ROWS.length - 1) {
+    playOne(cur + 1);
+  } else {
+    playingAll = false;
+    highlight(-1);
+    statusEl.textContent = playingAll ? '' : '播放结束 · 共 24 句';
+  }
+});
+
+document.getElementById('playAll').addEventListener('click', () => {
+  playingAll = true;
+  playOne(0);
+});
+document.getElementById('stopAll').addEventListener('click', () => {
+  playingAll = false;
+  audio.pause();
+  audio.currentTime = 0;
+  highlight(-1);
+  statusEl.textContent = '已停止 · 共 24 句';
+});
+
+render();
+</script>
+</body>
+</html>

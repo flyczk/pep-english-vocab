@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>句子 banner 配色 · 与教材册/单词并列</title>
+<style>
+  :root{
+    --g100:#f3f4f6;--g200:#e5e7eb;--g300:#d1d5db;--g400:#9ca3af;--g500:#6b7280;
+    --g600:#4b5563;--g700:#374151;--g900:#111827;
+    --blue100:#dbeafe;--blue600:#2563eb;--green100:#dcfce7;--green700:#15803d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#eef0f3;color:#111827;
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;padding:28px 20px 60px}
+  h1{font-size:20px;font-weight:700}
+  .note{font-size:13px;color:#6b7280;margin-top:6px;max-width:1080px}
+  h2{font-size:15px;font-weight:650;margin-top:32px;margin-bottom:12px}
+  h2 em{font-style:normal;font-size:12px;color:#8b909a;font-weight:400;margin-left:8px}
+
+  .swatches{display:flex;gap:16px;flex-wrap:wrap}
+  .sw{width:238px}
+  .sw .cap{font-size:12.5px;font-weight:650;margin-bottom:7px;display:flex;align-items:center;gap:6px}
+  .sw .cap .t{font-size:10.5px;font-weight:500;padding:2px 6px;border-radius:5px;background:#fff;color:#6b7280;border:1px solid #e2e5ea}
+  .sw .cap .t.cur{background:#059669;color:#fff;border-color:#059669}
+  .sw .cap .t.old{background:#e5e7eb;color:#4b5563;border-color:#e5e7eb}
+  .sw .code{font-size:11px;color:#8b909a;margin-top:6px;font-family:ui-monospace,Menlo,monospace}
+
+  /* banner 规格：与词表页完全一致 */
+  .banner{border-radius:12px;padding:20px;color:#fff}
+  .banner .row{display:flex;align-items:center;gap:16px}
+  .banner .ico{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.2);display:grid;place-items:center;flex-shrink:0}
+  .banner .ico svg{width:24px;height:24px;color:#fff}
+  .banner h3{font-size:18px;line-height:28px;font-weight:700}
+  .banner .sub{font-size:14px;line-height:20px;margin-top:2px}
+  .banner .pbar{margin-top:16px;height:6px;border-radius:99px;background:rgba(255,255,255,.25);overflow:hidden;display:flex}
+  .banner .pbar i{display:block;height:100%;background:#fff}
+  .banner .pbar i.l{background:rgba(255,255,255,.45)}
+  .banner .leg{margin-top:10px;font-size:12px;display:flex;gap:12px}
+  .banner .leg span{display:flex;align-items:center;gap:5px}
+  .banner .leg .d{width:6px;height:6px;border-radius:50%;background:#fff}
+  .banner .leg .d.l{background:rgba(255,255,255,.45)}
+  .banner .leg .d.n{background:rgba(255,255,255,.38)}
+
+  /* 手机整页 */
+  .phonewrap{display:flex;gap:22px;flex-wrap:wrap;margin-top:6px}
+  .phone{width:430px;background:#f9fafb;border-radius:16px;box-shadow:0 0 0 1px #e2e5ea;overflow:hidden}
+  header{background:#fff;box-shadow:0 1px 2px rgba(16,24,40,.05)}
+  .hrow{padding:16px;display:flex;align-items:center;gap:16px}
+  .back{width:36px;height:36px;flex-shrink:0;border-radius:8px;display:grid;place-items:center;color:var(--g600)}
+  .back svg{width:20px;height:20px}
+  .tt h1{font-size:18px;line-height:28px;font-weight:700}
+  .tt .crumb{font-size:12px;color:var(--g500)}
+  .tt .crumb b{font-weight:400;text-decoration:underline;text-underline-offset:2px;color:#2563eb}
+  main{padding:24px 16px 24px}
+  .card{background:#fff;border:1px solid var(--g200);border-radius:12px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+  .tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));height:36px;align-items:center;
+    border-radius:8px;background:var(--g100);padding:4px;color:var(--g500);margin-bottom:8px}
+  .tabs>span{display:flex;align-items:center;justify-content:center;white-space:nowrap;border-radius:6px;
+    padding:0 4px;font-size:12px;font-weight:500;height:28px}
+  .tabs>span.on{background:#fff;color:var(--g900);font-weight:600;box-shadow:0 1px 3px rgba(16,24,40,.1)}
+  .tabs>span i{font-style:normal;color:var(--g400);margin-left:4px;font-weight:400}
+  .ghead{display:flex;align-items:baseline;justify-content:space-between;padding:0 4px 6px;
+    margin-top:20px;margin-bottom:8px;border-bottom:1px solid var(--g100)}
+  .ghead h3{font-size:14px;font-weight:500;color:var(--g500)}
+  .ghead span{font-size:12px;color:var(--g400)}
+  ul{list-style:none}
+  li{margin-top:12px;background:#fff;border:1px solid var(--g200);border-radius:12px;
+    box-shadow:0 1px 2px rgba(16,24,40,.04);padding:16px;display:flex;align-items:flex-start;gap:16px}
+  li.done{border-color:#a7f3d0;background:rgba(236,253,245,.5)}
+  .num{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;flex-shrink:0;font-size:14px;font-weight:600}
+  .num.b{background:var(--blue100);color:var(--blue600)}
+  .num.d{background:var(--green100);color:var(--green700)}
+  .body{flex:1;min-width:0}
+  .enrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .en{font-size:18px;line-height:24px;font-weight:700;color:var(--g900);letter-spacing:-.01em;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .zh{font-size:14px;color:var(--g700);margin-top:4px}
+  .bdg{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:500;padding:2px 8px;border-radius:99px}
+  .bdg.done{background:var(--green100);color:var(--green700)}
+  .bdg.done svg{width:12px;height:12px}
+  .bdg.sec{background:var(--g100);color:var(--g600);font-size:11px;padding:2px 7px}
+  .play{width:36px;height:36px;border-radius:99px;display:grid;place-items:center;color:var(--g400);flex-shrink:0}
+  .play svg{width:20px;height:20px}
+  .foot{background:#fff;border-top:1px solid var(--g200);padding:16px;box-shadow:0 -4px 12px rgba(16,24,40,.06)}
+  .foot .row{display:flex;align-items:center;gap:12px}
+  .btn{flex:1;height:48px;border-radius:8px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;font-weight:500}
+  .btn.out{background:#fff;border:1px solid var(--g200);color:var(--g900)}
+  .btn.out svg{width:16px;height:16px}
+  .btn.pri{background:#2563eb;color:#fff;font-size:16px}
+  .btn.pri svg{width:16px;height:16px}
+  .plabel{font-size:12.5px;font-weight:650;margin-bottom:8px}
+  @media (max-width:960px){ .phonewrap{flex-direction:column} .phone{width:100%;max-width:430px} }
+</style>
+</head>
+<body>
+
+<h1>句子 banner 配色 · 与教材册 / 单词并列对比</h1>
+<div class="note">
+  现有配色：<b>教材册</b>＝蓝→靛（<code>from-blue-500 to-indigo-600</code>，站内 4 处）、<b>单词</b>＝绿→青（<code>from-green-500 to-teal-600</code>）。
+  句子原先用了蓝→靛，与教材册撞色，这是它难看的原因。下面三个紫色候选与它们同规格并排，看哪个"匹配"。
+</div>
+
+<h2>色板对比 <em>同一规格：p-5 / 48px 图标块 / text-lg 标题 / text-sm 副标题 / 分段进度 / 三态图例</em></h2>
+<div class="swatches" id="sw"></div>
+
+<h2>整页效果 <em>候选① 紫 violet-500 → purple-600，已上线</em></h2>
+<div class="phonewrap" id="pw"></div>
+
+<script>
+const ICON={
+  msg:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>',
+  book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+  back:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>',
+  vol:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>',
+  play:'<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 3 20 12 6 21"/></svg>',
+  grid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>',
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>'
+};
+const M = 7, L = 4, N = 7, T = 18;
+const pm = (M/T*100).toFixed(2), pl = (L/T*100).toFixed(2);
+
+function banner(o){
+  return `<div class="banner" style="background:linear-gradient(to right,${o.a},${o.b})">
+    <div class="row">
+      <div class="ico">${o.icon}</div>
+      <div><h3>${o.title}</h3><div class="sub" style="color:${o.sub}">${o.subText}</div></div>
+    </div>
+    <div class="pbar"><i style="width:${pm}%"></i><i class="l" style="width:${pl}%"></i></div>
+    <div class="leg" style="color:${o.leg}">
+      <span><i class="d"></i>已掌握 ${M}</span>
+      <span><i class="d l"></i>学习中 ${L}</span>
+      <span><i class="d n"></i>未练 ${N}</span>
+    </div>
+  </div>`;
+}
+
+const SW=[
+  {name:'教材册（现有）',tag:'old',tagText:'已占用',icon:ICON.book,title:'PEP英语八上',sub:'#dbeafe',subText:'8 个单元',
+   a:'#3b82f6',b:'#4f46e5',leg:'rgba(255,255,255,.85)',code:'from-blue-500 to-indigo-600'},
+  {name:'单词（现有）',tag:'old',tagText:'已占用',icon:ICON.book,title:'Unit 1 Happy Holiday',sub:'#dcfce7',subText:`共 62 个单词`,
+   a:'#22c55e',b:'#0d9488',leg:'rgba(255,255,255,.85)',code:'from-green-500 to-teal-600'},
+  {name:'句子 · 候选① 紫',tag:'cur',tagText:'已上线',icon:ICON.msg,title:'常用语句',sub:'#f3e8ff',subText:`共 ${T} 句 · 已掌握 ${M}`,
+   a:'#8b5cf6',b:'#9333ea',leg:'rgba(255,255,255,.85)',code:'from-violet-500 to-purple-600'},
+  {name:'句子 · 候选② 蓝紫',tag:'',tagText:'',icon:ICON.msg,title:'常用语句',sub:'#e0e7ff',subText:`共 ${T} 句 · 已掌握 ${M}`,
+   a:'#6366f1',b:'#7c3aed',leg:'rgba(255,255,255,.85)',code:'from-indigo-500 to-violet-600'},
+  {name:'句子 · 候选③ 紫红',tag:'',tagText:'',icon:ICON.msg,title:'常用语句',sub:'#fae8ff',subText:`共 ${T} 句 · 已掌握 ${M}`,
+   a:'#a855f7',b:'#c026d3',leg:'rgba(255,255,255,.85)',code:'from-purple-500 to-fuchsia-600'}
+];
+document.getElementById('sw').innerHTML = SW.map(o=>
+  `<div class="sw">
+     <div class="cap">${o.name}${o.tag?`<span class="t ${o.tag}">${o.tagText}</span>`:''}</div>
+     ${banner(o)}
+     <div class="code">${o.code}</div>
+   </div>`).join('');
+
+const DATA=[
+  [1,'重点考点','Where did you go on holiday?','你假期去了哪里？'],
+  [3,'重点考点','Did you do anything interesting on your holiday?','你假期做了什么有趣的事吗？'],
+  [6,'重点考点','Yes, I went to Yunnan.','是的，我去了云南。'],
+  [8,'重点考点','Yes, I went with my family.','是的，我和家人一起去的。'],
+  [11,'经典句型','How was your holiday?','你的假期怎么样？'],
+  [12,'经典句型','It was fantastic.','太棒了。'],
+  [13,'常用搭配','Yes, we stayed in the old town for a few days, and we enjoyed it very much.','是的，我们在老城住了几天，玩得很开心。'],
+  [16,'经典句型','What about you?','你呢？']
+];
+const MASTERED=new Set([1,6,8,11,12,13,16]);
+const LEARN={3:1};
+let seq=0, list='', lastCat='';
+DATA.forEach(d=>{
+  seq++;
+  if(d[1]!==lastCat){ if(lastCat) list+='</ul>'; list+=`<div class="ghead"><h3>${d[1]}</h3><span>${DATA.filter(x=>x[1]===d[1]).length} 句</span></div><ul>`; lastCat=d[1]; }
+  const done=MASTERED.has(d[0]), learn=LEARN[d[0]];
+  list+=`<li class="${done?'done':''}"><div class="num ${done?'d':'b'}">${seq}</div>
+    <div class="body"><div class="enrow"><div class="en">${d[2]}</div>
+    ${done?`<span class="bdg done">${ICON.check}已掌握</span>`:''}
+    ${learn?`<span class="bdg sec">学习中 S${learn}</span>`:''}</div>
+    <div class="zh">${d[3]}</div></div>
+    <div class="play">${ICON.vol}</div></li>`;
+});
+list+='</ul>';
+
+const BANNER = banner(SW[2]);
+document.getElementById('pw').innerHTML = `<div>
+  <div class="plabel">常用语句列表页（候选① 紫）</div>
+  <div class="phone">
+    <header><div class="hrow"><div class="back">${ICON.back}</div>
+      <div class="tt"><h1>Unit 1 Happy Holiday</h1><div class="crumb">PEP英语八上 · <b>单元总览</b></div></div>
+    </div></header>
+    <main>${BANNER}
+      <div class="tabs"><span class="on">全部<i>18</i></span><span>重点考点<i>12</i></span><span>常用搭配<i>2</i></span><span>经典句型<i>4</i></span></div>
+      ${list}
+    </main>
+    <div class="foot"><div class="row"><div class="btn out">${ICON.grid}单元总览</div><div class="btn pri">${ICON.play}开始练习</div></div></div>
+  </div></div>`;
+</script>
+</body>
+</html>

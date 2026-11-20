@@ -1,0 +1,43 @@
+# WorkBuddy 内部记忆（含内网地址、服务器路径、历史排查记录），不进公开仓库
+.workbuddy/
+
+# 系统与编辑器
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# 凭据与密钥（预防性排除）
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*auth*.json
+*storage_state*.json
+
+# 数据库与运行时
+*.db
+*.db-*
+*.sqlite*
+*.log
+
+# 大体积二进制：课本扫描页、截图、录音切片（本地保留，不进仓库）
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.mp3
+*.wav
+*.m4a
+*.mp4
+
+# 依赖与缓存
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/

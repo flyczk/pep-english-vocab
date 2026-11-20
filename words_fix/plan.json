@@ -1,0 +1,230 @@
+{
+ "missing": [],
+ "extra": [],
+ "updates": [
+  {
+   "id": 3324,
+   "unit": 2,
+   "word": "paper cutting",
+   "old_word": "paper cutting",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "剪纸",
+   "diffs": [
+    [
+     "phonetic",
+     "/peɪpə(r)kʌt/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3445,
+   "unit": 4,
+   "word": "in fact",
+   "old_word": "in fact",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "确切地说；实际上",
+   "diffs": [
+    [
+     "phonetic",
+     "/ɪn ˈfækt/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3447,
+   "unit": 4,
+   "word": "for this reason",
+   "old_word": "for this reason",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "出于这个原因",
+   "diffs": [
+    [
+     "phonetic",
+     "/fɔːr ðɪs ˈriːzən/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3449,
+   "unit": 4,
+   "word": "in order to",
+   "old_word": "in order to",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "为了；以便",
+   "diffs": [
+    [
+     "phonetic",
+     "/ɪn ˈɔːdər təʊ/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3521,
+   "unit": 6,
+   "word": "stick to sth",
+   "old_word": "stick to sth",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "坚持；维持",
+   "diffs": [
+    [
+     "phonetic",
+     "/stɪk/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3539,
+   "unit": 6,
+   "word": "put out",
+   "old_word": "put out",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "扑灭；把……摆好",
+   "diffs": [
+    [
+     "phonetic",
+     "/pʊt aʊt/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3545,
+   "unit": 6,
+   "word": "draw to a close",
+   "old_word": "draw to a close",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "即将结束；即将完成",
+   "diffs": [
+    [
+     "phonetic",
+     "/drɔː ˌtʊ ə ˈkləʊz/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3551,
+   "unit": 6,
+   "word": "last but not least",
+   "old_word": "last but not least",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "最后但同等重要的",
+   "diffs": [
+    [
+     "phonetic",
+     "/lɑːst bʌt nɒt liːst/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3556,
+   "unit": 7,
+   "word": "outer space",
+   "old_word": "outer space",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "太空；外层空间（= space）",
+   "diffs": [
+    [
+     "phonetic",
+     "/ˈaʊtə ˌspeɪs/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3560,
+   "unit": 7,
+   "word": "take over",
+   "old_word": "take over",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "接管；接收",
+   "diffs": [
+    [
+     "phonetic",
+     "/teɪk ˈəʊvər/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3717,
+   "unit": 8,
+   "word": "face-to-face",
+   "old_word": "face-to-face",
+   "ph": "",
+   "pos": "adj.",
+   "mean": "面对面的",
+   "diffs": [
+    [
+     "phonetic",
+     "/fes-to-fes/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3722,
+   "unit": 8,
+   "word": "in person",
+   "old_word": "in person",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "亲自；亲身",
+   "diffs": [
+    [
+     "phonetic",
+     "/ɪn ˈpɜːsn/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3726,
+   "unit": 8,
+   "word": "worry about",
+   "old_word": "worry about",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "为……担心",
+   "diffs": [
+    [
+     "phonetic",
+     "/ˈwɒri əbɒt/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": 3732,
+   "unit": 8,
+   "word": "right away",
+   "old_word": "right away",
+   "ph": "",
+   "pos": "phr.",
+   "mean": "立即；马上",
+   "diffs": [
+    [
+     "phonetic",
+     "/raɪt əweɪ/",
+     ""
+    ]
+   ]
+  }
+ ]
+}

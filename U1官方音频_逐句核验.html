@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U1 Section B 1b · 官方音频逐句核验（ASR 证据）</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f7;color:#1d1d1f;margin:0;padding:24px 18px 60px}
+.wrap{max-width:960px;margin:0 auto}
+h1{font-size:21px;margin:0 0 4px}
+.sub{color:#6e6e73;font-size:13px;margin-bottom:16px;line-height:1.7}
+.sum{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.pill{padding:7px 14px;border-radius:20px;font-size:12.5px;font-weight:600}
+.p-ok{background:#e6f4ea;color:#1a7f5a} .p-diff{background:#fff4e0;color:#9a6200}
+.p-bad{background:#fdeeee;color:#c0392b} .p-miss{background:#eceef2;color:#5a6472}
+.note{background:#fffbe8;border:1px solid #f5e3a3;border-radius:8px;padding:12px 14px;font-size:12.5px;line-height:1.85;margin-bottom:14px}
+.bar{display:flex;gap:10px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+button{font-family:inherit;cursor:pointer;border:none;border-radius:8px}
+.btn-all{background:#1a7f5a;color:#fff;padding:9px 16px;font-size:13px;font-weight:600}
+.btn-stop{background:#e8e8ed;color:#333;padding:9px 16px;font-size:13px}
+.card{background:#fff;border:1px solid #e3e3e8;border-radius:12px;overflow:hidden}
+.row{display:flex;align-items:center;gap:12px;padding:11px 14px;border-bottom:1px solid #f0f0f3}
+.row:last-child{border-bottom:none}
+.row.playing{background:#eef7f0}
+.row.diff{background:#fffdf6} .row.bad{background:#fef7f7} .row.miss{background:#fafafa}
+.num{flex-shrink:0;width:26px;height:26px;border-radius:7px;background:#eef0f4;color:#555;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.row.playing .num{background:#1a7f5a;color:#fff}
+.txt{flex:1;min-width:0}
+.en{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:13px;line-height:1.5}
+.heard{font-size:11.5px;color:#6e6e73;margin-top:3px;line-height:1.5}
+.heard b{color:#9aa0a6;font-weight:600}
+.meta{flex-shrink:0;text-align:right;width:96px}
+.badge{font-size:10.5px;padding:2px 7px;border-radius:10px;white-space:nowrap}
+.badge.ok{background:#e6f4ea;color:#1a7f5a} .badge.diff{background:#fff4e0;color:#9a6200}
+.badge.bad{background:#fdeeee;color:#c0392b} .badge.miss{background:#eceef2;color:#5a6472}
+.dur{font-size:10.5px;color:#b0b4ba;margin-top:2px}
+.play{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:#1a7f5a;color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center}
+.row.playing .play{background:#c0392b}
+.na{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:#e8e8ed;color:#8a8f98;font-size:10px;display:flex;align-items:center;justify-content:center}
+</style></head><body><div class="wrap">
+<h1>U1 Section B 1b · 官方音频逐句核验</h1>
+<div class="sub">人教版（2024）八上 Unit 1《Happy Holiday》Vincent 莫斯科假期日记 · 国家中小学智慧教育平台官方录音<br>
+<b>每句下面那行是机器转写（ASR）听到的内容</b>——你可以直接对照：如果两行一致，就是对的。也可以点播放用耳朵验。</div>
+
+<div class="sum">
+  <span class="pill p-ok">完全一致 19 句</span>
+  <span class="pill p-diff">轻微差异 3 句</span>
+  <span class="pill p-bad">差异较大 1 句</span>
+  <span class="pill p-miss">无官方音频 1 句</span>
+</div>
+
+<div class="note">
+<b>⚠️ 2026-10-24 03:45 更新</b>：前两次你听到的可能都是浏览器缓存的旧音频（站点对音频设了 30 天缓存，而新旧文件同名）。现在文件已全部改名 <code>_v2</code>，URL 变了，缓存必然失效。<b>如果这个页面还有问题，那就是真问题</b>。<br><br><b>这次和上次的区别</b>：上次我是靠"静音检测猜句子边界"，没有任何内容验证，结果整体错位。
+这次先用 whisper 把整段音频转成带时间戳的词序列，再把 24 句文本对齐上去，<b>切完每一段又重新转写核对一遍</b>，下面显示的 ASR 文字就是逐段回验的结果。<br>
+<b>已查明的上次失败原因</b>：官方音频前 21 秒是前置内容（"Section B. What can we learn from holiday experiences?" + "Activity 1B. Read Vincent's diary entries..." + "The 17th of July."），中间还有一句 "The 18th of July."，我上次从 0.7 秒就开始切，所以全错。<br>
+<b>需要你判断的 4 句</b>：19、23、28、38 是<b>官方录音与课本文字本身不同</b>（不是切分错）。例如 19 句课本是 to visit，录音念 visiting；37 句课本是 "It was fantastic!"，但录音里念的是 "We saw some fantastic buildings there."（所以这句没有官方音频，已降级 TTS）。
+</div>
+
+<div class="bar">
+  <button class="btn-all" id="playAll">▶ 顺序播放（跳过无音频句）</button>
+  <button class="btn-stop" id="stopAll">■ 停止</button>
+  <span class="dur" id="status">共 24 句</span>
+</div>
+
+<div class="card">
+    <div class="row bad" id="row0">
+      <div class="num">19</div>
+      <div class="txt">
+        <div class="en">Today was our first day to visit Moscow.</div>
+        <div class="heard"><b>ASR 听到：</b>Today was our first day visiting Moscow.</div>
+      </div>
+      <div class="meta"><span class="badge bad">差异大 0.80</span><div class="dur">3.48s</div></div>
+      <button class="play" data-i="0">▶</button>
+    </div>
+    <div class="row ok" id="row1">
+      <div class="num">20</div>
+      <div class="txt">
+        <div class="en">The weather was fine and everyone felt excited to visit some famous places in Russia.</div>
+        <div class="heard"><b>ASR 听到：</b>The weather was fine and everyone felt excited to visit some famous places in Russia.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">5.62s</div></div>
+      <button class="play" data-i="1">▶</button>
+    </div>
+    <div class="row ok" id="row2">
+      <div class="num">21</div>
+      <div class="txt">
+        <div class="en">In the morning, we went to the Victory Museum.</div>
+        <div class="heard"><b>ASR 听到：</b>In the morning, we went to the Victory Museum.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">3.69s</div></div>
+      <button class="play" data-i="2">▶</button>
+    </div>
+    <div class="row ok" id="row3">
+      <div class="num">22</div>
+      <div class="txt">
+        <div class="en">The Russian people built this museum to remember their fight against the Nazis during World War II.</div>
+        <div class="heard"><b>ASR 听到：</b>The Russian people built this museum to remember their fight against the Nazis during World War II.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">6.49s</div></div>
+      <button class="play" data-i="3">▶</button>
+    </div>
+    <div class="row diff" id="row4">
+      <div class="num">23</div>
+      <div class="txt">
+        <div class="en">As we walked through the halls, the tour guide told us stories about the war.</div>
+        <div class="heard"><b>ASR 听到：</b>As we walk through the halls, the tour guide told us stories about the war.</div>
+      </div>
+      <div class="meta"><span class="badge diff">微差 0.93</span><div class="dur">5.44s</div></div>
+      <button class="play" data-i="4">▶</button>
+    </div>
+    <div class="row ok" id="row5">
+      <div class="num">24</div>
+      <div class="txt">
+        <div class="en">In one hall, I saw an artwork with thousands of glass "tears" falling down.</div>
+        <div class="heard"><b>ASR 听到：</b>In one hall, I saw an artwork with thousands of glass tears falling down.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">5.95s</div></div>
+      <button class="play" data-i="5">▶</button>
+    </div>
+    <div class="row ok" id="row6">
+      <div class="num">25</div>
+      <div class="txt">
+        <div class="en">It reminds us that war is terrible and peace does not come easily.</div>
+        <div class="heard"><b>ASR 听到：</b>It reminds us that war is terrible and peace does not come easily.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">5.44s</div></div>
+      <button class="play" data-i="6">▶</button>
+    </div>
+    <div class="row ok" id="row7">
+      <div class="num">26</div>
+      <div class="txt">
+        <div class="en">We should not forget that.</div>
+        <div class="heard"><b>ASR 听到：</b>We should not forget that.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">2.9s</div></div>
+      <button class="play" data-i="7">▶</button>
+    </div>
+    <div class="row ok" id="row8">
+      <div class="num">27</div>
+      <div class="txt">
+        <div class="en">At noon, we had lunch at a restaurant near the park.</div>
+        <div class="heard"><b>ASR 听到：</b>At noon, we had lunch at a restaurant near the park.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">4.02s</div></div>
+      <button class="play" data-i="8">▶</button>
+    </div>
+    <div class="row diff" id="row9">
+      <div class="num">28</div>
+      <div class="txt">
+        <div class="en">I liked the ice cream there, so I ate a lot of it.</div>
+        <div class="heard"><b>ASR 听到：</b>I like the ice cream there, so I ate a lot of it.</div>
+      </div>
+      <div class="meta"><span class="badge diff">微差 0.92</span><div class="dur">4.3s</div></div>
+      <button class="play" data-i="9">▶</button>
+    </div>
+    <div class="row ok" id="row10">
+      <div class="num">29</div>
+      <div class="txt">
+        <div class="en">But, during dinner, I didn't feel like eating because I felt sick.</div>
+        <div class="heard"><b>ASR 听到：</b>But during dinner, I didn't feel like eating because I felt sick.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">6.55s</div></div>
+      <button class="play" data-i="10">▶</button>
+    </div>
+    <div class="row ok" id="row11">
+      <div class="num">30</div>
+      <div class="txt">
+        <div class="en">So now, I just want to get a good night's sleep.</div>
+        <div class="heard"><b>ASR 听到：</b>So now, I just want to get a good night's sleep.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">4.55s</div></div>
+      <button class="play" data-i="11">▶</button>
+    </div>
+    <div class="row ok" id="row12">
+      <div class="num">31</div>
+      <div class="txt">
+        <div class="en">It rained last night, so this morning the air was fresh and cool.</div>
+        <div class="heard"><b>ASR 听到：</b>It rained last night, so this morning the air was fresh and cool.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">6.32s</div></div>
+      <button class="play" data-i="12">▶</button>
+    </div>
+    <div class="row ok" id="row13">
+      <div class="num">32</div>
+      <div class="txt">
+        <div class="en">I felt much better today.</div>
+        <div class="heard"><b>ASR 听到：</b>I felt much better today.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">2.9s</div></div>
+      <button class="play" data-i="13">▶</button>
+    </div>
+    <div class="row ok" id="row14">
+      <div class="num">33</div>
+      <div class="txt">
+        <div class="en">We took the Moscow Metro to travel around.</div>
+        <div class="heard"><b>ASR 听到：</b>We took the Moscow Metro to travel around.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">3.1s</div></div>
+      <button class="play" data-i="14">▶</button>
+    </div>
+    <div class="row ok" id="row15">
+      <div class="num">34</div>
+      <div class="txt">
+        <div class="en">The metro stations are really beautiful.</div>
+        <div class="heard"><b>ASR 听到：</b>The metro stations are really beautiful.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">2.9s</div></div>
+      <button class="play" data-i="15">▶</button>
+    </div>
+    <div class="row ok" id="row16">
+      <div class="num">35</div>
+      <div class="txt">
+        <div class="en">Sometimes I felt like I was walking inside a palace.</div>
+        <div class="heard"><b>ASR 听到：</b>Sometimes I felt like I was walking inside a palace.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">4.68s</div></div>
+      <button class="play" data-i="16">▶</button>
+    </div>
+    <div class="row ok" id="row17">
+      <div class="num">36</div>
+      <div class="txt">
+        <div class="en">After that, we went to Red Square.</div>
+        <div class="heard"><b>ASR 听到：</b>After that, we went to red square.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">2.84s</div></div>
+      <button class="play" data-i="17">▶</button>
+    </div>
+    <div class="row miss" id="row18">
+      <div class="num">37</div>
+      <div class="txt">
+        <div class="en">It was fantastic!</div>
+        <div class="heard">（官方音频里没有这句）</div>
+      </div>
+      <div class="meta"><span class="badge miss">无官方音频</span><div class="dur">—s</div></div>
+      <span class="na">TTS</span>
+    </div>
+    <div class="row diff" id="row19">
+      <div class="num">38</div>
+      <div class="txt">
+        <div class="en">In the afternoon, we arrived at a school and met a group of Russian students.</div>
+        <div class="heard"><b>ASR 听到：</b>In the afternoon, we arrived at school and met a group of Russian students.</div>
+      </div>
+      <div class="meta"><span class="badge diff">微差 0.97</span><div class="dur">5.01s</div></div>
+      <button class="play" data-i="19">▶</button>
+    </div>
+    <div class="row ok" id="row20">
+      <div class="num">39</div>
+      <div class="txt">
+        <div class="en">We played games and soon became friends.</div>
+        <div class="heard"><b>ASR 听到：</b>We played games, and soon became friends.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">3.93s</div></div>
+      <button class="play" data-i="20">▶</button>
+    </div>
+    <div class="row ok" id="row21">
+      <div class="num">40</div>
+      <div class="txt">
+        <div class="en">Later, someone took out his accordion, and soon everyone got together to sing and dance.</div>
+        <div class="heard"><b>ASR 听到：</b>Later, someone took out his accordion, and soon everyone got together to sing and dance.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">5.97s</div></div>
+      <button class="play" data-i="21">▶</button>
+    </div>
+    <div class="row ok" id="row22">
+      <div class="num">41</div>
+      <div class="txt">
+        <div class="en">We were so happy that we didn't notice the time.</div>
+        <div class="heard"><b>ASR 听到：</b>We were so happy that we didn't notice the time.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">4.75s</div></div>
+      <button class="play" data-i="22">▶</button>
+    </div>
+    <div class="row ok" id="row23">
+      <div class="num">42</div>
+      <div class="txt">
+        <div class="en">It was such a good experience!</div>
+        <div class="heard"><b>ASR 听到：</b>It was such a good experience.</div>
+      </div>
+      <div class="meta"><span class="badge ok">✓ 完全一致</span><div class="dur">3.08s</div></div>
+      <button class="play" data-i="23">▶</button>
+    </div></div>
+</div>
+<script>
+const BASE='https://words.vip.cpolar.cn';
+const DATA=[{"i": 0, "n": 19, "en": "Today was our first day to visit Moscow.", "heard": "Today was our first day visiting Moscow.", "has": true, "dur": 3.48, "sim": 0.8, "cls": "bad", "badge": "差异大 0.80"}, {"i": 1, "n": 20, "en": "The weather was fine and everyone felt excited to visit some famous places in Russia.", "heard": "The weather was fine and everyone felt excited to visit some famous places in Russia.", "has": true, "dur": 5.62, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 2, "n": 21, "en": "In the morning, we went to the Victory Museum.", "heard": "In the morning, we went to the Victory Museum.", "has": true, "dur": 3.69, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 3, "n": 22, "en": "The Russian people built this museum to remember their fight against the Nazis during World War II.", "heard": "The Russian people built this museum to remember their fight against the Nazis during World War II.", "has": true, "dur": 6.49, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 4, "n": 23, "en": "As we walked through the halls, the tour guide told us stories about the war.", "heard": "As we walk through the halls, the tour guide told us stories about the war.", "has": true, "dur": 5.44, "sim": 0.933, "cls": "diff", "badge": "微差 0.93"}, {"i": 5, "n": 24, "en": "In one hall, I saw an artwork with thousands of glass \"tears\" falling down.", "heard": "In one hall, I saw an artwork with thousands of glass tears falling down.", "has": true, "dur": 5.95, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 6, "n": 25, "en": "It reminds us that war is terrible and peace does not come easily.", "heard": "It reminds us that war is terrible and peace does not come easily.", "has": true, "dur": 5.44, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 7, "n": 26, "en": "We should not forget that.", "heard": "We should not forget that.", "has": true, "dur": 2.9, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 8, "n": 27, "en": "At noon, we had lunch at a restaurant near the park.", "heard": "At noon, we had lunch at a restaurant near the park.", "has": true, "dur": 4.02, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 9, "n": 28, "en": "I liked the ice cream there, so I ate a lot of it.", "heard": "I like the ice cream there, so I ate a lot of it.", "has": true, "dur": 4.3, "sim": 0.923, "cls": "diff", "badge": "微差 0.92"}, {"i": 10, "n": 29, "en": "But, during dinner, I didn't feel like eating because I felt sick.", "heard": "But during dinner, I didn't feel like eating because I felt sick.", "has": true, "dur": 6.55, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 11, "n": 30, "en": "So now, I just want to get a good night's sleep.", "heard": "So now, I just want to get a good night's sleep.", "has": true, "dur": 4.55, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 12, "n": 31, "en": "It rained last night, so this morning the air was fresh and cool.", "heard": "It rained last night, so this morning the air was fresh and cool.", "has": true, "dur": 6.32, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 13, "n": 32, "en": "I felt much better today.", "heard": "I felt much better today.", "has": true, "dur": 2.9, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 14, "n": 33, "en": "We took the Moscow Metro to travel around.", "heard": "We took the Moscow Metro to travel around.", "has": true, "dur": 3.1, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 15, "n": 34, "en": "The metro stations are really beautiful.", "heard": "The metro stations are really beautiful.", "has": true, "dur": 2.9, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 16, "n": 35, "en": "Sometimes I felt like I was walking inside a palace.", "heard": "Sometimes I felt like I was walking inside a palace.", "has": true, "dur": 4.68, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 17, "n": 36, "en": "After that, we went to Red Square.", "heard": "After that, we went to red square.", "has": true, "dur": 2.84, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 18, "n": 37, "en": "It was fantastic!", "heard": "", "has": false, "dur": null, "sim": null, "cls": "miss", "badge": "无官方音频"}, {"i": 19, "n": 38, "en": "In the afternoon, we arrived at a school and met a group of Russian students.", "heard": "In the afternoon, we arrived at school and met a group of Russian students.", "has": true, "dur": 5.01, "sim": 0.966, "cls": "diff", "badge": "微差 0.97"}, {"i": 20, "n": 39, "en": "We played games and soon became friends.", "heard": "We played games, and soon became friends.", "has": true, "dur": 3.93, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 21, "n": 40, "en": "Later, someone took out his accordion, and soon everyone got together to sing and dance.", "heard": "Later, someone took out his accordion, and soon everyone got together to sing and dance.", "has": true, "dur": 5.97, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 22, "n": 41, "en": "We were so happy that we didn't notice the time.", "heard": "We were so happy that we didn't notice the time.", "has": true, "dur": 4.75, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}, {"i": 23, "n": 42, "en": "It was such a good experience!", "heard": "It was such a good experience.", "has": true, "dur": 3.08, "sim": 1.0, "cls": "ok", "badge": "✓ 完全一致"}];
+let audio=new Audio(); let cur=-1; let playingAll=false;
+const statusEl=document.getElementById('status');
+function highlight(i){document.querySelectorAll('.row').forEach((el,idx)=>{
+  el.classList.toggle('playing',idx===i);
+  const b=el.querySelector('.play'); if(b) b.textContent = idx===i?'■':'▶';
+}); if(i>=0){const el=document.getElementById('row'+i); if(el) el.scrollIntoView({block:'nearest',behavior:'smooth'});}}
+function playOne(i){
+  const r=DATA[i]; if(!r||!r.has) return false;
+  cur=i; audio.src=BASE+'/audio/u1_b1b_'+r.n+'_v2.mp3';
+  audio.play().catch(e=>{statusEl.textContent='播放失败：'+e.message;
+    // 自动跳到下一句
+    if(playingAll){let j=i+1; while(j<DATA.length&&!DATA[j].has) j++; if(j<DATA.length) playOne(j); else playingAll=false;}
+  });
+  highlight(i); statusEl.textContent='第 '+r.n+' 句 / 共 24 句'; return true;
+}
+audio.addEventListener('ended',()=>{
+  if(!playingAll){highlight(-1);return;}
+  let j=cur+1; while(j<DATA.length&&!DATA[j].has) j++;
+  if(j<DATA.length) playOne(j); else {playingAll=false;highlight(-1);statusEl.textContent='播放结束';}
+});
+document.getElementById('playAll').addEventListener('click',()=>{playingAll=true; playOne(0);});
+document.getElementById('stopAll').addEventListener('click',()=>{playingAll=false;audio.pause();audio.currentTime=0;highlight(-1);statusEl.textContent='已停止';});
+document.querySelectorAll('.play').forEach(b=>b.addEventListener('click',()=>{playingAll=false;playOne(Number(b.dataset.i));}));
+</script></body></html>

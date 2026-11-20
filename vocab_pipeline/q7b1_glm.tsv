@@ -1,0 +1,334 @@
+unit	word	phonetic	pos	meaning
+1	unit	/ˈjuːnɪt/	n.	单元
+1	starter	/ˈstɑːtə(r)/	n.	过渡单元
+1	section	/ˈsekʃn/	n.	部分；地区
+1	greet	/ɡriːt/	v.	招呼；问候
+1	each	/iːtʃ/	adj. & pron.	每个；各自
+1	other	/ˈʌðə(r)/	pron. & adj.	另外的人（或物）；另外的；其他的
+1	each other		phr.	互相；彼此
+1	oh	/əʊ/	interj.	哦；啊
+1	everyone	/ˈevriwʌn/	pron.	每人；所有人
+1	start	/stɑːt/	v.	开始；着手
+1	conversation	/ˌkɒnvəˈseɪʃn/	n.	谈话；交谈
+1	spell	/spel/	v.	用字母拼；拼写
+1	bell	/bel/	n.	铃（声）；钟（声）
+1	Helen	/ˈhelən/		海伦
+1	Ella	/ˈelə/		埃拉
+1	Emma	/ˈemə/		埃玛
+1	Peter	/ˈpiːtə(r)/		彼得
+1	Brown	/braʊn/		布朗
+1	PRC	/ˌpiː ɑː(r) ˈsiː/	abbr.	中华人民共和国
+1	PLA	/ˌpiː el ˈeɪ/	abbr.	中国人民解放军
+1	VR	/ˌviː ˈɑː(r)/	abbr.	虚拟现实
+1	WHO	/ˌdʌbljuː eɪtʃ ˈəʊ/	abbr.	世界卫生组织
+1	UN	/ˌjuː ˈen/	abbr.	联合国
+1	Miller	/ˈmɪlə(r)/		米勒
+2	bottle	/ˈbɒtl/	n.	瓶子
+2	eraser	/ɪˈreɪzə(r)/	n.	橡皮
+2	key	/kiː/	n.	钥匙；关键
+2	thing	/θɪŋ/	n.	东西；事情
+2	need	/niːd/	v. & n.	需要
+2	You're welcome.		phr.	别客气；不用谢。
+3	fun	/fʌn/	n. & adj.	乐趣；快乐；有趣的；使人快乐的
+3	yard	/jɑːd/	n.	院子；园圃
+3	carrot	/ˈkærət/	n.	胡萝卜
+3	goose	/ɡuːs/	n.	(pl. geese /ɡiːs/) 鹅
+3	count	/kaʊnt/	v.	数数
+3	another	/əˈnʌðə(r)/	adj. & pron.	另一；又一（人或事物）
+3	else	/els/	adv.	其他的；别的
+3	circle	/ˈsɜːkl/	v. & n.	圈出；圆形；圆圈
+3	look at		phr.	看；瞧
+4	make friends		phr.	交朋友
+4	get to know		phr.	认识；了解
+4	full	/fʊl/	adj.	完整的；满的
+4	full name		phr.	全名
+4	grade	/ɡreɪd/	n.	年级；等级
+4	last name		phr.	姓氏
+4	classmate	/ˈklɑːsmeɪt/	n.	同班同学
+4	class teacher		phr.	班主任
+4	first name		phr.	名字
+4	mistake	/mɪˈsteɪk/	n.	错误；失误
+4	country	/ˈkʌntri/	n.	国家
+4	same	/seɪm/	adj.	相同的
+4	twin	/twɪn/	n. & adj.	双胞胎之一；双胞胎之一的
+4	both	/bəʊθ/	adj. & pron.	两个；两个都
+4	band	/bænd/	n.	乐队
+4	pot	/pɒt/	n.	锅
+4	a lot		phr.	很；非常
+4	tofu	/ˈtəʊfuː/	n.	豆腐
+4	parrot	/ˈpærət/	n.	鹦鹉
+4	guitar	/ɡɪˈtɑː(r)/	n.	吉他
+4	tennis	/ˈtenɪs/	n.	网球运动
+4	page	/peɪdʒ/	n.	页面；（书刊或纸张）页
+4	even	/ˈiːvn/	adv.	甚至；连；愈加
+4	hey	/heɪ/	interj.	嘿；喂
+4	play the guitar		phr.	弹吉他
+4	would	/wʊd; wəd/	modal v.	想（用于礼貌地邀请或向某人提供某物）；将会
+4	would (d) like to		phr.	表示意愿、喜欢
+4	information	/ˌɪnfəˈmeɪʃn/	n.	信息；消息
+4	hobby	/ˈhɒbi/	n.	业余爱好
+4	re	/riː/	prep.	（用于回复电子邮件）关于；事由
+4	Green	/ɡriːn/		格林
+4	UK	/ˌjuː ˈkeɪ/	abbr.	英国
+4	US	/ˌjuː ˈes/	abbr.	美国
+4	Smith	/smɪθ/		史密斯
+4	Lisa	/ˈliːsə/		莉萨
+4	Tom	/tɒm/		汤姆
+4	hot pot		phr.	火锅
+4	Sally	/ˈsæli/		萨莉
+4	Wood	/wʊd/		伍德
+4	Sydney	/ˈsɪdni/		悉尼（澳大利亚城市）
+4	Australia	/ɒˈstreɪliə/		澳大利亚
+4	Mapo tofu		phr.	麻婆豆腐
+4	Beijing roast duck	/rəʊst/	phr.	北京烤鸭
+4	Singapore	/ˌsɪŋəˈpɔː(r)/		新加坡
+4	the Great Wall		phr.	长城
+4	Pauline	/pɔːˈliːn/		保利娜
+4	Lee	/liː/		李
+4	Coco	/ˈkəʊkəʊ/		科科
+4	London	/ˈlʌndən/		伦敦（英国首都）
+5	mean	/miːn/	v.	意思是；打算
+5	husband	/ˈhʌzbənd/	n.	丈夫
+5	bat	/bæt/	n.	球棒；球拍
+5	ping-pong bat		phr.	乒乓球拍
+5	play ping-pong		phr.	打乒乓球
+5	together	/təˈɡeðə(r)/	adv.	在一起；共同
+5	every day		phr.	每天
+5	fishing rod	/rɒd/	phr.	钓竿
+5	spend	/spend/	v.	花（时间、钱等）
+5	a lot of / lots of		phr.	大量；许多
+5	really	/ˈriːəli/	adv.	非常；确实；真正地
+5	member	/ˈmembə(r)/	n.	成员；会员
+5	activity	/ækˈtɪvəti/	n.	活动
+5	chess	/tʃes/	n.	国际象棋
+5	Chinese chess		phr.	中国象棋
+5	grandparent	/ˈɡrænpeərənt/	n.	祖父（母）；外祖父（母）
+5	funny	/ˈfʌni/	adj.	好笑的；奇怪的
+5	laugh	/lɑːf/	v. & n.	笑；发笑；笑声
+5	different	/ˈdɪfrənt/	adj.	不同的
+5	violin	/ˌvaɪəˈlɪn/	n.	小提琴
+5	have fun		phr.	玩得高兴
+5	hat	/hæt/	n.	帽子
+5	handsome	/ˈhænsəm/	adj.	英俊的
+5	knee	/niː/	n.	膝；膝盖
+5	at night		phr.	在夜晚
+5	in the middle		phr.	在中间
+5	grandchild	/ˈɡræntʃaɪld/	n.	(pl. grandchildren /ˈɡrænˌtʃɪldrən/)（外）孙子；（外）孙女
+5	son	/sʌn/	n.	儿子
+5	hike	/haɪk/	v. & n.	远足；徒步旅行
+5	go hiking		phr.	远足；徒步旅行
+5	next to		phr.	紧邻；在……近旁
+5	David	/ˈdeɪvɪd/		戴维
+5	Jim	/dʒɪm/		吉姆
+5	Kate	/keɪt/		凯特
+5	Lily	/ˈlɪli/		莉莉
+5	Ireland	/ˈaɪələnd/		爱尔兰
+5	Fred	/fred/		弗雷德
+5	Sam	/sæm/		萨姆
+5	Jane	/dʒeɪn/		简
+5	Jack	/dʒæk/		杰克
+5	Sarah	/ˈseərə/		萨拉
+5	Oscar	/ˈɒskə(r)/		奥斯卡
+5	Lucy	/ˈluːsi/		露西
+6	hall	/hɔːl/	n.	礼堂；大厅
+6	dining hall	/ˈdaɪnɪŋ/	phr.	餐厅
+6	in front of		phr.	在……前面
+6	building	/ˈbɪldɪŋ/	n.	建筑物；房子
+6	across	/əˈkrɒs/	adv. & prep.	在（……）对面；横过
+6	across from		phr.	在对面
+6	centre	/ˈsentə(r)/	n.	(= center) 中心；中央
+6	gym	/dʒɪm/	n.	(= gymnasium /dʒɪmˈneɪziəm/) 体育馆，健身房；（尤指学校的）体育活动
+6	field	/fiːld/	n.	场地；田地
+6	sports field		phr.	运动场
+6	office	/ˈɒfɪs/	n.	办公室
+6	large	/lɑːdʒ/	adj.	大的；大号的
+6	special	/ˈspeʃl/	adj.	特别的；特殊的
+6	smart	/smɑːt/	adj.	智能的；聪明的
+6	whiteboard	/ˈwaɪtbɔːd/	n.	白板；白色书写板
+6	put up		phr.	张贴；搭建
+6	important	/ɪmˈpɔːtnt/	adj.	重要的
+6	notice	/ˈnəʊtɪs/	n. & v.	通知；注意；注意到；意识到
+6	locker	/ˈlɒkə(r)/	n.	有锁存物柜；寄物柜
+6	drawer	/drɔː(r)/	n.	抽屉
+6	at the back (of)		phr.	在（……）后面
+6	corner	/ˈkɔːnə(r)/	n.	角；墙角；街角
+6	bookcase	/ˈbʊkkeɪs/	n.	书架；书柜
+6	screen	/skriːn/	n.	屏幕；银幕
+6	at school		phr.	在学校
+6	different from		phr.	与……不一样
+6	modern	/ˈmɒdn/	adj.	现代的；当代的
+6	do exercises		phr.	做体操
+6	amazing	/əˈmeɪzɪŋ/	adj.	令人惊奇（惊喜或惊叹）的
+6	raise	/reɪz/	v.	使升高；提高
+6	flag	/flæɡ/	n.	旗；旗帜
+6	most	/məʊst/	adj., pron. & adv.	大多数；最多；最大；最
+6	change	/tʃeɪndʒ/	v. & n.	改变；变化
+6	seat	/siːt/	n.	座位
+6	delicious	/dɪˈlɪʃəs/	adj.	美味的；可口的
+6	How about ...?		phr.	……怎么样？
+6	yours	/jɔːz/	pron.	（通常写作 Yours，用于书信结尾的签名前）你的；您的
+6	send	/send/	v.	发送；邮寄
+6	similar	/ˈsɪmələ(r)/	adj.	类似的；相像的
+6	similar to		phr.	类似的；相像的
+6	sound	/saʊnd/	v. & n.	听起来；好像；声音；响声
+6	bye for now		phr.	再见
+6	Flora	/ˈflɔːrə/		弗洛拉
+7	biology	/baɪˈɒlədʒi/	n.	生物学
+7	IT	/ˌaɪ ˈtiː/	abbr.	(= information technology /tekˈnɒlədʒi/) 信息技术
+7	geography	/dʒiˈɒɡrəfi/	n.	地理（学）
+7	history	/ˈhɪstri/	n.	历史；历史课
+7	boring	/ˈbɔːrɪŋ/	adj.	乏味的；令人生厌的
+7	useful	/ˈjuːsfl/	adj.	有用的；有益的
+7	exciting	/ɪkˈsaɪtɪŋ/	adj.	令人激动的；使人兴奋的
+7	past	/pɑːst/	n., adj. & prep.	过去；过去的事情；过去的；在……之后
+7	good with		phr.	灵巧的；善于应付……的
+7	number	/ˈnʌmbə(r)/	n.	数字；号码
+7	help sb with		phr.	帮助某人做（某事）
+7	reason	/ˈriːzn/	n.	原因；理由
+7	listen to		phr.	听；倾听
+7	good at		phr.	擅长
+7	remember	/rɪˈmembə(r)/	v.	记住；记起
+7	as	/æz; əz/	prep. & conj.	如同；作为；当……时；由于
+7	AM	/ˌeɪ ˈem/	abbr.	(= a.m.) 上午
+7	PM	/ˌpiː ˈem/	abbr.	(= p.m.) 下午；午后
+7	French	/frentʃ/	n. & adj.	法语；法国的；法国人的；法语的
+7	excellent	/ˈeksələnt/	adj.	优秀的；极好的
+7	instrument	/ˈɪnstrəmənt/	n.	乐器；器械；工具
+7	singer	/ˈsɪŋə(r)/	n.	歌手
+7	future	/ˈfjuːtʃə(r)/	n.	将来；未来
+7	in the future		phr.	将来；未来
+7	term	/tɜːm/	n.	学期
+7	work out		phr.	计算出；解决
+7	problem	/ˈprɒbləm/	n.	难题；困难
+7	in class		phr.	课堂上
+7	magic	/ˈmædʒɪk/	n. & adj.	魔法；魔力；魔术；有魔力的；有神奇力量的
+7	life	/laɪf/	n.	生活；生命
+7	scientist	/ˈsaɪəntɪst/	n.	科学家
+7	Baker	/ˈbeɪkə(r)/		贝克
+7	Mike	/maɪk/		迈克
+7	Davis	/ˈdeɪvɪs/		戴维斯
+7	Canada	/ˈkænədə/		加拿大
+8	club	/klʌb/	n.	俱乐部；社团
+8	join	/dʒɔɪn/	v.	参加；加入
+8	choose	/tʃuːz/	v.	选择；挑选
+8	drama	/ˈdrɑːmə/	n.	戏剧；戏剧表演
+8	play Chinese chess		phr.	下中国象棋
+8	feeling	/ˈfiːlɪŋ/	n.	感觉；情感
+8	news	/njuːz/	n.	消息；新闻
+8	musical	/ˈmjuːzɪkl/	adj.	音乐的；有音乐天赋的
+8	musical instrument		phr.	乐器
+8	exactly	/ɪɡˈzæktli/	adv.	正是如此；准确地
+8	drum	/drʌm/	n.	鼓
+8	ability	/əˈbɪləti/	n.	能力；才能
+8	paint	/peɪnt/	v. & n.	用颜料画；在……上刷油漆；油漆；涂料
+8	climb	/klaɪm/	v.	攀登；爬
+8	more	/mɔː(r)/	adj. & pron.	更多（的）
+8	act	/ækt/	v. & n.	扮演；行动；（戏剧等）一幕；行动
+8	act out		phr.	表演
+8	at home		phr.	在家里
+8	interested	/ˈɪntrəstɪd/	adj.	感兴趣的
+8	interested in		phr.	对……感兴趣
+8	nature	/ˈneɪtʃə(r)/	n.	自然界；大自然
+8	beef	/biːf/	n.	牛肉
+9	soon	/suːn/	adv.	不久；很快
+9	than	/ðæn; ðən/	prep. & conj.	（用以引出比较的第二部分）比
+9	more than		phr.	多于
+9	mind	/maɪnd/	n.	头脑；心思
+9	fall	/fɔːl/	v. & n.	进入；掉落；跌倒；（美式）秋天
+9	fall in love with		phr.	爱上……
+9	take photos		phr.	拍照
+9	collect	/kəˈlekt/	v.	收集；采集
+9	insect	/ˈɪnsekt/	n.	昆虫
+9	discover	/dɪˈskʌvə(r)/	v.	发现；发觉
+9	wildlife	/ˈwaɪldlaɪf/	n.	野生动物；野生生物
+9	Linda	/ˈlɪndə/		琳达
+9	Alice	/ˈælɪs/		爱丽丝
+9	Bill	/bɪl/		比尔
+9	Jenny	/ˈdʒeni/		珍妮
+9	make use of		phr.	使用……；利用……
+9	quarter	/ˈkwɔːtə(r)/	n.	一刻钟；四等份之一
+9	shower	/ˈʃaʊə(r)/	n. & v.	淋浴；淋浴器；阵雨；洗淋浴
+9	take a shower		phr.	淋浴
+9	get dressed		phr.	穿衣服
+9	brush	/brʌʃ/	v. & n.	（用刷子）刷；刷子；画笔
+9	tooth	/tuːθ/	n.	(pl. teeth /tiːθ/) 牙齿
+9	duty	/ˈdjuːti/	n.	值班；职责
+9	on duty		phr.	值班
+9	usually	/ˈjuːʒuəli/	adv.	通常地；一般地
+9	get up		phr.	起床；站起
+9	reporter	/rɪˈpɔːtə(r)/	n.	记者
+9	around	/əˈraʊnd/	adv. & prep.	大约；环绕；到处
+9	homework	/ˈhəʊmwɜːk/	n.	家庭作业
+9	go to bed		phr.	上床睡觉
+9	saying	/ˈseɪɪŋ/	n.	谚语；格言
+9	rise	/raɪz/	v. & n.	起床；升起；增长；增加；增强
+9	stay	/steɪ/	v.	停留；待
+9	routine	/ruːˈtiːn/	n.	常规
+9	restaurant	/ˈrestrɒnt/	n.	餐馆；餐厅
+9	housework	/ˈhaʊswɜːk/	n.	家务劳动
+9	while	/waɪl/	n. & conj.	一段时间；一会儿；在……期间；当……的时候
+9	weekend	/ˌwiːkˈend/	n.	周末
+9	at weekends		phr.	在周末
+9	daily	/ˈdeɪli/	adj.	每日的；日常的
+9	daily routine		phr.	日常生活
+9	only	/ˈəʊnli/	adv.	只；仅
+9	break	/breɪk/	n. & v.	休息；间断；（使）破碎；损坏
+9	Finnish	/ˈfɪnɪʃ/	n. & adj.	芬兰语；芬兰的；芬兰人的；芬兰语的
+9	finish	/ˈfɪnɪʃ/	v.	结束；完成
+9	hockey	/ˈhɒki/	n.	曲棍球
+9	ice hockey		phr.	冰球运动；冰上曲棍球
+9	already	/ɔːlˈredi/	adv.	已经；早已
+9	dark	/dɑːk/	adj.	昏暗的；深色的
+9	outside	/ˌaʊtˈsaɪd/	adv., prep. & adj.	在（……）外面；外面的
+9	part	/pɑːt/	n.	部分
+9	everyday	/ˈevrideɪ/	adj.	每天的；日常的
+9	prepare	/prɪˈpeə(r)/	v.	把……预备好；准备
+9	prepare sth for		phr.	为……把某物准备好
+9	Timo	/ˈtiːməʊ/		蒂莫
+9	Halla	/ˈhʌlə/		哈拉
+9	Helsinki	/helˈsɪŋki/		赫尔辛基（芬兰首都）
+9	Finland	/ˈfɪnlənd/		芬兰
+9	home economics	/ˌiːkəˈnɒmɪks/	phr.	家政学；家庭经济学
+10	celebrate	/ˈselɪbreɪt/	v.	庆祝；庆贺
+10	surprise	/səˈpraɪz/	n. & v.	惊奇；惊讶；使感到意外
+10	something	/ˈsʌmθɪŋ/	pron.	某事；某物
+10	sale	/seɪl/	n.	出售；销售
+10	kilo	/ˈkiːləʊ/	n.	(= kilogram, kilogramme /ˈkɪləɡræm/) (pl. kilos) 千克；公斤
+10	yogurt	/ˈjɒɡət/	n.	(= yoghurt) 酸奶
+10	total	/ˈtəʊtl/	n. & adj.	总数；合计；总的；全体的
+10	price	/praɪs/	n.	价格
+10	balloon	/bəˈluːn/	n.	气球
+10	chocolate	/ˈtʃɒklət/	n.	巧克力
+10	pizza	/ˈpiːtsə/	n.	比萨饼
+10	list	/lɪst/	n. & v.	名单；清单；列表；列清单
+10	own	/əʊn/	adj. & pron.	自己的；本人的
+10	example	/ɪɡˈzɑːmpl/	n.	例子；范例
+10	for example		phr.	例如
+10	language	/ˈlæŋɡwɪdʒ/	n.	语言
+10	international	/ˌɪntəˈnæʃnəl/	adj.	国际的
+10	mark	/mɑːk/	v. & n.	做记号；纪念；打分；记号
+10	national	/ˈnæʃnəl/	adj.	国家的；民族的
+10	found	/faʊnd/	v.	创建；创立
+10	meaningful	/ˈmiːnɪŋfl/	adj.	重要的；重大的
+10	make a wish		phr.	许愿
+10	celebration	/ˌselɪˈbreɪʃn/	n.	庆典；庆祝（活动）
+10	post	/pəʊst/	n. & v.	帖子；邮政；邮寄；发布
+10	contact	/ˈkɒntækt/	n. & v.	联系；接触；联系；联络
+10	symbol	/ˈsɪmbl/	n.	象征；符号
+10	take a photo		phr.	拍照
+10	village	/ˈvɪlɪdʒ/	n.	村庄；村镇
+10	grow	/ɡrəʊ/	v.	成长；长大；增长
+10	blow	/bləʊ/	v.	吹；刮
+10	blow out		phr.	吹灭
+10	enjoy	/ɪnˈdʒɔɪ/	v.	享受……的乐趣；喜欢
+10	height	/haɪt/	n.	身高；高度
+10	later	/ˈleɪtə(r)/	adv. & adj.	以后（的）；后来（的）
+10	next time		phr.	下次
+10	whom	/huːm/	pron.	谁；什么人
+10	William Shakespeare	/ˈwɪljəm/ /ˈʃeɪkspɪə(r)/		威廉·莎士比亚
+10	Florence Nightingale	/ˈflɒrəns/ /ˈnaɪtɪŋɡeɪl/		弗洛伦斯·南丁格尔
+10	National Day		phr.	国庆节
+10	CPC Founding Day		phr.	中国共产党建党纪念日
+10	PLA Day		phr.	中国人民解放军建军节
+10	Judy	/ˈdʒuːdi/		朱迪
+10	Clark	/klɑːk/		克拉克
