@@ -1,7 +1,7 @@
 # 人教版中学英语单词库（初中 + 高中）· 工作区
 
 - GitHub：https://github.com/flyczk/pep-english-vocab
-- Gitee：https://gitee.com/flyczk/pep-english-vocab
+- Gitee（私有镜像）：https://gitee.com/jeffchen5/pep-english-vocab
 
 覆盖人教版初中、高中全部最新英语单词，配套教材原文核对、官方录音切片、单词音频对齐、挖空题生成与点读站（`words.vip.cpolar.cn`）的相关脚本和文档。
 
