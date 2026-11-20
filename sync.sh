@@ -23,7 +23,7 @@ branch="$(git branch --show-current)"
 if git remote get-url origin >/dev/null 2>&1; then
   git pull --rebase origin "$branch"
   git push origin "$branch"
-  echo "已同步到 origin/$branch：$msg"
+  echo "已同步到 origin/${branch}：$msg"
 else
   echo "已本地提交（无 origin 远端）：$msg"
 fi
