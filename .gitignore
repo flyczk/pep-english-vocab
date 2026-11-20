@@ -1,4 +1,7 @@
-# WorkBuddy 内部记忆（含内网地址、服务器路径、历史排查记录），不进公开仓库
+# 配置轻量，内容全量：除系统垃圾 / 依赖 / 凭据外，所有资料都入库
+# （含课本扫描页、截图、录音切片、TSV/JSON 数据）
+
+# 唯一的例外：WorkBuddy 内部记忆（含内网地址、服务器路径、历史排查记录）
 .workbuddy/
 
 # 系统与编辑器
@@ -9,7 +12,7 @@
 .idea/
 .vscode/
 
-# 凭据与密钥（预防性排除）
+# 凭据与密钥
 .env
 .env.*
 *.pem
@@ -19,24 +22,11 @@ id_ed25519*
 *auth*.json
 *storage_state*.json
 
-# 数据库与运行时
+# 运行时产物与缓存
 *.db
 *.db-*
 *.sqlite*
 *.log
-
-# 大体积二进制：课本扫描页、截图、录音切片（本地保留，不进仓库）
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.webp
-*.mp3
-*.wav
-*.m4a
-*.mp4
-
-# 依赖与缓存
 node_modules/
 __pycache__/
 *.pyc
