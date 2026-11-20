@@ -1,5 +1,7 @@
 # 人教版八年级上册英语点读项目 · 工作区
 
+仓库：https://github.com/flyczk/pep-b8-english-workspace
+
 围绕「单词学习站」(`words.vip.cpolar.cn`) 八上模块的资料工作区：教材原文核对、官方录音切片、单词音频对齐、挖空题生成、句子模块设计与实施记录。
 
 > 本仓库为**轻量化**版本：只放脚本、SQL、TSV/JSON 教学数据和 Markdown 文档。
